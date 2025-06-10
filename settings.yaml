@@ -24,12 +24,13 @@ appliances:
         active_ratio: 0.5
         active_oversample: 5
         normalization: False
-        model: ModelPaperBackward
+        model: LWT # Changed to LWT
         hparams:
             L: 2304
             F: 32
             K: 16
             H: 512
+            num_lwt_levels: 3 # Added for LWT model configuration
     dishwasher-norm:
         name: dish washer
         filename: dishwasher.th
@@ -46,7 +47,7 @@ appliances:
         active_ratio: 0.5
         active_oversample: 5
         normalization: True
-        model: ModelPaper
+        model: CWNN # Changed to CWNN
         hparams:
             L: 1500
             F: 32
@@ -68,7 +69,7 @@ appliances:
         active_ratio: 0.5
         active_oversample: 5
         normalization: False
-        model: ModelOnlyRegression
+        model: CWNN # Changed to CWNN
         hparams:
             L: 2304
             F: 32
@@ -90,7 +91,7 @@ appliances:
         active_ratio: 0.5
         active_oversample: 5
         normalization: True
-        model: ModelOnlyRegression
+        model: CWNN # Changed to CWNN
         hparams:
             L: 2304
             F: 32
@@ -112,7 +113,7 @@ appliances:
         active_ratio: 0.5
         active_oversample: 5
         normalization: False
-        model: ModelClassAttention
+        model: CWNN # Changed to CWNN
         hparams:
             L: 2304
             F: 32
@@ -133,7 +134,7 @@ appliances:
         active_threshold: 15.0
         active_ratio: null
         normalization: False
-        model: ModelPaperBackward
+        model: CWNN # Changed to CWNN
         hparams:
             L: 496
             F: 32
@@ -154,12 +155,13 @@ appliances:
         active_threshold: 15.0
         active_ratio: null
         normalization: True
-        model: ModelPaper
+        model: LWT # Changed to LWT
         hparams:
             L: 496
             F: 32
             K: 8
             H: 1024
+            num_lwt_levels: 2 # Added for LWT model configuration
     fridge-onlyregression:
         name: fridge
         filename: fridge.th
@@ -176,7 +178,7 @@ appliances:
         active_ratio: null
         normalization: False
         onlyregression: True
-        model: ModelOnlyRegression
+        model: CWNN # Changed to CWNN
         hparams:
             L: 496
             F: 32
@@ -197,7 +199,7 @@ appliances:
         active_threshold: 15.0
         active_ratio: null
         normalization: True
-        model: ModelOnlyRegression
+        model: CWNN # Changed to CWNN
         hparams:
             L: 496
             F: 32
@@ -218,7 +220,7 @@ appliances:
         active_threshold: 15.0
         active_ratio: null
         normalization: False
-        model: ModelClassAttention
+        model: CWNN # Changed to CWNN
         hparams:
             L: 496
             F: 32
@@ -238,12 +240,13 @@ appliances:
         active_ratio: 0.5
         active_oversample: 5
         normalization: False
-        model: ModelPaperBackward
+        model: LWT # Changed to LWT
         hparams:
             L: 128
             F: 16
             K: 8
             H: 1024
+            num_lwt_levels: 4 # Added for LWT model configuration
     microwave-norm:
         name: microwave
         filename: microwave.th
@@ -258,7 +261,7 @@ appliances:
         active_ratio: 0.5
         active_oversample: 5
         normalization: True
-        model: ModelPaper
+        model: CWNN # Changed to CWNN
         hparams:
             L: 128
             F: 16
@@ -278,7 +281,7 @@ appliances:
         active_ratio: 0.5
         active_oversample: 5
         normalization: False
-        model: ModelOnlyRegression
+        model: CWNN # Changed to CWNN
         hparams:
             L: 128
             F: 16
@@ -298,7 +301,7 @@ appliances:
         active_ratio: 0.5
         active_oversample: 5
         normalization: True
-        model: ModelOnlyRegression
+        model: CWNN # Changed to CWNN
         hparams:
             L: 128
             F: 16
@@ -318,7 +321,7 @@ appliances:
         active_ratio: 0.5
         active_oversample: 5
         normalization: False
-        model: ModelClassAttention
+        model: CWNN # Changed to CWNN
         hparams:
             L: 128
             F: 16
