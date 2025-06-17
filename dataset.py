@@ -6,26 +6,6 @@ import torch
 from torch.utils.data import Dataset
 
 class InMemoryKoreaDataset(Dataset):
-    """
-    In-memory dataset handler for preprocessed REDD-like data stored in CSVs.
-    Assumes CSV files contain 'main' column for aggregate consumption
-    and a column named after the specific appliance for its consumption.
-
-    Arguments:
-        path (str): Directory containing the preprocessed CSV files (e.g., 'redd_house1_0.csv').
-        buildings (list): List of building identifiers (e.g., ['redd_house1', 'redd_house2'])
-                          that correspond to the prefixes of the CSV filenames.
-        appliance (str): The name of the appliance to predict (e.g., 'refrigerator', 'dishwasher').
-        windowsize (int): Sliding window size for input sequences.
-        active_threshold (float): Threshold for classifying appliance activity.
-        active_ratio (float, optional): Desired ratio of active/inactive windows for balancing.
-        active_oversample (int, optional): Factor for oversampling active windows.
-        normalization_enabled (bool): Whether to standardize the data.
-        transform_params (dict, optional): Dictionary containing pre-calculated
-                                          'sample_mean', 'sample_std', 'target_mean', 'target_std'
-                                          for consistent standardization (e.g., from training set).
-    """
-
     def __init__(
         self,
         path,
