@@ -31,18 +31,6 @@ def train_model(
     num_epochs=10,
     device='cpu'
 ):
-    """
-    Trains and validates the given PyTorch model.
-
-    Args:
-        model (nn.Module): The model to train.
-        train_loader (DataLoader): DataLoader for the training dataset.
-        val_loader (DataLoader): DataLoader for the validation dataset.
-        optimizer (torch.optim.Optimizer): Optimizer for model parameters.
-        criterion (nn.Module): Loss function (e.g., MSELoss).
-        num_epochs (int): Number of training epochs.
-        device (str): Device to run training on ('cpu' or 'cuda').
-    """
     model.to(device)
 
     start_time_overall = time.time()
