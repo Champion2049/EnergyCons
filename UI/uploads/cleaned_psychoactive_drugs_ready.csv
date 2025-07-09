@@ -1,0 +1,552 @@
+Drug Name,Molecular Formula,Effects,Psychoactivity,MolecularWeight,TPSA,RotatableBondCount,HydrogenBondDonors,HydrogenBondAcceptors,SMILES,Functional Groups
+Paracetamol,C8H9NO2,Non-psychoactive,0,151.16,49.3,1,2,2,CC(=O)NC1=CC=C(C=C1)O,"Hydroxyl, Carbonyl, Ketone"
+Ibuprofen,C13H18O2,Non-psychoactive,0,206.28,37.3,4,1,2,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Aspirin,C9H8O4,Non-psychoactive,0,180.16,63.6,3,1,4,CC(=O)OC1=CC=CC=C1C(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Amoxicillin,C16H19N3O5S,Non-psychoactive,0,308.13,68.28,4.62,4,7,CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Metformin,C4H11N5,Non-psychoactive,0,129.16,91.5,2,3,1,CN(C)C(=N)N=C(N)N,Amine
+Atorvastatin,C33H35FN2O5,Non-psychoactive,0,558.6,112,12,4,6,CC(C)C1=C(C(=C(N1CCC(CC(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Omeprazole,C17H19N3O3S,Non-psychoactive,0,345.4,96.3,5,1,6,CC1=CN=C(C(=C1OC)C)CS(=O)C2=NC3=C(N2)C=C(C=C3)OC,Ether
+Ciprofloxacin,C17H18FN3O3,Non-psychoactive,0,331.34,72.9,3,2,7,C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCNCC4)F)C(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether"
+Clarithromycin,C38H69NO13,Non-psychoactive,0,748,183,8,4,14,CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)OC)C)C)O)(C)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Azithromycin,C38H72N2O12,Non-psychoactive,0,749,180,7,5,14,CCC1C(C(C(N(CC(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)C)O)(C)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Hydrochlorothiazide,C7H8ClN3O4S2,Non-psychoactive,0,297.7,135,1,3,7,C1NC2=CC(=C(C=C2S(=O)(=O)N1)S(=O)(=O)N)Cl,Amine
+Losartan,C22H23ClN6O,Non-psychoactive,0,422.9,92.5,8,2,5,CCCCC1=NC(=C(N1CC2=CC=C(C=C2)C3=CC=CC=C3C4=NNN=N4)CO)Cl,"Hydroxyl, Alcohol, Ether"
+Amlodipine,C20H25ClN2O5,Non-psychoactive,0,408.9,99.9,10,2,7,CCOC(=O)C1=C(NC(=C(C1C2=CC=CC=C2Cl)C(=O)OC)C)COCCN,"Amine, Carbonyl, Ether, Ketone"
+Lisinopril,C21H31N3O5,Non-psychoactive,0,405.5,133,12,4,7,C1CC(N(C1)C(=O)C(CCCCN)NC(CCC2=CC=CC=C2)C(=O)O)C(=O)O,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Levothyroxine,C15H11I4NO4,Non-psychoactive,0,776.87,92.8,5,3,5,C1=C(C=C(C(=C1I)OC2=CC(=C(C(=C2)I)O)I)I)CC(C(=O)O)N,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Albuterol,C13H21NO3,Non-psychoactive,0,239.31,72.7,5,4,4,CC(C)(C)NCC(C1=CC(=C(C=C1)O)CO)O,"Hydroxyl, Alcohol, Ether"
+Salbutamol,C13H21NO3,Non-psychoactive,0,239.31,72.7,5,4,4,CC(C)(C)NCC(C1=CC(=C(C=C1)O)CO)O,"Hydroxyl, Alcohol, Ether"
+Cetirizine,C21H25ClN2O3,Non-psychoactive,0,388.9,53,8,1,5,C1CN(CCN1CCOCC(=O)O)C(C2=CC=CC=C2)C3=CC=C(C=C3)Cl,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Loratadine,C22H23ClN2O2,Non-psychoactive,0,382.9,42.4,2,0,3,CCOC(=O)N1CCC(=C2C3=C(CCC4=C2N=CC=C4)C=C(C=C3)Cl)CC1,"Carbonyl, Ether"
+Ranitidine,C13H22N4O3S,Non-psychoactive,0,314.41,112,9,2,7,CNC(=C[N+](=O)[O-])NCCSCC1=CC=C(O1)CN(C)C,Amine
+Pantoprazole,C16H15F2N3O4S,Non-psychoactive,0,383.4,106,7,1,9,COC1=C(C(=NC=C1)CS(=O)C2=NC3=C(N2)C=C(C=C3)OC(F)F)OC,Ether
+Esomeprazole,C17H19N3O3S,Non-psychoactive,0,345.4,96.3,5,1,6,CC1=CN=C(C(=C1OC)C)CS(=O)C2=NC3=C(N2)C=C(C=C3)OC,Ether
+Insulin,C256H381N65O77S6,Non-psychoactive,0,5794,2450,178,78,89,CCC(C)C1C(=O)NC2CSSCC(C(=O)NC(CSSCC(C(=O)NCC(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC2=O)CO)CC(C)C)CC3=CC=C(C=C3)O)CCC(=O)N)CC(C)C)CCC(=O)O)CC(=O)N)CC4=CC=C(C=C4)O)C(=O)NC(CC(=O)N)C(=O)O)C(=O)NCC(=O)NC(CCC(=O)O)C(=O)NC(CCCNC(=N)N)C(=O)NCC(=O)NC(CC5=CC=CC=C5)C(=O)NC(CC6=CC=CC=C6)C(=O)NC(CC7=CC=C(C=C7)O)C(=O)NC(C(C)O)C(=O)N8CCCC8C(=O)NC(CCCCN)C(=O)NC(C(C)O)C(=O)O)C(C)C)CC(C)C)CC9=CC=C(C=C9)O)CC(C)C)C)CCC(=O)O)C(C)C)CC(C)C)CC2=CNC=N2)CO)NC(=O)C(CC(C)C)NC(=O)C(CC2=CNC=N2)NC(=O)C(CCC(=O)N)NC(=O)C(C(=O)N)NC(=O)C(C(C)C)NC(=O)C(CC2=CC=CC=C2)N)C(=O)NC(C(=O)NC(C(=O)N1)CO)C(C)O)NC(=O)C(CCC(=O)N)NC(=O)C(CCC(=O)O)NC(=O)C(C(C)C)NC(=O)C(C(C)CC)NC(=O)CN,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Glipizide,C21H27N5O4S,Non-psychoactive,0,445.5,139,7,3,6,CC1=CN=C(C=N1)C(=O)NCCC2=CC=C(C=C2)S(=O)(=O)NC(=O)NC3CCCCC3,Carbonyl
+Clopidogrel,C16H16ClNO2S,Non-psychoactive,0,321.8,57.8,4,0,4,COC(=O)C(C1=CC=CC=C1Cl)N2CCC3=C(C2)C=CS3,"Carbonyl, Ether, Ketone"
+Warfarin,C19H16O4,Non-psychoactive,0,308.3,63.6,4,1,4,CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O,"Hydroxyl, Carbonyl, Ketone"
+Cimetidine,C10H16N6S,Non-psychoactive,0,252.34,114,7,3,4,CC1=C(N=CN1)CSCCNC(=NC)NC#N,"Amine, Nitrile"
+Doxycycline,C22H24N2O8,Non-psychoactive,0,444.4,182,2,6,9,CC1C2C(C3C(C(=O)C(=C(C3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O,"Hydroxyl, Amine, Carbonyl, Alcohol, Ether, Ketone"
+Fluconazole,C13H12F2N6O,Non-psychoactive,0,306.27,68.28,4.62,1,7,C1=CC(=C(C=C1F)F)C(CN2C=NC=N2)(CN3C=NC=N3)O,"Hydroxyl, Alcohol, Ether"
+Itraconazole,C35H38Cl2N8O4,Non-psychoactive,0,705.6,101,11,0,9,CCC(C)N1C(=O)N(C=N1)C2=CC=C(C=C2)N3CCN(CC3)C4=CC=C(C=C4)OCC5COC(O5)(CN6C=NC=N6)C7=C(C=C(C=C7)Cl)Cl,Ether
+Metronidazole,C6H9N3O3,Non-psychoactive,0,308.13,68.28,2,1,4,CC1=NC=C(N1CCO)[N+](=O)[O-],"Hydroxyl, Alcohol, Ether"
+Naproxen,C14H14O3,Non-psychoactive,0,230.26,46.5,3,1,3,CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Meloxicam,C14H13N3O4S2,Non-psychoactive,0,351.4,136,2,2,7,CC1=CN=C(S1)NC(=O)C2=C(C3=CC=CC=C3S(=O)(=O)N2C)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Celecoxib,C17H14F3N3O2S,Non-psychoactive,0,308.13,68.28,4.62,1,7,CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F,Amine
+Furosemide,C12H11ClN2O5S,Non-psychoactive,0,330.74,131,5,3,7,C1=COC(=C1)CNC2=CC(=C(C=C2C(=O)O)S(=O)(=O)N)Cl,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether"
+Spironolactone,C24H32O4S,Non-psychoactive,0,416.6,85.7,2,0,5,CC(=O)SC1CC2=CC(=O)CCC2(C3C1C4CCC5(C4(CC3)C)CCC(=O)O5)C,"Carbonyl, Ether, Ketone"
+Triamterene,C12H11N7,Non-psychoactive,0,253.26,130,1,3,7,C1=CC=C(C=C1)C2=NC3=C(N=C(N=C3N=C2N)N)N,Amine
+Digoxin,C41H64O14,Non-psychoactive,0,780.9,203,7,6,14,CC1C(C(CC(O1)OC2C(OC(CC2O)OC3C(OC(CC3O)OC4CCC5(C(C4)CCC6C5CC(C7(C6(CCC7C8=CC(=O)OC8)O)C)O)C)C)C)O)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Verapamil,C27H38N2O4,Non-psychoactive,0,454.6,64,13,0,6,CC(C)C(CCCN(C)CCC1=CC(=C(C=C1)OC)OC)(C#N)C2=CC(=C(C=C2)OC)OC,Ether
+Diltiazem,C22H26N2O4S,Non-psychoactive,0,414.5,84.4,4.62,0,6,CC(=O)OC1C(SC2=CC=CC=C2N(C1=O)CCN(C)C)C3=CC=C(C=C3)OC,"Carbonyl, Ether, Ketone"
+Propranolol,C16H21NO2,Non-psychoactive,0,259.34,41.5,6,2,3,CC(C)NCC(COC1=CC=CC2=CC=CC=C21)O,"Hydroxyl, Alcohol, Ether"
+Metoprolol,C15H25NO3,Non-psychoactive,0,267.36,50.7,9,2,4,CC(C)NCC(COC1=CC=C(C=C1)CCOC)O,"Hydroxyl, Alcohol, Ether"
+Carvedilol,C24H26N2O4,Non-psychoactive,0,406.5,75.7,10,3,5,COC1=CC=CC=C1OCCNCC(COC2=CC=CC3=C2C4=CC=CC=C4N3)O,"Hydroxyl, Alcohol, Ether"
+Nifedipine,C17H18N2O6,Non-psychoactive,0,346.3,110,5,1,7,CC1=C(C(C(=C(N1)C)C(=O)OC)C2=CC=CC=C2[N+](=O)[O-])C(=O)OC,"Carbonyl, Ether, Ketone"
+Glyburide,C23H28ClN3O5S,Non-psychoactive,0,494,122,8,3,5,COC1=C(C=C(C=C1)Cl)C(=O)NCCC2=CC=C(C=C2)S(=O)(=O)NC(=O)NC3CCCCC3,"Carbonyl, Ether"
+Pioglitazone,C19H20N2O3S,Non-psychoactive,0,356.4,93.6,7,1,5,CCC1=CN=C(C=C1)CCOC2=CC=C(C=C2)CC3C(=O)NC(=O)S3,"Carbonyl, Ether, Ketone"
+Sitagliptin,C16H15F6N5O,Non-psychoactive,0,407.31,68.28,4,1,10,C1CN2C(=NN=C2C(F)(F)F)CN1C(=O)CC(CC3=CC(=C(C=C3F)F)F)N,"Amine, Carbonyl, Ketone"
+Linagliptin,C25H28N8O2,Non-psychoactive,0,472.5,113,4,1,7,CC#CCN1C2=C(N=C1N3CCCC(C3)N)N(C(=O)N(C2=O)CC4=NC5=CC=CC=C5C(=N4)C)C,Amine
+Empagliflozin,C23H27ClO7,Non-psychoactive,0,450.9,109,6,4,7,C1COCC1OC2=CC=C(C=C2)CC3=C(C=CC(=C3)C4C(C(C(C(O4)CO)O)O)O)Cl,"Hydroxyl, Alcohol, Ether"
+Canagliflozin,C24H25FO5S,Non-psychoactive,0,444.5,118,5,4,7,CC1=C(C=C(C=C1)C2C(C(C(C(O2)CO)O)O)O)CC3=CC=C(S3)C4=CC=C(C=C4)F,"Hydroxyl, Alcohol, Ether"
+Erythromycin,C37H67NO13,Non-psychoactive,0,733.9,194,7,5,14,CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)O)(C)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Nitrofurantoin,C8H6N4O5,Non-psychoactive,0,238.16,121,2,1,6,C1C(=O)NC(=O)N1N=CC2=CC=C(O2)[N+](=O)[O-],"Carbonyl, Ketone"
+Trimethoprim,C14H18N4O3,Non-psychoactive,0,290.32,106,5,2,7,COC1=CC(=CC(=C1OC)OC)CC2=CN=C(N=C2N)N,"Amine, Ether"
+Sulfamethoxazole,C10H11N3O3S,Non-psychoactive,0,253.28,107,3,2,6,CC1=CC(=NO1)NS(=O)(=O)C2=CC=C(C=C2)N,Amine
+Prednisone,C21H26O5,Non-psychoactive,0,358.4,91.7,4.62,2,5,CC12CC(=O)C3C(C1CCC2(C(=O)CO)O)CCC4=CC(=O)C=CC34C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Hydrocortisone,C21H30O5,Non-psychoactive,0,362.5,94.8,2,3,5,CC12CCC(=O)C=C1CCC3C2C(CC4(C3CCC4(C(=O)CO)O)C)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Fluticasone,C22H27F3O4S,Non-psychoactive,0,444.5,99.9,3,2,8,CC1CC2C3CC(C4=CC(=O)C=CC4(C3(C(CC2(C1(C(=O)SCF)O)C)O)F)C)F,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Budesonide,C25H34O6,Non-psychoactive,0,430.5,93.1,4.62,2,6,CCCC1OC2CC3C4CCC5=CC(=O)C=CC5(C4C(CC3(C2(O1)C(=O)CO)C)O)C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Mometasone,C22H28Cl2O4,Non-psychoactive,0,427.4,74.6,2,2,4,CC1CC2C3CCC4=CC(=O)C=CC4(C3(C(CC2(C1(C(=O)CCl)O)C)O)Cl)C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Beclomethasone,C22H29ClO5,Non-psychoactive,0,408.9,94.8,4.62,3,5,CC1CC2C3CCC4=CC(=O)C=CC4(C3(C(CC2(C1(C(=O)CO)O)C)O)Cl)C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Tamsulosin,C20H28N2O5S,Non-psychoactive,0,308.13,108,11,2,7,CCOC1=CC=CC=C1OCCNC(C)CC2=CC(=C(C=C2)OC)S(=O)(=O)N,"Amine, Ether"
+Finasteride,C23H36N2O2,Non-psychoactive,0,372.5,58.2,2,2,2,CC12CCC3C(C1CCC2C(=O)NC(C)(C)C)CCC4C3(C=CC(=O)N4)C,"Carbonyl, Ketone"
+Dutasteride,C27H30F6N2O2,Non-psychoactive,0,528.5,58.2,2,2,8,CC12CCC3C(C1CCC2C(=O)NC4=C(C=CC(=C4)C(F)(F)F)C(F)(F)F)CCC5C3(C=CC(=O)N5)C,"Carbonyl, Ketone"
+Tolterodine,C22H31NO,Non-psychoactive,0,325.5,23.5,7,1,2,CC1=CC(=C(C=C1)O)C(CCN(C(C)C)C(C)C)C2=CC=CC=C2,Hydroxyl
+Solifenacin,C23H26N2O2,Non-psychoactive,0,362.5,32.8,3,0,3,C1CN2CCC1C(C2)OC(=O)N3CCC4=CC=CC=C4C3C5=CC=CC=C5,"Carbonyl, Ether"
+Phenylephrine,C9H13NO2,Non-psychoactive,0,167.2,52.5,3,3,3,CNCC(C1=CC(=CC=C1)O)O,"Hydroxyl, Alcohol, Ether"
+Pseudoephedrine,C10H15NO,Non-psychoactive,0,165.23,32.3,3,2,2,CC(C(C1=CC=CC=C1)O)NC,"Hydroxyl, Alcohol, Ether"
+Guaifenesin,C10H14O4,Non-psychoactive,0,198.22,58.9,5,2,4,COC1=CC=CC=C1OCC(CO)O,"Hydroxyl, Alcohol, Ether"
+Montelukast,C35H36ClNO3S,Non-psychoactive,0,586.2,95.7,12,2,5,CC(C)(C1=CC=CC=C1CCC(C2=CC=CC(=C2)C=CC3=NC4=C(C=CC(=C4)Cl)C=C3)SCC5(CC5)CC(=O)O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Zafirlukast,C31H33N3O6S,Non-psychoactive,0,575.7,124,9,2,6,CC1=CC=CC=C1S(=O)(=O)NC(=O)C2=CC(=C(C=C2)CC3=CN(C4=C3C=C(C=C4)NC(=O)OC5CCCC5)C)OC,"Carbonyl, Ether"
+Theophylline,C7H8N4O2,Non-psychoactive,0,180.16,69.3,0,1,3,CN1C2=C(C(=O)N(C1=O)C)NC=N2,Aromatic Ring
+Acyclovir,C8H11N5O3,Non-psychoactive,0,225.2,115,4,3,5,C1=NC2=C(N1COCCO)N=C(NC2=O)N,"Hydroxyl, Amine, Alcohol, Ether"
+Valacyclovir,C13H20N6O4,Non-psychoactive,0,324.34,147,8,3,7,CC(C)C(C(=O)OCCOCN1C=NC2=C1N=C(NC2=O)N)N,"Amine, Carbonyl, Ether, Ketone"
+Famciclovir,C14H19N5O4,Non-psychoactive,0,321.33,122,9,1,8,CC(=O)OCC(CCN1C=NC2=CN=C(N=C21)N)COC(=O)C,"Amine, Carbonyl, Ether, Ketone"
+Oseltamivir,C16H28N2O4,Non-psychoactive,0,312.4,90.7,8,2,5,CCC(CC)OC1C=C(CC(C1NC(=O)C)N)C(=O)OCC,"Amine, Carbonyl, Ether, Ketone"
+Zanamivir,C12H20N4O7,Non-psychoactive,0,332.31,201,6,7,8,CC(=O)NC1C(C=C(OC1C(C(CO)O)O)C(=O)O)N=C(N)N,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Loperamide,C29H33ClN2O2,Non-psychoactive,0,477,43.8,7,1,3,CN(C)C(=O)C(CCN1CCC(CC1)(C2=CC=C(C=C2)Cl)O)(C3=CC=CC=C3)C4=CC=CC=C4,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Diphenhydramine,C17H21NO,Non-psychoactive,0,255.35,12.5,6,0,2,CN(C)CCOC(C1=CC=CC=C1)C2=CC=CC=C2,Ether
+Meclizine,C25H27ClN2,Non-psychoactive,0,390.9,6.5,5,0,2,CC1=CC(=CC=C1)CN2CCN(CC2)C(C3=CC=CC=C3)C4=CC=C(C=C4)Cl,"Aromatic Ring, Halide"
+Promethazine,C17H20N2S,Non-psychoactive,0,284.4,31.8,3,0,3,CC(CN1C2=CC=CC=C2SC3=CC=CC=C31)N(C)C,Aromatic Ring
+Ondansetron,C18H19N3O,Non-psychoactive,0,293.4,39.8,2,0,2,CC1=NC=CN1CC2CCC3=C(C2=O)C4=CC=CC=C4N3C,"Carbonyl, Ketone"
+Acetazolamide,C4H6N4O3S2,Non-psychoactive,0,222.3,152,2,2,7,CC(=O)NC1=NN=C(S1)S(=O)(=O)N,"Amine, Carbonyl, Ketone"
+Allopurinol,C5H4N4O,Non-psychoactive,0,136.11,70.1,0,2,3,C1=NNC2=C1C(=O)NC=N2,Aromatic Ring
+Alendronate,C4H13NO7P2,Non-psychoactive,0,249.1,161,5,6,8,C(CC(O)(P(=O)(O)O)P(=O)(O)O)CN,"Hydroxyl, Amine, Alcohol, Ether"
+Bisacodyl,C22H19NO4,Non-psychoactive,0,308.13,68.28,4.62,0,5,CC(=O)OC1=CC=C(C=C1)C(C2=CC=C(C=C2)OC(=O)C)C3=CC=CC=N3,"Carbonyl, Ether, Ketone"
+Bismuth Subsalicylate,C7H6BiO4,Non-psychoactive,0,308.13,68.28,4.62,1,4,C1=CC=C2C(=C1)C(=O)O[Bi]O2.O,"Carbonyl, Ether"
+Calcium Carbonate,CCaO3,Non-psychoactive,0,100.09,63.2,0,0,3,C(=O)([O-])[O-].[Ca+2],"Carbonyl, Ether"
+Captopril,C9H15NO3S,Non-psychoactive,0,217.29,58.6,3,2,4,CC(CS)C(=O)N1CCCC1C(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Cefdinir,C14H13N5O5S2,Non-psychoactive,0,395.4,212,5,4,10,C=CC1=C(N2C(C(C2=O)NC(=O)C(=NO)C3=CSC(=N3)N)SC1)C(=O)O,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Ceftriaxone,C18H18N8O7S3,Non-psychoactive,0,554.6,288,8,4,13,CN1C(=NC(=O)C(=O)N1)SCC2=C(N3C(C(C3=O)NC(=O)C(=NOC)C4=CSC(=N4)N)SC2)C(=O)O,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Cephalexin,C16H17N3O4S,Non-psychoactive,0,347.4,138,4,3,6,CC1=C(N2C(C(C2=O)NC(=O)C(C3=CC=CC=C3)N)SC1)C(=O)O,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Chlorpheniramine,C16H19ClN2,Non-psychoactive,0,274.79,16.1,5,0,2,CN(C)CCC(C1=CC=C(C=C1)Cl)C2=CC=CC=N2,"Aromatic Ring, Halide"
+Dexamethasone,C22H29FO5,Non-psychoactive,0,392.5,94.8,2,3,6,CC1CC2C3CCC4=CC(=O)C=CC4(C3(C(CC2(C1(C(=O)CO)O)C)O)F)C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Dicyclomine,C19H35NO2,Non-psychoactive,0,309.5,29.5,8,0,3,CCN(CC)CCOC(=O)C1(CCCCC1)C2CCCCC2,"Carbonyl, Ether, Ketone"
+Dimenhydrinate,C24H28ClN5O3,Non-psychoactive,0,470,81.8,6,1,5,CN1C2=C(C(=O)N(C1=O)C)NC(=N2)Cl.CN(C)CCOC(C1=CC=CC=C1)C2=CC=CC=C2,Ether
+Docusate,C20H38O7S,Non-psychoactive,0,422.6,115,18,1,7,CCCCC(CC)COC(=O)CC(C(=O)OCC(CC)CCCC)S(=O)(=O)O,"Hydroxyl, Carbonyl, Ether, Ketone"
+Enalapril,C20H28N2O5,Non-psychoactive,0,376.4,95.9,10,2,6,CCOC(=O)C(CCC1=CC=CC=C1)NC(C)C(=O)N2CCCC2C(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Epinephrine,C9H13NO3,Non-psychoactive,0,308.13,68.28,4.62,4,4,CNCC(C1=CC(=C(C=C1)O)O)O,"Hydroxyl, Alcohol, Ether"
+Ferrous Sulfate,FeO4S,Non-psychoactive,0,151.91,88.6,0,0,4,[O-]S(=O)(=O)[O-].[Fe+2],None
+Gabapentin,C9H17NO2,Non-psychoactive,0,171.24,63.3,3,2,3,C1CCC(CC1)(CC(=O)O)CN,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Gemfibrozil,C15H22O3,Non-psychoactive,0,250.33,46.5,6,1,3,CC1=CC(=C(C=C1)C)OCCCC(C)(C)C(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Glimepiride,C24H34N4O5S,Non-psychoactive,0,490.6,133,7,3,5,CCC1=C(CN(C1=O)C(=O)NCCC2=CC=C(C=C2)S(=O)(=O)NC(=O)NC3CCC(CC3)C)C,"Carbonyl, Ketone"
+Hydralazine,C8H8N4,Non-psychoactive,0,160.18,63.8,1,2,4,C1=CC=C2C(=C1)C=NN=C2NN,Amine
+Hydroxyzine,C21H27ClN2O2,Non-psychoactive,0,374.9,35.9,8,1,4,C1CN(CCN1CCOCCO)C(C2=CC=CC=C2)C3=CC=C(C=C3)Cl,"Hydroxyl, Alcohol, Ether"
+Isosorbide Mononitrate,C6H9NO6,Non-psychoactive,0,308.13,68.28,4.62,1,6,C1C(C2C(O1)C(CO2)O[N+](=O)[O-])O,"Hydroxyl, Alcohol, Ether"
+Ketorolac,C15H13NO3,Non-psychoactive,0,255.27,59.3,3,1,3,C1CN2C(=CC=C2C(=O)C3=CC=CC=C3)C1C(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Labetalol,C19H24N2O3,Non-psychoactive,0,328.4,68.28,8,4,4,CC(CCC1=CC=CC=C1)NCC(C2=CC(=C(C=C2)O)C(=O)N)O,"Hydroxyl, Amine, Carbonyl, Alcohol, Ether"
+Lactulose,C12H22O11,Non-psychoactive,0,342.3,190,5,8,11,C(C1C(C(C(C(O1)OC2C(OC(C2O)(CO)O)CO)O)O)O)O,"Hydroxyl, Alcohol, Ether"
+Levofloxacin,C18H20FN3O4,Non-psychoactive,0,361.4,73.3,2,1,8,CC1COC2=C3N1C=C(C(=O)C3=CC(=C2N4CCN(CC4)C)F)C(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether"
+Lovastatin,C24H36O5,Non-psychoactive,0,404.5,72.8,7,1,5,CCC(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Methocarbamol,C11H15NO5,Non-psychoactive,0,241.24,91,7,2,5,COC1=CC=CC=C1OCC(COC(=O)N)O,"Hydroxyl, Amine, Carbonyl, Alcohol, Ether"
+Methotrexate,C20H22N8O5,Non-psychoactive,0,454.4,211,9,5,12,CN(CC1=CN=C2C(=N1)C(=NC(=N2)N)N)C3=CC=C(C=C3)C(=O)NC(CCC(=O)O)C(=O)O,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Metoclopramide,C14H22ClN3O2,Non-psychoactive,0,299.79,67.6,7,2,4,CCN(CC)CCNC(=O)C1=CC(=C(C=C1OC)N)Cl,"Amine, Carbonyl, Ether"
+Miconazole,C18H14Cl4N2O,Non-psychoactive,0,416.1,27.1,6,0,2,C1=CC(=C(C=C1Cl)Cl)COC(CN2C=CN=C2)C3=C(C=C(C=C3)Cl)Cl,Ether
+Minocycline,C23H27N3O7,Non-psychoactive,0,457.5,165,3,5,9,CN(C)C1C2CC3CC4=C(C=CC(=C4C(=C3C(=O)C2(C(=C(C1=O)C(=O)N)O)O)O)O)N(C)C,"Hydroxyl, Amine, Carbonyl, Alcohol, Ether, Ketone"
+Misoprostol,C22H38O5,Non-psychoactive,0,308.13,68.28,4.62,2,5,CCCCC(C)(CC=CC1C(CC(=O)C1CCCCCCC(=O)OC)O)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Nifuroxazide,C12H9N3O5,Non-psychoactive,0,275.22,121,3,2,6,C1=CC(=CC=C1C(=O)NN=CC2=CC=C(O2)[N+](=O)[O-])O,"Hydroxyl, Carbonyl"
+Nitroglycerin,C3H5N3O9,Non-psychoactive,0,227.09,165,5,0,9,C(C(CO[N+](=O)[O-])O[N+](=O)[O-])O[N+](=O)[O-],Ether
+Olmesartan,C24H26N6O3,Non-psychoactive,0,446.5,130,8,3,7,CCCC1=NC(=C(N1CC2=CC=C(C=C2)C3=CC=CC=C3C4=NNN=N4)C(=O)O)C(C)(C)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether"
+Oxcarbazepine,C15H12N2O2,Non-psychoactive,0,252.27,63.4,0,1,2,C1C2=CC=CC=C2N(C3=CC=CC=C3C1=O)C(=O)N,"Amine, Carbonyl, Ketone"
+Phenobarbital,C12H12N2O3,Non-psychoactive,0,232.23,75.3,2,2,3,CCC1(C(=O)NC(=O)NC1=O)C2=CC=CC=C2,"Carbonyl, Ketone"
+Phenytoin,C15H12N2O2,Non-psychoactive,0,252.27,58.2,2,2,2,C1=CC=C(C=C1)C2(C(=O)NC(=O)N2)C3=CC=CC=C3,"Carbonyl, Ketone"
+Potassium Chloride,ClK,Non-psychoactive,0,74.55,68.28,4.62,0,1,[Cl-].[K+],Halide
+Pravastatin,C23H36O7,Non-psychoactive,0,424.5,124,11,4,7,CCC(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC(CC(CC(=O)O)O)O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Quetiapine,C21H25N3O2S,Non-psychoactive,0,383.5,73.6,6,1,5,C1CN(CCN1CCOCCO)C2=NC3=CC=CC=C3SC4=CC=CC=C42,"Hydroxyl, Alcohol, Ether"
+Risedronate,C7H11NO7P2,Non-psychoactive,0,308.13,68.28,4.62,5,8,C1=CC(=CN=C1)CC(O)(P(=O)(O)O)P(=O)(O)O,"Hydroxyl, Alcohol, Ether"
+Sevelamer,C6H12ClNO,Non-psychoactive,0,308.13,68.28,4.62,1,2,C=CCN.C1C(O1)CCl,"Amine, Ether"
+Sodium Bicarbonate,CHNaO3,Non-psychoactive,0,84.01,60.4,0,1,3,C(=O)(O)[O-].[Na+],"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether"
+Tacrolimus,C44H69NO12,Non-psychoactive,0,804,178,7,3,12,CC1CC(C2C(CC(C(O2)(C(=O)C(=O)N3CCCCC3C(=O)OC(C(C(CC(=O)C(C=C(C1)C)CC=C)O)C)C(=CC4CCC(C(C4)OC)O)C)O)C)OC)OC,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Tetracycline,C22H24N2O8,Non-psychoactive,0,444.4,182,2,6,9,CC1(C2CC3C(C(=O)C(=C(C3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O,"Hydroxyl, Amine, Carbonyl, Alcohol, Ether, Ketone"
+Tizanidine,C9H8ClN5S,Non-psychoactive,0,253.71,90.4,2,2,4,C1CN=C(N1)NC2=C(C=CC3=NSN=C32)Cl,"Amine, Aromatic Ring, Halide"
+Topiramate,C12H21NO8S,Non-psychoactive,0,339.36,124,3,1,9,CC1(OC2COC3(C(C2O1)OC(O3)(C)C)COS(=O)(=O)N)C,"Amine, Ether"
+Tramadol,C16H25NO2,Non-psychoactive,0,263.37,68.28,4,1,3,CN(C)CC1CCCCC1(C2=CC(=CC=C2)OC)O,"Hydroxyl, Alcohol, Ether"
+Trazodone,C19H22ClN5O,Non-psychoactive,0,371.9,42.4,5,0,4,C1CN(CCN1CCCN2C(=O)N3C=CC=CC3=N2)C4=CC(=CC=C4)Cl,"Aromatic Ring, Halide"
+Trimethoprim-Sulfamethoxazole,C24H29N7O6S,Non-psychoactive,0,543.6,212,8,4,13,CC1=CC(=NO1)NS(=O)(=O)C2=CC=C(C=C2)N.COC1=CC(=CC(=C1OC)OC)CC2=CN=C(N=C2N)N,"Amine, Ether"
+Ursodiol,C24H40O4,Non-psychoactive,0,392.6,77.8,4,3,4,CC(CCC(=O)O)C1CCC2C1(CCC3C2C(CC4C3(CCC(C4)O)C)O)C,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Vancomycin,C66H75Cl2N9O24,Non-psychoactive,0,1449.2,530,13,19,26,CC1C(C(CC(O1)OC2C(C(C(OC2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)C(C(C(=O)NC(C(=O)NC5C(=O)NC7C8=CC(=C(C=C8)O)C9=C(C=C(C=C9O)O)C(NC(=O)C(C(C1=CC(=C(O4)C=C1)Cl)O)NC7=O)C(=O)O)CC(=O)N)NC(=O)C(CC(C)C)NC)O)Cl)CO)O)O)(C)N)O,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Chlorhexidine,C22H30Cl2N10,Non-psychoactive,0,505.4,178,13,6,2,C1=CC(=CC=C1NC(=NC(=NCCCCCCN=C(N)N=C(N)NC2=CC=C(C=C2)Cl)N)N)Cl,Amine
+Zinc Sulfate,O4SZn,Non-psychoactive,0,308.13,68.28,4.62,0,4,[O-]S(=O)(=O)[O-].[Zn+2],None
+Zolpidem,C19H21N3O,Non-psychoactive,0,307.4,37.6,3,0,2,CC1=CC=C(C=C1)C2=C(N3C=C(C=CC3=N2)C)CC(=O)N(C)C,"Carbonyl, Ketone"
+Azelastine,C22H24ClN3O,Non-psychoactive,0,381.9,35.9,3,0,3,CN1CCCC(CC1)N2C(=O)C3=CC=CC=C3C(=N2)CC4=CC=C(C=C4)Cl,"Aromatic Ring, Halide"
+Baclofen,C10H12ClNO2,Non-psychoactive,0,213.66,63.3,4,2,3,C1=CC(=CC=C1C(CC(=O)O)CN)Cl,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Betahistine,C8H12N2,Non-psychoactive,0,136.19,24.9,3,1,2,CNCCC1=CC=CC=N1,"Amine, Aromatic Ring"
+Bromocriptine,C32H40BrN5O5,Non-psychoactive,0,654.6,118,5,3,6,CC(C)CC1C(=O)N2CCCC2C3(N1C(=O)C(O3)(C(C)C)NC(=O)C4CN(C5CC6=C(NC7=CC=CC(=C67)C5=C4)Br)C)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Cilostazol,C20H27N5O2,Non-psychoactive,0,369.5,81.9,7,1,5,C1CCC(CC1)N2C(=NN=N2)CCCCOC3=CC4=C(C=C3)NC(=O)CC4,"Carbonyl, Ether, Ketone"
+Cyclobenzaprine,C20H21N,Non-psychoactive,0,275.4,3.2,3,0,1,CN(C)CCC=C1C2=CC=CC=C2C=CC3=CC=CC=C31,Aromatic Ring
+Dantrolene,C14H10N4O5,Non-psychoactive,0,314.25,121,3,1,6,C1C(=O)NC(=O)N1N=CC2=CC=C(O2)C3=CC=C(C=C3)[N+](=O)[O-],"Carbonyl, Ketone"
+Donepezil,C24H29NO3,Non-psychoactive,0,379.5,68.28,6,0,4,COC1=C(C=C2C(=C1)CC(C2=O)CC3CCN(CC3)CC4=CC=CC=C4)OC,"Carbonyl, Ether, Ketone"
+Ezetimibe,C24H21F2NO3,Non-psychoactive,0,409.4,60.8,6,2,5,C1=CC(=CC=C1C2C(C(=O)N2C3=CC=C(C=C3)F)CCC(C4=CC=C(C=C4)F)O)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Fenofibrate,C20H21ClO4,Non-psychoactive,0,360.8,52.6,7,0,4,CC(C)OC(=O)C(C)(C)OC1=CC=C(C=C1)C(=O)C2=CC=C(C=C2)Cl,"Carbonyl, Ether, Ketone"
+Flecainide,C17H20F6N2O3,Non-psychoactive,0,414.34,59.6,7,2,10,C1CCNC(C1)CNC(=O)C2=C(C=CC(=C2)OCC(F)(F)F)OCC(F)(F)F,"Carbonyl, Ether"
+Fluvoxamine,C15H21F3N2O2,Non-psychoactive,0,318.33,56.8,4.62,1,7,COCCCCC(=NOCCN)C1=CC=C(C=C1)C(F)(F)F,"Amine, Ether"
+Glucosamine,C6H13NO5,Non-psychoactive,0,308.13,116,1,5,6,C(C1C(C(C(C(O1)O)N)O)O)O,"Hydroxyl, Amine, Alcohol, Ether"
+Indapamide,C16H16ClN3O3S,Non-psychoactive,0,365.8,101,3,2,5,CC1CC2=CC=CC=C2N1NC(=O)C3=CC(=C(C=C3)Cl)S(=O)(=O)N,"Amine, Carbonyl"
+Isotretinoin,C20H28O2,Non-psychoactive,0,300.4,68.28,5,1,2,CC1=C(C(CCC1)(C)C)C=CC(=CC=CC(=CC(=O)O)C)C,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Ketoconazole,C26H28Cl2N4O4,Non-psychoactive,0,531.4,69.1,7,0,6,CC(=O)N1CCN(CC1)C2=CC=C(C=C2)OCC3COC(O3)(CN4C=CN=C4)C5=C(C=C(C=C5)Cl)Cl,"Carbonyl, Ether, Ketone"
+Lamivudine,C8H11N3O3S,Non-psychoactive,0,229.26,113,4.62,2,4,C1C(OC(S1)CO)N2C=CC(=NC2=O)N,"Hydroxyl, Amine, Alcohol, Ether"
+Levocetirizine,C21H25ClN2O3,Non-psychoactive,0,388.9,53,8,1,5,C1CN(CCN1CCOCC(=O)O)C(C2=CC=CC=C2)C3=CC=C(C=C3)Cl,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Magnesium Hydroxide,H2MgO2,Non-psychoactive,0,58.32,2,0,2,2,[OH-].[OH-].[Mg+2],Hydroxyl
+Memantine,C12H21N,Non-psychoactive,0,179.3,26,0,1,1,CC12CC3CC(C1)(CC(C3)(C2)N)C,Amine
+Mycophenolate,C17H20O6,Non-psychoactive,0,308.13,68.28,4.62,2,6,CC1=C2COC(=O)C2=C(C(=C1OC)CC=C(C)CCC(=O)O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Nadolol,C17H27NO4,Non-psychoactive,0,309.4,82,6,4,5,CC(C)(C)NCC(COC1=CC=CC2=C1CC(C(C2)O)O)O,"Hydroxyl, Alcohol, Ether"
+Nebivolol,C22H25F2NO4,Non-psychoactive,0,405.4,71,4.62,3,7,C1CC2=C(C=CC(=C2)F)OC1C(CNCC(C3CCC4=C(O3)C=CC(=C4)F)O)O,"Hydroxyl, Alcohol, Ether"
+Nitrofurazone,C6H6N4O4,Non-psychoactive,0,198.14,126,2,2,5,C1=C(OC(=C1)[N+](=O)[O-])C=NNC(=O)N,"Amine, Carbonyl"
+Nortriptyline,C19H21N,Non-psychoactive,0,263.4,12,3,1,1,CNCCC=C1C2=CC=CC=C2CCC3=CC=CC=C31,"Amine, Aromatic Ring"
+Paroxetine,C19H20FNO3,Non-psychoactive,0,329.4,39.7,4,1,5,C1CNCC(C1C2=CC=C(C=C2)F)COC3=CC4=C(C=C3)OCO4,Ether
+Pentoxifylline,C13H18N4O3,Non-psychoactive,0,278.31,75.5,5,0,4,CC(=O)CCCCN1C(=O)C2=C(N=CN2C)N(C1=O)C,"Carbonyl, Ketone"
+Phenazopyridine,C11H11N5,Non-psychoactive,0,213.24,89.7,2,2,5,C1=CC=C(C=C1)N=NC2=C(N=C(C=C2)N)N,Amine
+Prazosin,C19H21N5O4,Non-psychoactive,0,383.4,107,4.62,1,8,COC1=C(C=C2C(=C1)C(=NC(=N2)N3CCN(CC3)C(=O)C4=CC=CO4)N)OC,"Amine, Carbonyl, Ether"
+Pregabalin,C8H17NO2,Non-psychoactive,0,159.23,63.3,5,2,3,CC(C)CC(CC(=O)O)CN,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Prochlorperazine,C20H24ClN3S,Non-psychoactive,0,373.9,35,4,0,4,CN1CCN(CC1)CCCN2C3=CC=CC=C3SC4=C2C=C(C=C4)Cl,"Aromatic Ring, Halide"
+Pyridoxine,C8H11NO3,Non-psychoactive,0,169.18,73.6,2,3,4,CC1=NC=C(C(=C1O)CO)CO,"Hydroxyl, Alcohol, Ether"
+Raloxifene,C28H27NO4S,Non-psychoactive,0,473.6,98.2,7,2,6,C1CCN(CC1)CCOC2=CC=C(C=C2)C(=O)C3=C(SC4=C3C=CC(=C4)O)C5=CC=C(C=C5)O,"Hydroxyl, Carbonyl, Ether"
+Rifaximin,C43H51N3O11,Non-psychoactive,0,785.9,198,3,5,12,CC1C=CC=C(C(=O)NC2=C(C3=C(C4=C(C(=C3O)C)OC(C4=O)(OC=CC(C(C(C(C(C(C1O)C)O)C)OC(=O)C)C)OC)C)C5=C2N6C=CC(=CC6=N5)C)O)C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Selegiline,C13H17N,Non-psychoactive,0,187.28,3.2,4,0,1,CC(CC1=CC=CC=C1)N(C)CC#C,Aromatic Ring
+Sertaconazole,C20H15Cl3N2OS,Non-psychoactive,0,437.8,55.3,6,0,3,C1=CC2=C(C(=C1)Cl)SC=C2COC(CN3C=CN=C3)C4=C(C=C(C=C4)Cl)Cl,Ether
+Sertraline,C17H17Cl2N,Non-psychoactive,0,306.2,12,2,1,1,CNC1CCC(C2=CC=CC=C12)C3=CC(=C(C=C3)Cl)Cl,"Amine, Aromatic Ring, Halide"
+Sildenafil,C22H30N6O4S,Non-psychoactive,0,474.6,118,4.62,1,8,CCCC1=NN(C2=C1N=C(NC2=O)C3=C(C=CC(=C3)S(=O)(=O)N4CCN(CC4)C)OCC)C,Ether
+Tadalafil,C22H19N3O4,,0,389.4,74.9,1,1,4,CN1CC(=O)N2C(C1=O)CC3=C(C2C4=CC5=C(C=C4)OCO5)NC6=CC=CC=C36,"Carbonyl, Ether, Ketone"
+Tamoxifen,C26H29NO,Non-psychoactive,0,371.5,12.5,8,0,2,CCC(=C(C1=CC=CC=C1)C2=CC=C(C=C2)OCCN(C)C)C3=CC=CC=C3,Ether
+Telmisartan,C33H30N4O2,Non-psychoactive,0,514.6,72.9,7,1,4,CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether"
+Tiotropium,C19H22NO4S2+,Non-psychoactive,0,392.5,116,5,1,6,C[N+]1(C2CC(CC1C3C2O3)OC(=O)C(C4=CC=CS4)(C5=CC=CS5)O)C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Tolmetin,C15H15NO3,Non-psychoactive,0,308.13,68.28,4.62,1,3,CC1=CC=C(C=C1)C(=O)C2=CC=C(N2C)CC(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Valganciclovir,C14H22N6O5,Non-psychoactive,0,308.13,167,9,4,8,CC(C)C(C(=O)OCC(CO)OCN1C=NC2=C1N=C(NC2=O)N)N,"Hydroxyl, Amine, Carbonyl, Alcohol, Ether, Ketone"
+Valsartan,C24H29N5O3,Non-psychoactive,0,435.5,112,10,2,6,CCCCC(=O)N(CC1=CC=C(C=C1)C2=CC=CC=C2C3=NNN=N3)C(C(C)C)C(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Vardenafil,C23H32N6O4S,Non-psychoactive,0,488.6,118,8,1,8,CCCC1=NC(=C2N1N=C(NC2=O)C3=C(C=CC(=C3)S(=O)(=O)N4CCN(CC4)CC)OCC)C,Ether
+Venlafaxine,C17H27NO2,Non-psychoactive,0,277.4,32.7,5,1,3,CN(C)CC(C1=CC=C(C=C1)OC)C2(CCCCC2)O,"Hydroxyl, Alcohol, Ether"
+Vildagliptin,C17H25N3O2,Non-psychoactive,0,303.4,76.4,4.62,2,4,C1CC(N(C1)C(=O)CNC23CC4CC(C2)CC(C4)(C3)O)C#N,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Voriconazole,C16H14F3N5O,Non-psychoactive,0,349.31,76.7,5,1,8,CC(C1=NC=NC=C1F)C(CN2C=NC=N2)(C3=C(C=C(C=C3)F)F)O,"Hydroxyl, Alcohol, Ether"
+Zonisamide,C8H8N2O3S,Non-psychoactive,0,212.23,68.28,4.62,1,5,C1=CC=C2C(=C1)C(=NO2)CS(=O)(=O)N,Amine
+Rifampin,C43H58N4O12,Non-psychoactive,0,822.9,220,5,6,15,CC1C=CC=C(C(=O)NC2=C(C(=C3C(=C2O)C(=C(C4=C3C(=O)C(O4)(OC=CC(C(C(C(C(C(C1O)C)O)C)OC(=O)C)C)OC)C)C)O)O)C=NN5CCN(CC5)C)C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Rivaroxaban,C19H18ClN3O5S,Non-psychoactive,0,435.9,116,5,1,6,C1COCC(=O)N1C2=CC=C(C=C2)N3CC(OC3=O)CNC(=O)C4=CC=C(S4)Cl,"Carbonyl, Ether, Ketone"
+Apixaban,C25H25N5O4,Non-psychoactive,0,459.5,111,5,1,5,COC1=CC=C(C=C1)N2C3=C(CCN(C3=O)C4=CC=C(C=C4)N5CCCCC5=O)C(=N2)C(=O)N,"Amine, Carbonyl, Ether, Ketone"
+Dabigatran,C25H25N7O3,Non-psychoactive,0,471.5,150,9,4,7,CN1C2=C(C=C(C=C2)C(=O)N(CCC(=O)O)C3=CC=CC=N3)N=C1CNC4=CC=C(C=C4)C(=N)N,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Simvastatin,C25H38O5,Non-psychoactive,0,418.6,72.8,7,1,5,CCC(C)(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Rosuvastatin,C22H28FN3O6S,Non-psychoactive,0,308.13,68.28,4.62,3,10,CC(C)C1=NC(=NC(=C1C=CC(CC(CC(=O)O)O)O)C2=CC=C(C=C2)F)N(C)S(=O)(=O)C,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Psilocybin ,C12H17N2O4P,"The headspace of psilocybin mushrooms is typically described as extremely relaxing, profound and stoning in style compared to more stimulating psychedelics such as LSD or 2C-B. They are also regarded as being less clear-headed than other commonly used tryptamines such as 4-AcO-DMT, DMT and ayahuasca. This may be due to the presence of other alkaloids like norbaeocystin.",1,284.25,85.8,5,3,5,CN(C)CCC1=CNC2=C1C(=CC=C2)OP(=O)(O)O,Hydroxyl
+LSD,C20H25N3O,"Compared to some other psychedelics such as psilocybin mushrooms, LSA, and ayahuasca, LSD is reported to be more stimulating and fast-paced in its physical and cognitive effects. The wide variety of effects observed may be attributed to its so-called ""promiscuous"" binding activity at a range of CNS receptors other than serotonin, such as dopamine and norepinephrine receptors.",1,323.4,39.3,3,1,2,CCN(CC)C(=O)C1CN(C2CC3=CNC4=CC=CC(=C34)C2=C1)C,"Carbonyl, Ketone"
+Mescaline,C11H17NO3,Psychoactive,1,211.26,53.7,4.62,1,4,COC1=CC(=CC(=C1OC)OC)CCN,"Amine, Ether"
+"N,N-Dimethyltryptamine",C12H16N2,"Depending on the dosage and method of administration, the effects of DMT can range from mild psychedelic states to powerfully immersive life-altering experiences which are often described as the ultimate displacement from ordinary consciousness in which users report experiencing ineffable spiritual realms or alternate dimensions. It's also commonly reported to encounter 'beings' of unknown origin after consuming a high dose of DMT. Terrence Mckenna and Dr. Rick Strassman have both studied and popularized this phenomenon. [24]",1,188.27,19,3,1,1,CN(C)CCC1=CNC2=CC=CC=C21,Aromatic Ring
+1B-LSD,C24H31N3O2,"Psychoactive reports from many users suggest that the subjective effects of 1B-LSD are so similar to that of LSD so as to be virtually indistinguishable from one another. In comparison to other psychedelics such as psilocybin, LSA and ayahuasca, 1B-LSD is significantly more stimulating and fast-paced regarding the specific style of its physical and cognitive effects.",1,393.5,68.28,5,0,3,CCCC(=O)N1C=C2CC3C(=CC(CN3C)C(=O)N(CC)CC)C4=C2C1=CC=C4,"Carbonyl, Ketone"
+1cP-AL-LAD,C26H31N3O2,"While its subjective effects largely overlap with those of AL-LAD or LSD, 1cP-AL-LAD is commonly reported to be significantly shorter in its duration and less uncomfortable in both its negative physical side effects and general anxiety. Some users have proposed that this compound could potentially serve as an effective introductory psychedelic, alongside other shorter-lasting and manageable psychedelics like 2C-B or 4-HO-MET.",1,417.5,45.6,6,0,3,CCN(CC)C(=O)C1CN(C2CC3=CN(C4=CC=CC(=C34)C2=C1)C(=O)C5CC5)CC=C,"Carbonyl, Ketone"
+1cP-LSD,C24H29N3O2,Psychoactive,1,391.5,45.6,4,0,3,CCN(CC)C(=O)C1CN(C2CC3=CN(C4=CC=CC(=C34)C2=C1)C(=O)C5CC5)C,"Carbonyl, Ketone"
+1P-ETH-LAD,C24H31N3O2,Psychoactive,1,393.5,45.6,5,0,3,CCC(=O)N1C=C2CC3C(=CC(CN3CC)C(=O)N(CC)CC)C4=C2C1=CC=C4,"Carbonyl, Ketone"
+1P-LSD,C23H29N3O2,Psychoactive,1,308.13,68.28,4,0,3,CCC(=O)N1C=C2CC3C(=CC(CN3C)C(=O)N(CC)CC)C4=C2C1=CC=C4,"Carbonyl, Ketone"
+1V-LSD,C25H33N3O2,Psychoactive,1,407.5,45.6,6,0,3,CCCCC(=O)N1C=C2CC3C(=CC(CN3C)C(=O)N(CC)CC)C4=C2C1=CC=C4,"Carbonyl, Ketone"
+AL-LAD,C22H27N3O,Psychoactive,1,349.5,39.3,5,1,2,CCN(CC)C(=O)C1CN(C2CC3=CNC4=CC=CC(=C34)C2=C1)CC=C,"Carbonyl, Ketone"
+ALD-52,C22H27N3O2,Psychoactive,1,365.5,45.6,3,0,3,CCN(CC)C(=O)C1CN(C2CC3=CN(C4=CC=CC(=C34)C2=C1)C(=O)C)C,"Carbonyl, Ketone"
+ETH-LAD,C21H27N3O,Psychoactive,1,337.5,39.3,4,1,2,CCN1CC(C=C2C1CC3=CNC4=CC=CC2=C34)C(=O)N(CC)CC,"Carbonyl, Ketone"
+LAE-32,C18H21N3O,Psychoactive,1,295.4,48.1,2,2,2,CCNC(=O)C1CN(C2CC3=CNC4=CC=CC(=C34)C2=C1)C,"Carbonyl, Ketone"
+LSA,C7H5NO3S,Psychoactive,1,183.19,71.6,0,1,3,C1=CC=C2C(=C1)C(=O)NS2(=O)=O,Carbonyl
+LSM-775,C20H23N3O2,Psychoactive,1,308.13,68.28,4.62,1,3,CN1CC(C=C2C1CC3=CNC4=CC=CC2=C34)C(=O)N5CCOCC5,"Carbonyl, Ether, Ketone"
+LSZ,C21H25N3O,Psychoactive,1,335.4,39.3,1,1,2,CC1CC(N1C(=O)C2CN(C3CC4=CNC5=CC=CC(=C45)C3=C2)C)C,"Carbonyl, Ketone"
+MiPLA,C20H25N3O,Psychoactive,1,323.4,39.3,2,1,2,CC(C)N(C)C(=O)C1CN(C2CC3=CNC4=CC=CC(=C34)C2=C1)C,"Carbonyl, Ketone"
+PARGY-LAD,C22H25N3O,Psychoactive,1,347.5,39.3,4,1,2,CCN(CC)C(=O)C1CN(C2CC3=CNC4=CC=CC(=C34)C2=C1)CC#C,"Carbonyl, Ketone"
+PRO-LAD,C22H29N3O,Psychoactive,1,351.5,39.3,5,1,2,CCCN1CC(C=C2C1CC3=CNC4=CC=CC2=C34)C(=O)N(CC)CC,"Carbonyl, Ketone"
+AMT (pharmaceutical) ,C17H23NO7S,Psychoactive,1,385.4,156,6,6,8,CC(C(C1=CC=C(C=C1)O)O)NCCC2=CC=C(C=C2)O.OS(=O)(=O)O,"Hydroxyl, Alcohol, Ether"
+"N,N-Diethyltryptamine",C14H20N2,Psychoactive,1,216.32,19,5,1,1,CCN(CC)CCC1=CNC2=CC=CC=C21,Aromatic Ring
+DiPT,C16H24N2,Psychoactive,1,244.37,19,5,1,1,CC(C)N(CCC1=CNC2=CC=CC=C21)C(C)C,Aromatic Ring
+"N,N-Dipropyltryptamine",C16H24N2,Psychoactive,1,244.37,19,7,1,1,CCCN(CCC)CCC1=CNC2=CC=CC=C21,Aromatic Ring
+N-Ethyl-N-propyltryptamine,C15H22N2,Psychoactive,1,230.35,19,6,1,1,CCCN(CC)CCC1=CNC2=CC=CC=C21,Aromatic Ring
+MET,C5H11NO2S,Psychoactive,1,149.21,88.6,4,2,4,CSCCC(C(=O)O)N,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+MiPT,C14H20N2,Psychoactive,1,216.32,19,4,1,1,CC(C)N(C)CCC1=CNC2=CC=CC=C21,Aromatic Ring
+4-AcO-DET,C16H22N2O2,Psychoactive,1,274.36,45.3,7,1,3,CCN(CC)CCC1=CNC2=C1C(=CC=C2)OC(=O)C,"Carbonyl, Ether, Ketone"
+4-AcO-DiPT,C18H26N2O2,Psychoactive,1,302.4,45.3,7,1,3,CC(C)N(CCC1=CNC2=C1C(=CC=C2)OC(=O)C)C(C)C,"Carbonyl, Ether, Ketone"
+4-AcO-DMT,C14H18N2O2,Psychoactive,1,246.3,45.3,5,1,3,CC(=O)OC1=CC=CC2=C1C(=CN2)CCN(C)C,"Carbonyl, Ether, Ketone"
+4-AcO-MET,C15H20N2O2,Psychoactive,1,260.33,45.3,6,1,3,CCN(C)CCC1=CNC2=C1C(=CC=C2)OC(=O)C,"Carbonyl, Ether, Ketone"
+4-AcO-MiPT,C16H22N2O2,Psychoactive,1,274.36,45.3,6,1,3,CC(C)N(C)CCC1=CNC2=C1C(=CC=C2)OC(=O)C,"Carbonyl, Ether, Ketone"
+4-HO-DET,C14H20N2O,Psychoactive,1,232.32,39.3,5,2,2,CCN(CC)CCC1=CNC2=C1C(=CC=C2)O,Hydroxyl
+4-HO-DiPT,C16H24N2O,Psychoactive,1,260.37,39.3,5,2,2,CC(C)N(CCC1=CNC2=C1C(=CC=C2)O)C(C)C,Hydroxyl
+4-HO-DPT,C16H24N2O,Psychoactive,1,260.37,39.3,7,2,2,CCCN(CCC)CCC1=CNC2=C1C(=CC=C2)O,Hydroxyl
+4-HO-EPT,C15H22N2O,Psychoactive,1,246.35,39.3,6,2,2,CCCN(CC)CCC1=CNC2=C1C(=CC=C2)O,Hydroxyl
+4-HO-MET,C13H18N2O,Psychoactive,1,218.29,39.3,4,2,2,CCN(C)CCC1=CNC2=C1C(=CC=C2)O,Hydroxyl
+4-HO-MiPT,C14H20N2O,Psychoactive,1,232.32,39.3,4,2,2,CC(C)N(C)CCC1=CNC2=C1C(=CC=C2)O,Hydroxyl
+4-HO-MPT,C14H20N2O,Psychoactive,1,232.32,39.3,5,2,2,CCCN(C)CCC1=CNC2=C1C(=CC=C2)O,Hydroxyl
+5-MeO-aMT,C12H16N2O,Psychoactive,1,204.27,68.28,3,2,2,CC(CC1=CNC2=C1C=C(C=C2)OC)N,"Amine, Ether"
+5-MeO-DALT,C17H22N2O,Psychoactive,1,270.37,28.3,8,1,2,COC1=CC2=C(C=C1)NC=C2CCN(CC=C)CC=C,Ether
+5-MeO-DiPT,C17H26N2O,Psychoactive,1,274.4,68.28,4.62,1,2,CC(C)N(CCC1=CNC2=C1C=C(C=C2)OC)C(C)C,Ether
+5-MeO-DMT,C13H18N2O,Psychoactive,1,218.29,28.3,4,1,2,CN(C)CCC1=CNC2=C1C=C(C=C2)OC,Ether
+5-MeO-EiPT,C16H24N2O,Psychoactive,1,260.37,28.3,6,1,2,CCN(CCC1=CNC2=C1C=C(C=C2)OC)C(C)C,Ether
+5-MeO-MiPT,C15H22N2O,Psychoactive,1,246.35,68.28,4.62,1,2,CC(C)N(C)CCC1=CNC2=C1C=C(C=C2)OC,Ether
+Bufotenin,C12H16N2O,Psychoactive,1,204.27,39.3,3,2,2,CN(C)CCC1=CNC2=C1C=C(C=C2)O,Hydroxyl
+Ibogaine,C20H26N2O,Psychoactive,1,310.4,28.3,4.62,1,2,CCC1CC2CC3C1N(C2)CCC4=C3NC5=C4C=C(C=C5)OC,Ether
+Psilocin,C12H16N2O,Psychoactive,1,204.27,39.3,3,2,2,CN(C)CCC1=CNC2=C1C(=CC=C2)O,Hydroxyl
+Psilocybin,C12H17N2O4P,Psychoactive,1,284.25,85.8,5,3,5,CN(C)CCC1=CNC2=C1C(=CC=C2)OP(=O)(O)O,Hydroxyl
+3C-E,C13H21NO3,Psychoactive,1,308.13,53.7,6,1,4,CCOC1=C(C=C(C=C1OC)CC(C)N)OC,"Amine, Ether"
+3C-P,C14H23NO3,Psychoactive,1,253.34,53.7,7,1,4,CCCOC1=C(C=C(C=C1OC)CC(C)N)OC,"Amine, Ether"
+Allylescaline,C13H19NO3,Psychoactive,1,237.29,53.7,7,1,4,COC1=CC(=CC(=C1OCC=C)OC)CCN,"Amine, Ether"
+Escaline,C12H19NO3,Psychoactive,1,225.28,53.7,6,1,4,CCOC1=C(C=C(C=C1OC)CCN)OC,"Amine, Ether"
+Mescaline,C11H17NO3,Psychoactive,1,211.26,53.7,5,1,4,COC1=CC(=CC(=C1OC)OC)CCN,"Amine, Ether"
+Methallylescaline,C14H21NO3,Psychoactive,1,251.32,68.28,4.62,1,4,CC(=C)COC1=C(C=C(C=C1OC)CCN)OC,"Amine, Ether"
+2C-B,C10H14BrNO2,Psychoactive,1,260.13,44.5,4,1,3,COC1=CC(=C(C=C1CCN)OC)Br,"Amine, Ether"
+2C-C,C10H14ClNO2,Psychoactive,1,215.67,44.5,4,1,3,COC1=CC(=C(C=C1CCN)OC)Cl,"Amine, Ether"
+2C-D,C11H17NO2,Psychoactive,1,195.26,44.5,4,1,3,CC1=CC(=C(C=C1OC)CCN)OC,"Amine, Ether"
+2C-E,C12H19NO2,Psychoactive,1,209.28,44.5,5,1,3,CCC1=CC(=C(C=C1OC)CCN)OC,"Amine, Ether"
+2C-H,C10H15NO2,Psychoactive,1,181.23,44.5,4,1,3,COC1=CC(=C(C=C1)OC)CCN,"Amine, Ether"
+2C-I,C10H14INO2,Psychoactive,1,308.13,44.5,4,1,3,COC1=CC(=C(C=C1CCN)OC)I,"Amine, Ether"
+2C-P,C13H21NO2,Psychoactive,1,223.31,44.5,6,1,3,CCCC1=CC(=C(C=C1OC)CCN)OC,"Amine, Ether"
+2C-T,C11H17NO2S,Psychoactive,1,227.33,69.8,5,1,4,COC1=CC(=C(C=C1CCN)OC)SC,"Amine, Ether"
+2C-T-2,C12H19NO2S,Psychoactive,1,241.35,69.8,6,1,4,CCSC1=C(C=C(C(=C1)OC)CCN)OC,"Amine, Ether"
+2C-T-7,C13H21NO2S,Psychoactive,1,255.38,69.8,7,1,4,CCCSC1=C(C=C(C(=C1)OC)CCN)OC,"Amine, Ether"
+2C-T-21,C12H18FNO2S,Psychoactive,1,259.34,69.8,7,1,5,COC1=CC(=C(C=C1CCN)OC)SCCF,"Amine, Ether"
+2C-B-FLY,C12H14BrNO2,Psychoactive,1,284.15,44.5,2,1,3,C1COC2=C(C3=C(C(=C21)CCN)OCC3)Br,"Amine, Ether"
+2c-b Hydrobromide,C10H15Br2NO2,Psychoactive,1,341.04,44.5,4,2,3,COC1=CC(=C(C=C1CCN)OC)Br.Br,"Amine, Ether"
+BOD,C12H19NO3,Psychoactive,1,308.13,68.28,4.62,1,4,CC1=CC(=C(C=C1OC)C(CN)OC)OC,"Amine, Ether"
+"2,5-DMA",C11H17NO2,Psychoactive,1,195.26,44.5,4,1,3,CC(CC1=C(C=CC(=C1)OC)OC)N,"Amine, Ether"
+DOB,C11H16BrNO2,Psychoactive,1,274.15,44.5,4,1,3,CC(CC1=CC(=C(C=C1OC)Br)OC)N,"Amine, Ether"
+DOC,C21H30O3,Psychoactive,1,330.5,54.4,2,1,3,CC12CCC3C(C1CCC2C(=O)CO)CCC4=CC(=O)CCC34C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+DOI,C11H16INO2,Psychoactive,1,321.15,44.5,4,1,3,CC(CC1=CC(=C(C=C1OC)I)OC)N,"Amine, Ether"
+DOM,C12H19NO2,Psychoactive,1,209.28,44.5,4,1,3,CC1=CC(=C(C=C1OC)CC(C)N)OC,"Amine, Ether"
+TMA-2,C12H19NO3,Psychoactive,1,225.28,53.7,5,1,4,CC(CC1=CC(=C(C=C1OC)OC)OC)N,"Amine, Ether"
+Bromo-DragonFLY,C13H12BrNO2,Psychoactive,1,294.14,52.3,2,1,3,CC(CC1=C2C=COC2=C(C3=C1OC=C3)Br)N,Amine
+25B-NBOH,C17H20BrNO3,Psychoactive,1,366.2,50.7,7,2,4,COC1=CC(=C(C=C1CCNCC2=CC=CC=C2O)OC)Br,"Hydroxyl, Ether"
+25B-NBOMe,C18H22BrNO3,Psychoactive,1,380.3,39.7,8,1,4,COC1=CC=CC=C1CNCCC2=CC(=C(C=C2OC)Br)OC,Ether
+25C-NBOH,C17H20ClNO3,Psychoactive,1,321.8,50.7,7,2,4,COC1=CC(=C(C=C1CCNCC2=CC=CC=C2O)OC)Cl,"Hydroxyl, Ether"
+25C-NBOMe,C18H22ClNO3,Psychoactive,1,335.8,39.7,8,1,4,COC1=CC=CC=C1CNCCC2=CC(=C(C=C2OC)Cl)OC,Ether
+25D-NBOMe,C19H25NO3,Psychoactive,1,315.4,39.7,8,1,4,CC1=CC(=C(C=C1OC)CCNCC2=CC=CC=C2OC)OC,Ether
+25E-NBOH,C19H25NO3,Psychoactive,1,315.4,50.7,8,2,4,CCC1=CC(=C(C=C1OC)CCNCC2=CC=CC=C2O)OC,"Hydroxyl, Ether"
+25H-NBOMe,C18H23NO3,Psychoactive,1,301.4,39.7,8,1,4,COC1=CC(=C(C=C1)OC)CCNCC2=CC=CC=C2OC,Ether
+25I-NBOH,C17H20INO3,Psychoactive,1,413.25,50.7,4.62,2,4,COC1=CC(=C(C=C1CCNCC2=CC=CC=C2O)OC)I,"Hydroxyl, Ether"
+25I-NBOMe,C18H22INO3,Psychoactive,1,427.3,39.7,8,1,4,COC1=CC=CC=C1CNCCC2=CC(=C(C=C2OC)I)OC,Ether
+25N-NBOMe,C18H22N2O5,Psychoactive,1,346.4,85.5,8,1,6,COC1=CC=CC=C1CNCCC2=CC(=C(C=C2OC)[N+](=O)[O-])OC,Ether
+4-c-(Hydroxymethyl)-d-erythro-pentose,C6H12O6,Psychoactive,1,180.16,118,5,5,6,C(C(CO)(C(C(C=O)O)O)O)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+BOD,C12H19NO3,Psychoactive,1,225.28,53.7,5,1,4,CC1=CC(=C(C=C1OC)C(CN)OC)OC,"Amine, Ether"
+Trimethylaluminum(TMA),C3H12Al,Psychoactive,1,75.11,0,0,0,0,C.C.C.[Al],None
+TMA-6,C12H19NO3,Psychoactive,1,225.28,53.7,5,1,4,CC(CC1=C(C=C(C=C1OC)OC)OC)N,"Amine, Ether"
+5-MeO-DiBF,C17H25NO2,Psychoactive,1,275.4,25.6,6,0,3,CC(C)N(CCC1=COC2=C1C=C(C=C2)OC)C(C)C,Ether
+Efavirenz,C14H9ClF3NO2,Psychoactive,1,315.67,38.3,1,1,5,C1CC1C#CC2(C3=C(C=CC(=C3)Cl)NC(=O)O2)C(F)(F)F,"Carbonyl, Ether"
+Glaucine,C21H25NO4,Psychoactive,1,355.4,40.2,4,0,5,CN1CCC2=CC(=C(C3=C2C1CC4=CC(=C(C=C43)OC)OC)OC)OC,Ether
+Mirtazapine,C17H19N3,Psychoactive,1,265.35,19.4,0,0,3,CN1CCN2C(C1)C3=CC=CC=C3CC4=C2N=CC=C4,Aromatic Ring
+Cannabis,C15H24,Psychoactive,1,204.35,0,0,0,0,CC1=CCC(C=CCC(=CCC1)C)(C)C,None
+Daturaolone,C30H48O2,Psychoactive,1,440.7,37.3,0,1,2,CC1(CCC2(CCC3(C(=CCC4C3(CC(C5C4(CCC(=O)C5(C)C)C)O)C)C2C1)C)C)C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Harmaline,C13H14N2O,Psychoactive,1,214.26,37.4,1,1,2,CC1=NCCC2=C1NC3=C2C=CC(=C3)OC,Ether
+Harmine,C13H12N2O,Psychoactive,1,212.25,37.9,1,1,2,CC1=NC=CC2=C1NC3=C2C=CC(=C3)OC,Ether
+Tetrahydroharmine,C13H16N2O,Psychoactive,1,216.28,37.1,1,2,2,CC1C2=C(CCN1)C3=C(N2)C=C(C=C3)OC,Ether
+2-Fluorodeschloroketamine,C13H16FNO,Psychoactive,1,221.27,29.1,2,1,3,CNC1(CCCCC1=O)C2=CC=CC=C2F,"Carbonyl, Ketone"
+2'-Oxo-PCE,C14H19NO,Psychoactive,1,217.31,29.1,3,1,2,CCNC1(CCCCC1=O)C2=CC=CC=C2,"Carbonyl, Ketone"
+2'-Oxo-PCM,C13H17NO,Psychoactive,1,203.28,29.1,2,1,2,CNC1(CCCCC1=O)C2=CC=CC=C2,"Carbonyl, Ketone"
+3-Chloro-pcp,C17H24ClN,Psychoactive,1,277.8,3.2,2,0,1,C1CCC(CC1)(C2=CC(=CC=C2)Cl)N3CCCCC3,"Aromatic Ring, Halide"
+3-HO-PCE,C14H21NO,Psychoactive,1,219.32,68.28,4.62,2,2,CCNC1(CCCCC1)C2=CC(=CC=C2)O,Hydroxyl
+3-HO-PCP,C17H25NO,Psychoactive,1,259.4,23.5,2,1,2,C1CCC(CC1)(C2=CC(=CC=C2)O)N3CCCCC3,Hydroxyl
+3-Me-PCP,C18H27N,Psychoactive,1,257.4,3.2,2,0,1,CC1=CC(=CC=C1)C2(CCCCC2)N3CCCCC3,Aromatic Ring
+3-Me-PCPy,C17H25N,Psychoactive,1,243.4,3.2,2,0,1,CC1=CC(=CC=C1)C2(CCCCC2)N3CCCC3,Aromatic Ring
+3-MeO-PCE,C15H23NO,Psychoactive,1,233.35,21.3,4,1,2,CCNC1(CCCCC1)C2=CC(=CC=C2)OC,Ether
+3-MeO-PCMo,C17H25NO2,Psychoactive,1,275.4,21.7,3,0,3,COC1=CC=CC(=C1)C2(CCCCC2)N3CCOCC3,Ether
+3-MeO-PCP,C18H27NO,Psychoactive,1,273.4,12.5,3,0,2,COC1=CC=CC(=C1)C2(CCCCC2)N3CCCCC3,Ether
+4-MeO-PCP,C18H27NO,Psychoactive,1,273.4,12.5,3,0,2,COC1=CC=C(C=C1)C2(CCCCC2)N3CCCCC3,Ether
+Deoxymethoxetamine,C15H21NO,Psychoactive,1,231.33,29.1,3,1,2,CCNC1(CCCCC1=O)C2=CC=CC(=C2)C,"Carbonyl, Ketone"
+Eticyclidine,C14H21N,Psychoactive,1,203.32,12,3,1,1,CCNC1(CCCCC1)C2=CC=CC=C2,"Amine, Aromatic Ring"
+Fluorexetamine,C14H18FNO,Psychoactive,1,235.3,29.1,3,1,3,CCNC1(CCCCC1=O)C2=CC(=CC=C2)F,"Carbonyl, Ketone"
+Hydroxetamine,C14H19NO2,Psychoactive,1,233.31,49.3,3,2,3,CCNC1(CCCCC1=O)C2=CC(=CC=C2)O,"Hydroxyl, Carbonyl, Ketone"
+Ketamine,C13H16ClNO,Psychoactive,1,237.72,29.1,2,1,2,CNC1(CCCCC1=O)C2=CC=CC=C2Cl,"Carbonyl, Ketone"
+(R)-Ketamine Hydrochloride,C13H17Cl2NO,Psychoactive,1,274.18,29.1,2,2,2,CNC1(CCCCC1=O)C2=CC=CC=C2Cl.Cl,"Carbonyl, Ketone"
+S-Ketamine,C13H16ClNO,Psychoactive,1,237.72,29.1,2,1,2,CNC1(CCCCC1=O)C2=CC=CC=C2Cl,"Carbonyl, Ketone"
+Methoxetamine,C15H21NO2,Psychoactive,1,247.33,38.3,4,1,3,CCNC1(CCCCC1=O)C2=CC(=CC=C2)OC,"Carbonyl, Ether, Ketone"
+Methoxisopropamine,C16H23NO2,Psychoactive,1,261.36,38.3,4,1,3,CC(C)NC1(CCCCC1=O)C2=CC(=CC=C2)OC,"Carbonyl, Ether, Ketone"
+Phencyclidine,C17H25N,Psychoactive,1,243.4,3.2,2,0,1,C1CCC(CC1)(C2=CC=CC=C2)N3CCCCC3,Aromatic Ring
+Dextromethorphan,C18H25NO,Psychoactive,1,271.4,12.5,1,0,2,CN1CCC23CCCCC2C1CC4=C3C=C(C=C4)OC,Ether
+Dextrorphan,C17H23NO,Psychoactive,1,257.37,23.5,0,1,2,CN1CCC23CCCCC2C1CC4=C3C=C(C=C4)O,Hydroxyl
+Diphenidine,C19H23N,Psychoactive,1,265.4,3.2,4,0,1,C1CCN(CC1)C(CC2=CC=CC=C2)C3=CC=CC=C3,Aromatic Ring
+Ephenidine,C16H19N,Psychoactive,1,225.33,12,5,1,1,CCNC(CC1=CC=CC=C1)C2=CC=CC=C2,"Amine, Aromatic Ring"
+Methoxphenidine,C20H25NO,Psychoactive,1,295.4,12.5,5,0,2,COC1=CC=CC=C1C(CC2=CC=CC=C2)N3CCCCC3,Ether
+Amantadine,C10H17N,Psychoactive,1,151.25,26,0,1,1,C1C2CC3CC1CC(C2)(C3)N,Amine
+Memantine,C12H21N,Psychoactive,1,179.3,26,0,1,1,CC12CC3CC(C1)(CC(C3)(C2)N)C,Amine
+Ibogaine,C20H26N2O,Psychoactive,1,310.4,28.3,2,1,2,CCC1CC2CC3C1N(C2)CCC4=C3NC5=C4C=C(C=C5)OC,Ether
+Nitrous oxide,N2O,Psychoactive,1,44.01,68.28,0,0,2,[N-]=[N+]=O,None
+Atropine,C17H23NO3,Psychoactive,1,289.4,49.8,5,1,4,CN1C2CCC1CC(C2)OC(=O)C(CO)C3=CC=CC=C3,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Hyoscyamine,C17H23NO3,Psychoactive,1,289.4,49.8,5,1,4,CN1C2CCC1CC(C2)OC(=O)C(CO)C3=CC=CC=C3,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Scopolamine,C17H21NO4,Psychoactive,1,303.35,62.3,5,1,5,CN1C2CC(CC1C3C2O3)OC(=O)C(CO)C4=CC=CC=C4,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Diphenhydramine,C17H21NO,Psychoactive,1,255.35,12.5,6,0,2,CN(C)CCOC(C1=CC=CC=C1)C2=CC=CC=C2,Ether
+Doxylamine,C17H22N2O,Psychoactive,1,308.13,68.28,4.62,0,3,CC(C1=CC=CC=C1)(C2=CC=CC=N2)OCCN(C)C,Ether
+Promethazine,C17H20N2S,Psychoactive,1,284.4,31.8,3,0,3,CC(CN1C2=CC=CC=C2SC3=CC=CC=C31)N(C)C,Aromatic Ring
+Benzydamine,C19H23N3O,Psychoactive,1,308.13,68.28,4.62,0,3,CN(C)CCCOC1=NN(C2=CC=CC=C21)CC3=CC=CC=C3,Ether
+Biperiden,C21H29NO,Psychoactive,1,311.5,23.5,5,1,2,C1CCN(CC1)CCC(C2CC3CC2C=C3)(C4=CC=CC=C4)O,"Hydroxyl, Alcohol, Ether"
+Myristicin,C11H12O3,Psychoactive,1,192.21,27.7,3,0,3,COC1=CC(=CC2=C1OCO2)CC=C,Ether
+Elemicin,C12H16O3,Psychoactive,1,308.13,68.28,4.62,0,3,COC1=CC(=CC(=C1OC)OC)CC=C,Ether
+Cannabidiol,C21H30O2,Psychoactive,1,314.5,40.5,6,2,2,CCCCCC1=CC(=C(C(=C1)O)C2C=C(CCC2C(=C)C)C)O,Hydroxyl
+CBD,C21H30O2,Psychoactive,1,314.5,40.5,6,2,2,CCCCCC1=CC(=C(C(=C1)O)C2C=C(CCC2C(=C)C)C)O,Hydroxyl
+CBDA,C22H30O4,Psychoactive,1,358.5,68.28,4.62,3,4,CCCCCC1=CC(=C(C(=C1C(=O)O)O)C2C=C(CCC2C(=C)C)C)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether"
+CBDH,C22H32O2,Psychoactive,1,308.13,68.28,4.62,2,2,CCCCCCC1=CC(=C(C(=C1)O)C2C=C(CCC2C(=C)C)C)O,Hydroxyl
+CBDP,C14H13O4P,Psychoactive,1,308.13,44.8,2,0,4,CC1=CC=CC=C1OP2(=O)OCC3=CC=CC=C3O2,Ether
+THC,C21H30O2,Psychoactive,1,314.5,29.5,4,1,2,CCCCCC1=CC(=C2C3C=C(CCC3C(OC2=C1)(C)C)C)O,"Hydroxyl, Ether"
+delta9-Tetrahydrocannabinolic acid,C22H30O4,Psychoactive,1,358.5,66.8,5,2,4,CCCCCC1=CC2=C(C3C=C(CCC3C(O2)(C)C)C)C(=C1C(=O)O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether"
+THCP,C23H34O2,Psychoactive,1,342.5,29.5,6,1,2,CCCCCCCC1=CC(=C2C3C=C(CCC3C(OC2=C1)(C)C)C)O,"Hydroxyl, Ether"
+5F-AKB48,C23H30FN3O,Psychoactive,1,383.5,68.28,7,1,3,C1C2CC3CC1CC(C2)(C3)NC(=O)C4=NN(C5=CC=CC=C54)CCCCCF,Carbonyl
+5F-PB-22,C23H21FN2O2,Psychoactive,1,376.4,44.1,8,0,4,C1=CC=C2C(=C1)C(=CN2CCCCCF)C(=O)OC3=CC=CC4=C3N=CC=C4,"Carbonyl, Ether"
+AB-FUBINACA,C20H21FN4O2,Psychoactive,1,308.13,90,6,2,4,CC(C)C(C(=O)N)NC(=O)C1=NN(C2=CC=CC=C21)CC3=CC=C(C=C3)F,"Amine, Carbonyl, Ketone"
+APICA,C24H32N2O,Psychoactive,1,364.5,34,6,1,1,CCCCCN1C=C(C2=CC=CC=C21)C(=O)NC34CC5CC(C3)CC(C5)C4,Carbonyl
+JWH-018,C24H23NO,Psychoactive,1,341.4,22,6,0,1,CCCCCN1C=C(C2=CC=CC=C21)C(=O)C3=CC=CC4=CC=CC=C43,Carbonyl
+JWH-073,C23H21NO,Psychoactive,1,327.4,22,5,0,1,CCCCN1C=C(C2=CC=CC=C21)C(=O)C3=CC=CC4=CC=CC=C43,Carbonyl
+STS-135,C24H31FN2O,Psychoactive,1,382.5,34,7,1,2,C1C2CC3CC1CC(C2)(C3)NC(=O)C4=CN(C5=CC=CC=C54)CCCCCF,Carbonyl
+THJ-018,C23H22N2O,Psychoactive,1,342.4,34.9,6,0,2,CCCCCN1C2=CC=CC=C2C(=N1)C(=O)C3=CC=CC4=CC=CC=C43,Carbonyl
+THJ-2201,C23H21FN2O,Psychoactive,1,360.4,34.9,7,0,3,C1=CC=C2C(=C1)C=CC=C2C(=O)C3=NN(C4=CC=CC=C43)CCCCCF,Carbonyl
+Salvinorin A,C23H28O8,Psychoactive,1,432.5,109,5,0,8,CC(=O)OC1CC(C2(CCC3C(=O)OC(CC3(C2C1=O)C)C4=COC=C4)C)C(=O)OC,"Carbonyl, Ether, Ketone"
+5-Hydroxytryptophan,C11H12N2O3,Psychoactive,1,220.22,99.3,3,4,4,C1=CC2=C(C=C1O)C(=CN2)CC(C(=O)O)N,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Galantamine,C17H21NO3,Psychoactive,1,287.35,41.9,1,1,4,CN1CCC23C=CC(CC2OC4=C(C=CC(=C34)C1)OC)O,"Hydroxyl, Alcohol, Ether"
+Melatonin,C13H16N2O2,Psychoactive,1,232.28,54.1,4,2,2,CC(=O)NCCC1=CNC2=C1C=C(C=C2)OC,"Carbonyl, Ether, Ketone"
+Dextromethorphan,C18H25NO,Psychoactive,1,271.4,12.5,1,0,2,CN1CCC23CCCCC2C1CC4=C3C=C(C=C4)OC,Ether
+Nitrous oxide,N2O,Psychoactive,1,44.01,19.1,0,0,2,[N-]=[N+]=O,None
+Amyl Nitrite,C5H11NO2,Psychoactive,1,117.15,38.7,4,0,3,CCCCCON=O,Ether
+Amyl nitrite,C5H11NO2,Psychoactive,1,117.15,38.7,4,0,3,CCCCCON=O,Ether
+Isopropyl nitrite,C3H7NO2,Psychoactive,1,89.09,38.7,1,0,3,CC(C)ON=O,Ether
+Isobutyl nitrite,C4H9NO2,Psychoactive,1,103.12,38.7,2,0,3,CC(C)CON=O,Ether
+DXM,C18H25NO,Psychoactive,1,271.4,12.5,1,0,2,CN1CCC23CCCCC2C1CC4=C3C=C(C=C4)OC,Ether
+Memantine,C12H21N,Psychoactive,1,308.13,68.28,4.62,1,1,CC12CC3CC(C1)(CC(C3)(C2)N)C,Amine
+Progesterone,C21H30O2,Psychoactive,1,308.13,68.28,4.62,0,2,CC(=O)C1CCC2C1(CCC3C2CCC4=CC(=O)CCC34C)C,"Carbonyl, Ketone"
+Tadalafil,C22H19N3O4,Psychoactive,1,389.4,74.9,1,1,4,CN1CC(=O)N2C(C1=O)CC3=C(C2C4=CC5=C(C=C4)OCO5)NC6=CC=CC=C36,"Carbonyl, Ether, Ketone"
+Alcohol,C2H6O,Psychoactive,1,308.13,20.2,4.62,1,1,CCO,"Hydroxyl, Alcohol, Ether"
+2-Methyl-2-butanol,C5H12O,Psychoactive,1,308.13,20.2,1,1,1,CCC(C)(C)O,"Hydroxyl, Alcohol, Ether"
+Benzodiazepine,C9H8N2,Psychoactive,1,144.17,24.4,0,1,2,C1=CC=C2C(=C1)C=CC=NN2,"Amine, Aromatic Ring"
+Alprazolam,C17H13ClN4,Psychoactive,1,308.8,43.1,1,0,3,CC1=NN=C2N1C3=C(C=C(C=C3)Cl)C(=NC2)C4=CC=CC=C4,"Aromatic Ring, Halide"
+Bromazepam,C14H10BrN3O,Psychoactive,1,316.15,54.4,1,1,3,C1C(=O)NC2=C(C=C(C=C2)Br)C(=N1)C3=CC=CC=N3,"Carbonyl, Ketone"
+Chlordiazepoxide,C16H14ClN3O,Psychoactive,1,299.75,48.2,4.62,1,3,CN=C1CN(C(=C2C=C(C=CC2=N1)Cl)C3=CC=CC=C3)O,Hydroxyl
+Clonazepam,C15H10ClN3O3,Psychoactive,1,308.13,68.28,4.62,1,4,C1C(=O)NC2=C(C=C(C=C2)[N+](=O)[O-])C(=N1)C3=CC=CC=C3Cl,"Carbonyl, Ketone"
+Clonazolam,C17H12ClN5O2,Psychoactive,1,353.8,88.9,1,0,5,CC1=NN=C2N1C3=C(C=C(C=C3)[N+](=O)[O-])C(=NC2)C4=CC=CC=C4Cl,"Aromatic Ring, Halide"
+Diazepam,C16H13ClN2O,Psychoactive,1,284.74,32.7,1,0,2,CN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3,"Carbonyl, Ketone"
+Diclazepam,C16H12Cl2N2O,Psychoactive,1,319.2,32.7,1,0,2,CN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3Cl,"Carbonyl, Ketone"
+Flualprazolam,C17H12ClFN4,Psychoactive,1,326.8,43.1,1,0,4,CC1=NN=C2N1C3=C(C=C(C=C3)Cl)C(=NC2)C4=CC=CC=C4F,"Aromatic Ring, Halide"
+Flubromazepam,C15H10BrFN2O,Psychoactive,1,308.13,68.28,4.62,1,3,C1C(=O)NC2=C(C=C(C=C2)Br)C(=N1)C3=CC=CC=C3F,"Carbonyl, Ketone"
+Flubromazolam,C17H12BrFN4,Psychoactive,1,371.2,43.1,1,0,4,CC1=NN=C2N1C3=C(C=C(C=C3)Br)C(=NC2)C4=CC=CC=C4F,"Aromatic Ring, Halide"
+Flunitrazepam,C16H12FN3O3,Psychoactive,1,313.28,78.5,1,0,5,CN1C(=O)CN=C(C2=C1C=CC(=C2)[N+](=O)[O-])C3=CC=CC=C3F,"Carbonyl, Ketone"
+Flunitrazolam,C17H12FN5O2,Psychoactive,1,308.13,68.28,4.62,0,6,CC1=NN=C2N1C3=C(C=C(C=C3)[N+](=O)[O-])C(=NC2)C4=CC=CC=C4F,"Aromatic Ring, Halide"
+Lorazepam,C15H10Cl2N2O2,Psychoactive,1,308.13,68.28,4.62,2,3,C1=CC=C(C(=C1)C2=NC(C(=O)NC3=C2C=C(C=C3)Cl)O)Cl,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Midazolam,C18H13ClFN3,Psychoactive,1,325.8,30.2,1,0,3,CC1=NC=C2N1C3=C(C=C(C=C3)Cl)C(=NC2)C4=CC=CC=C4F,"Aromatic Ring, Halide"
+Nifoxipam,C15H10FN3O4,Psychoactive,1,315.26,108,1,2,6,C1=CC=C(C(=C1)C2=NC(C(=O)NC3=C2C=C(C=C3)[N+](=O)[O-])O)F,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Norflurazepam,C15H10ClFN2O,Psychoactive,1,308.13,68.28,4.62,1,3,C1C(=O)NC2=C(C=C(C=C2)Cl)C(=N1)C3=CC=CC=C3F,"Carbonyl, Ketone"
+Pyrazolam,C16H12BrN5,Psychoactive,1,354.2,56,1,0,4,CC1=NN=C2N1C3=C(C=C(C=C3)Br)C(=NC2)C4=CC=CC=N4,"Aromatic Ring, Halide"
+Temazepam,C16H13ClN2O2,Psychoactive,1,300.74,52.9,1,1,3,CN1C2=C(C=C(C=C2)Cl)C(=NC(C1=O)O)C3=CC=CC=C3,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Triazolam,C17H12Cl2N4,Psychoactive,1,343.2,43.1,1,0,3,CC1=NN=C2N1C3=C(C=C(C=C3)Cl)C(=NC2)C4=CC=CC=C4Cl,"Aromatic Ring, Halide"
+Thienodiazepine,C7H6N2S,Psychoactive,1,150.2,68.28,0,0,3,C1C=C2C(=CC=CN=N2)S1,None
+Deschloroetizolam,C17H16N4S,Psychoactive,1,308.4,71.3,2,0,4,CCC1=CC2=C(S1)N3C(=NN=C3CN=C2C4=CC=CC=C4)C,Aromatic Ring
+Etizolam,C17H15ClN4S,Psychoactive,1,342.8,71.3,2,0,4,CCC1=CC2=C(S1)N3C(=NN=C3CN=C2C4=CC=CC=C4Cl)C,"Aromatic Ring, Halide"
+Fluclotizolam,C15H10ClFN4S,Psychoactive,1,332.8,71.3,1,0,5,CC1=NN=C2N1C3=C(C=C(S3)Cl)C(=NC2)C4=CC=CC=C4F,"Aromatic Ring, Halide"
+Metizolam,C16H13ClN4S,Psychoactive,1,328.8,71.3,2,0,4,CCC1=CC2=C(S1)N3C=NN=C3CN=C2C4=CC=CC=C4Cl,"Aromatic Ring, Halide"
+Barbiturate,C4H4N2O3,Psychoactive,1,128.09,75.3,0,2,3,C1C(=O)NC(=O)NC1=O,"Carbonyl, Ketone"
+Amobarbital,C11H18N2O3,Psychoactive,1,226.27,75.3,4,2,3,CCC1(C(=O)NC(=O)NC1=O)CCC(C)C,"Carbonyl, Ketone"
+Pentobarbital,C11H18N2O3,Psychoactive,1,226.27,75.3,4,2,3,CCCC(C)C1(C(=O)NC(=O)NC1=O)CC,"Carbonyl, Ketone"
+Phenobarbital,C12H12N2O3,Psychoactive,1,232.23,75.3,2,2,3,CCC1(C(=O)NC(=O)NC1=O)C2=CC=CC=C2,"Carbonyl, Ketone"
+Secobarbital,C12H18N2O3,Psychoactive,1,238.28,75.3,5,2,3,CCCC(C)C1(C(=O)NC(=O)NC1=O)CC=C,"Carbonyl, Ketone"
+Gaboxadol,C6H8N2O2,Psychoactive,1,140.14,50.4,0,2,3,C1CNCC2=C1C(=O)NO2,Amine
+Ibotenic acid,C5H6N2O4,Psychoactive,1,308.13,68.28,2,3,5,C1=C(ONC1=O)C(C(=O)O)N,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Muscimol,C4H6N2O2,Psychoactive,1,114.1,64.4,1,2,3,C1=C(ONC1=O)CN,Amine
+Zaleplon,C17H15N5O,Psychoactive,1,305.33,74.3,3,0,4,CCN(C1=CC=CC(=C1)C2=CC=NC3=C(C=NN23)C#N)C(=O)C,"Carbonyl, Ketone"
+Zolpidem,C19H21N3O,Psychoactive,1,307.4,37.6,3,0,2,CC1=CC=C(C=C1)C2=C(N3C=C(C=CC3=N2)C)CC(=O)N(C)C,"Carbonyl, Ketone"
+Zopiclone,C17H17ClN6O3,Psychoactive,1,388.8,91.8,3,0,7,CN1CCN(CC1)C(=O)OC2C3=NC=CN=C3C(=O)N2C4=NC=C(C=C4)Cl,"Carbonyl, Ether"
+Eszopiclone,C17H17ClN6O3,Psychoactive,1,388.8,91.8,3,0,7,CN1CCN(CC1)C(=O)OC2C3=NC=CN=C3C(=O)N2C4=NC=C(C=C4)Cl,"Carbonyl, Ether"
+4-Amino-3-(4-fluorophenyl)butanoic acid,C10H12FNO2,Psychoactive,1,197.21,63.3,4.62,2,4,C1=CC(=CC=C1C(CC(=O)O)CN)F,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Gabapentin,C9H17NO2,Psychoactive,1,171.24,63.3,3,2,3,C1CCC(CC1)(CC(=O)O)CN,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Phenibut,C10H13NO2,Psychoactive,1,179.22,63.3,4,2,3,C1=CC=C(C=C1)C(CC(=O)O)CN,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Pregabalin,C8H17NO2,Psychoactive,1,159.23,63.3,5,2,3,CC(C)CC(CC(=O)O)CN,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+"1,4-Butanediol",C4H10O2,Psychoactive,1,90.12,68.28,3,2,2,C(CCO)CO,"Hydroxyl, Alcohol, Ether"
+Baclofen,C10H12ClNO2,Psychoactive,1,213.66,63.3,4,2,3,C1=CC(=CC=C1C(CC(=O)O)CN)Cl,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Carisoprodol,C12H24N2O4,Psychoactive,1,260.33,90.7,9,2,4,CCCC(C)(COC(=O)N)COC(=O)NC(C)C,"Amine, Carbonyl, Ether"
+4-Amino-3-(4-fluorophenyl)butanoic acid,C10H12FNO2,Psychoactive,1,197.21,63.3,4,2,4,C1=CC(=CC=C1C(CC(=O)O)CN)F,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+GBL,C4H6O2,Psychoactive,1,86.09,26.3,0,0,2,C1CC(=O)OC1,"Carbonyl, Ether, Ketone"
+GHB,C4H8O3,Psychoactive,1,308.13,57.5,3,2,3,C(CC(=O)O)CO,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Kava,C14H16O3,Psychoactive,1,232.27,35.5,3,0,3,COC1=CC(=O)OC(C1)C=CC2=CCCC=C2,"Carbonyl, Ether, Ketone"
+Mebroqualone,C15H11BrN2O,Psychoactive,1,315.16,32.7,1,0,2,CC1=NC2=CC=CC=C2C(=O)N1C3=CC=CC=C3Br,"Aromatic Ring, Halide"
+Meprobamate,C9H18N2O4,Psychoactive,1,218.25,105,8,2,4,CCCC(C)(COC(=O)N)COC(=O)N,"Amine, Carbonyl, Ether"
+Methaqualone,C16H14N2O,Psychoactive,1,250.29,32.7,1,0,2,CC1=CC=CC=C1N2C(=NC3=CC=CC=C3C2=O)C,Aromatic Ring
+Nitromethaqualone,C16H13N3O4,Psychoactive,1,308.13,87.7,2,0,5,CC1=NC2=CC=CC=C2C(=O)N1C3=C(C=C(C=C3)[N+](=O)[O-])OC,Ether
+Opioids,C55H70N4O7,Psychoactive,1,899.2,112,11,1,10,CCC(=O)N(C1CCN(CC1)CCC2=CC=CC=C2)C3=CC=CC=C3.CCOC(=O)C1(CCN(CC1)C)C2=CC=CC=C2.CN1CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)OC)O4)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+2-Methyl-AP-237,C18H26N2O,Psychoactive,1,286.4,23.6,5,0,2,CCCC(=O)N1CCN(CC1C)CC=CC2=CC=CC=C2,"Carbonyl, Ketone"
+Acetylfentanyl,C21H26N2O,Psychoactive,1,322.4,23.6,5,0,2,CC(=O)N(C1CCN(CC1)CCC2=CC=CC=C2)C3=CC=CC=C3,"Carbonyl, Ketone"
+Buprenorphine,C29H41NO4,Psychoactive,1,467.6,62.2,5,2,5,CC(C)(C)C(C)(C1CC23CCC1(C4C25CCN(C3CC6=C5C(=C(C=C6)O)O4)CC7CC7)OC)O,"Hydroxyl, Alcohol, Ether"
+Codeine,C18H21NO3,Psychoactive,1,299.4,41.9,1,1,4,CN1CCC23C4C1CC5=C2C(=C(C=C5)OC)OC3C(C=C4)O,"Hydroxyl, Alcohol, Ether"
+Desomorphine,C17H21NO2,Psychoactive,1,271.35,32.7,0,1,3,CN1CCC23C4C1CC5=C2C(=C(C=C5)O)OC3CCC4,"Hydroxyl, Ether"
+Dextropropoxyphene,C22H29NO2,Psychoactive,1,308.13,29.5,9,0,3,CCC(=O)OC(CC1=CC=CC=C1)(C2=CC=CC=C2)C(C)CN(C)C,"Carbonyl, Ether, Ketone"
+Diacetylmorphine,C21H23NO5,Psychoactive,1,369.4,65.1,4,0,6,CC(=O)OC1C=CC2C3CC4=C5C2(C1OC5=C(C=C4)OC(=O)C)CCN3C,"Carbonyl, Ether, Ketone"
+Dihydrocodeine,C18H23NO3,Psychoactive,1,301.4,68.28,4.62,1,4,CN1CCC23C4C1CC5=C2C(=C(C=C5)OC)OC3C(CC4)O,"Hydroxyl, Alcohol, Ether"
+Ethylmorphine,C19H23NO3,Psychoactive,1,313.4,41.9,2,1,4,CCOC1=C2C3=C(CC4C5C3(CCN4C)C(O2)C(C=C5)O)C=C1,"Hydroxyl, Alcohol, Ether"
+Fentanyl,C22H28N2O,Psychoactive,1,336.5,23.6,6,0,2,CCC(=O)N(C1CCN(CC1)CCC2=CC=CC=C2)C3=CC=CC=C3,"Carbonyl, Ketone"
+Hydrocodone,C18H21NO3,Psychoactive,1,299.4,38.8,1,0,4,CN1CCC23C4C1CC5=C2C(=C(C=C5)OC)OC3C(=O)CC4,"Carbonyl, Ether, Ketone"
+Hydromorphone,C17H19NO3,Psychoactive,1,285.34,49.8,0,1,4,CN1CCC23C4C1CC5=C2C(=C(C=C5)O)OC3C(=O)CC4,"Hydroxyl, Carbonyl, Ether, Ketone"
+Methadone,C21H27NO,Psychoactive,1,309.4,20.3,7,0,2,CCC(=O)C(CC(C)N(C)C)(C1=CC=CC=C1)C2=CC=CC=C2,"Carbonyl, Ketone"
+Morphine,C17H19NO3,Psychoactive,1,285.34,52.9,0,2,4,CN1CCC23C4C1CC5=C2C(=C(C=C5)O)OC3C(C=C4)O,"Hydroxyl, Alcohol, Ether"
+O-Desmethyltramadol,C15H23NO2,Psychoactive,1,249.35,68.28,3,2,3,CN(C)CC1CCCCC1(C2=CC(=CC=C2)O)O,"Hydroxyl, Alcohol, Ether"
+Oxycodone,C18H21NO4,Psychoactive,1,315.4,59,1,1,5,CN1CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)OC)O4)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Oxymorphone,C17H19NO4,Psychoactive,1,301.34,70,0,2,5,CN1CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)O)O4)O,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+Pethidine,C15H21NO2,Psychoactive,1,247.33,29.5,4,0,3,CCOC(=O)C1(CCN(CC1)C)C2=CC=CC=C2,"Carbonyl, Ether, Ketone"
+Tapentadol,C14H23NO,Psychoactive,1,221.34,23.5,4.62,1,2,CCC(C1=CC(=CC=C1)O)C(C)CN(C)C,Hydroxyl
+Tianeptine,C21H25ClN2O4S,Psychoactive,1,308.13,68.28,4.62,2,6,CN1C2=CC=CC=C2C(C3=C(S1(=O)=O)C=C(C=C3)Cl)NCCCCCCC(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Tilidine,C17H23NO2,Psychoactive,1,273.37,29.5,5,0,3,CCOC(=O)C1(CCC=CC1N(C)C)C2=CC=CC=C2,"Carbonyl, Ether, Ketone"
+Tramadol,C16H25NO2,Psychoactive,1,263.37,32.7,4,1,3,CN(C)CC1CCCCC1(C2=CC(=CC=C2)OC)O,"Hydroxyl, Alcohol, Ether"
+U-47700,C16H22Cl2N2O,Psychoactive,1,329.3,23.6,3,0,2,CN(C)C1CCCCC1N(C)C(=O)C2=CC(=C(C=C2)Cl)Cl,Carbonyl
+Clonidine,C9H9Cl2N3,Psychoactive,1,230.09,36.4,2,2,1,C1CN=C(N1)NC2=C(C=CC=C2Cl)Cl,"Amine, Aromatic Ring, Halide"
+Tizanidine,C9H8ClN5S,Psychoactive,1,253.71,90.4,2,2,4,C1CN=C(N1)NC2=C(C=CC3=NSN=C32)Cl,"Amine, Aromatic Ring, Halide"
+2-FA,C9H12FN,Psychoactive,1,153.2,26,2,1,2,CC(CC1=CC=CC=C1F)N,Amine
+2-FEA,C11H16FN,Psychoactive,1,181.25,12,4,1,2,CCNC(C)CC1=CC=CC=C1F,"Amine, Aromatic Ring, Halide"
+2-FMA,C10H14FN,Psychoactive,1,167.22,12,3,1,2,CC(CC1=CC=CC=C1F)NC,"Amine, Aromatic Ring, Halide"
+3-FA,C9H12FN,Psychoactive,1,153.2,26,2,1,2,CC(CC1=CC(=CC=C1)F)N,Amine
+3-FEA,C11H16FN,Psychoactive,1,181.25,12,4,1,2,CCNC(C)CC1=CC(=CC=C1)F,"Amine, Aromatic Ring, Halide"
+3-FMA,C10H14FN,Psychoactive,1,167.22,12,3,1,2,CC(CC1=CC(=CC=C1)F)NC,"Amine, Aromatic Ring, Halide"
+3-MMA,C11H17NO,Psychoactive,1,179.26,21.3,4,1,2,CC(CC1=CC(=CC=C1)OC)NC,Ether
+4-FA,C9H12FN,Psychoactive,1,153.2,26,2,1,2,CC(CC1=CC=C(C=C1)F)N,Amine
+4-FMA,C10H14FN,Psychoactive,1,167.22,12,3,1,2,CC(CC1=CC=C(C=C1)F)NC,"Amine, Aromatic Ring, Halide"
+Amphetamine,C9H13N,Psychoactive,1,135.21,26,2,1,1,CC(CC1=CC=CC=C1)N,Amine
+Ephedrine,C10H15NO,Psychoactive,1,165.23,32.3,3,2,2,CC(C(C1=CC=CC=C1)O)NC,"Hydroxyl, Alcohol, Ether"
+Fenethylline,C18H23N5O2,Psychoactive,1,341.4,70.5,6,1,4,CC(CC1=CC=CC=C1)NCCN2C=NC3=C2C(=O)N(C(=O)N3C)C,"Amine, Aromatic Ring"
+Lisdexamfetamine,C15H25N3O,Psychoactive,1,263.38,81.1,8,3,3,CC(CC1=CC=CC=C1)NC(=O)C(CCCCN)N,"Amine, Carbonyl, Ketone"
+Methamphetamine,C10H15N,Psychoactive,1,308.13,68.28,4.62,1,1,CC(CC1=CC=CC=C1)NC,"Amine, Aromatic Ring"
+Pseudoephedrine,C10H15NO,Psychoactive,1,308.13,68.28,4.62,2,2,CC(C(C1=CC=CC=C1)O)NC,"Hydroxyl, Alcohol, Ether"
+3-FPM,C11H14FNO,Psychoactive,1,195.23,21.3,1,1,3,CC1C(OCCN1)C2=CC(=CC=C2)F,Ether
+Phenmetrazine,C11H15NO,Psychoactive,1,177.24,21.3,1,1,2,CC1C(OCCN1)C2=CC=CC=C2,Ether
+"3,4-CTMP",C14H17Cl2NO2,Psychoactive,1,302.2,68.28,4,1,3,COC(=O)C(C1CCCCN1)C2=CC(=C(C=C2)Cl)Cl,"Carbonyl, Ether, Ketone"
+4-Fluoromethylphenidate,C14H18FNO2,Psychoactive,1,251.3,38.3,4,1,4,COC(=O)C(C1CCCCN1)C2=CC=C(C=C2)F,"Carbonyl, Ether, Ketone"
+4F-MPH,C14H18FNO2,Psychoactive,1,251.3,38.3,4,1,4,COC(=O)C(C1CCCCN1)C2=CC=C(C=C2)F,"Carbonyl, Ether, Ketone"
+Ethylphenidate,C15H21NO2,Psychoactive,1,308.13,38.3,5,1,3,CCOC(=O)C(C1CCCCN1)C2=CC=CC=C2,"Carbonyl, Ether, Ketone"
+Isopropylphenidate,C16H23NO2,Psychoactive,1,261.36,38.3,5,1,3,CC(C)OC(=O)C(C1CCCCN1)C2=CC=CC=C2,"Carbonyl, Ether, Ketone"
+Methylnaphthidate,C18H21NO2,Psychoactive,1,283.4,38.3,4,1,3,COC(=O)C(C1CCCCN1)C2=CC3=CC=CC=C3C=C2,"Carbonyl, Ether, Ketone"
+Methylphenidate,C14H19NO2,Psychoactive,1,233.31,38.3,4,1,3,COC(=O)C(C1CCCCN1)C2=CC=CC=C2,"Carbonyl, Ether, Ketone"
+Dexmethylphenidate,C14H19NO2,Psychoactive,1,233.31,38.3,4,1,3,COC(=O)C(C1CCCCN1)C2=CC=CC=C2,"Carbonyl, Ether, Ketone"
+2-MMC,C11H15NO,Psychoactive,1,177.24,29.1,3,1,2,CC1=CC=CC=C1C(=O)C(C)NC,"Carbonyl, Ketone"
+3-CMC,C10H12ClNO,Psychoactive,1,197.66,29.1,3,1,2,CC(C(=O)C1=CC(=CC=C1)Cl)NC,"Carbonyl, Ketone"
+3-MMC,C11H15NO,Psychoactive,1,177.24,29.1,3,1,2,CC1=CC(=CC=C1)C(=O)C(C)NC,"Carbonyl, Ketone"
+4-MEC,C12H17NO,Psychoactive,1,191.27,29.1,4,1,2,CCNC(C)C(=O)C1=CC=C(C=C1)C,"Carbonyl, Ketone"
+Butylone,C12H15NO3,Psychoactive,1,221.25,47.6,4.62,1,4,CCC(C(=O)C1=CC2=C(C=C1)OCO2)NC,"Carbonyl, Ether, Ketone"
+Ephylone,C14H19NO3,Psychoactive,1,249.3,47.6,6,1,4,CCCC(C(=O)C1=CC2=C(C=C1)OCO2)NCC,"Carbonyl, Ether, Ketone"
+Ethcathinone,C11H15NO,Psychoactive,1,177.24,29.1,4,1,2,CCNC(C)C(=O)C1=CC=CC=C1,"Carbonyl, Ketone"
+Ethylone,C12H15NO3,Psychoactive,1,221.25,47.6,4,1,4,CCNC(C)C(=O)C1=CC2=C(C=C1)OCO2,"Carbonyl, Ether, Ketone"
+Eutylone,C13H17NO3,Psychoactive,1,235.28,47.6,5,1,4,CCC(C(=O)C1=CC2=C(C=C1)OCO2)NCC,"Carbonyl, Ether, Ketone"
+Hexedrone,C13H19NO,Psychoactive,1,205.3,29.1,6,1,2,CCCCC(C(=O)C1=CC=CC=C1)NC,"Carbonyl, Ketone"
+Mephedrone,C11H15NO,Psychoactive,1,177.24,29.1,3,1,2,CC1=CC=C(C=C1)C(=O)C(C)NC,"Carbonyl, Ketone"
+Methcathinone,C10H13NO,Psychoactive,1,163.22,29.1,3,1,2,CC(C(=O)C1=CC=CC=C1)NC,"Carbonyl, Ketone"
+Methylone,C11H13NO3,Psychoactive,1,207.23,47.6,3,1,4,CC(C(=O)C1=CC2=C(C=C1)OCO2)NC,"Carbonyl, Ether, Ketone"
+Mexedrone,C12H17NO2,Psychoactive,1,207.27,38.3,5,1,3,CC1=CC=C(C=C1)C(=O)C(COC)NC,"Carbonyl, Ether, Ketone"
+N-Ethylhexedrone,C14H21NO,Psychoactive,1,219.32,29.1,7,1,2,CCCCC(C(=O)C1=CC=CC=C1)NCC,"Carbonyl, Ketone"
+N-Ethylpentedrone,C13H19NO,Psychoactive,1,205.3,29.1,6,1,2,CCCC(C(=O)C1=CC=CC=C1)NCC,"Carbonyl, Ketone"
+Pentedrone,C12H17NO,Psychoactive,1,191.27,29.1,5,1,2,CCCC(C(=O)C1=CC=CC=C1)NC,"Carbonyl, Ketone"
+Pentylone,C13H17NO3,Psychoactive,1,235.28,47.6,5,1,4,CCCC(C(=O)C1=CC2=C(C=C1)OCO2)NC,"Carbonyl, Ether, Ketone"
+1-Phenyl-2-(1-pyrrolidinyl)-1-hexanone,C16H23NO,Psychoactive,1,245.36,20.3,6,0,2,CCCCC(C(=O)C1=CC=CC=C1)N2CCCC2,"Carbonyl, Ketone"
+1-Phenyl-2-(1-pyrrolidinyl)-1-hexanone,C16H23NO,Psychoactive,1,245.36,20.3,6,0,2,CCCCC(C(=O)C1=CC=CC=C1)N2CCCC2,"Carbonyl, Ketone"
+MDPHP,C17H23NO3,Psychoactive,1,289.4,38.8,6,0,4,CCCCC(C(=O)C1=CC2=C(C=C1)OCO2)N3CCCC3,"Carbonyl, Ether, Ketone"
+MDPV,C16H21NO3,Psychoactive,1,275.34,38.8,5,0,4,CCCC(C(=O)C1=CC2=C(C=C1)OCO2)N3CCCC3,"Carbonyl, Ether, Ketone"
+Mecoprop,C10H11ClO3,Psychoactive,1,214.64,46.5,3,1,3,CC1=C(C=CC(=C1)Cl)OC(C)C(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Cocaine,C17H21NO4,Psychoactive,1,303.35,55.8,5,0,5,CN1C2CCC1C(C(C2)OC(=O)C3=CC=CC=C3)C(=O)OC,"Carbonyl, Ether, Ketone"
+RTI-111,C16H20Cl3NO2,Psychoactive,1,364.7,29.5,3,1,3,CN1C2CCC1C(C(C2)C3=CC(=C(C=C3)Cl)Cl)C(=O)OC.Cl,"Carbonyl, Ether, Ketone"
+Troparil,C16H21NO2,Psychoactive,1,259.34,29.5,3,0,3,CN1C2CCC1C(C(C2)C3=CC=CC=C3)C(=O)OC,"Carbonyl, Ether, Ketone"
+Cyclazodone,C12H12N2O2,Psychoactive,1,216.24,50.7,2,1,3,C1CC1N=C2NC(=O)C(O2)C3=CC=CC=C3,"Carbonyl, Ether, Ketone"
+N-Methylcyclazodone,C13H14N2O2,Psychoactive,1,230.26,41.9,3,0,2,CN(C1CC1)C2=NC(=O)C(O2)C3=CC=CC=C3,"Carbonyl, Ether, Ketone"
+Caffeine,C8H10N4O2,Psychoactive,1,194.19,58.4,0,0,3,CN1C=NC2=C1C(=O)N(C(=O)N2C)C,Aromatic Ring
+Theacrine,C9H12N4O3,Psychoactive,1,224.22,64.2,0,0,3,CN1C2=C(N(C1=O)C)N(C(=O)N(C2=O)C)C,Aromatic Ring
+"1,3-DMAA",C7H17N,Psychoactive,1,115.22,26,3,1,1,CCC(C)CC(C)N,Amine
+2-AI,C9H11N,Psychoactive,1,133.19,26,0,1,1,C1C(CC2=CC=CC=C21)N,Amine
+Bromantane,C16H20BrN,Psychoactive,1,306.24,12,2,1,1,C1C2CC3CC1CC(C2)C3NC4=CC=C(C=C4)Br,"Amine, Aromatic Ring, Halide"
+Desoxypipradrol,C18H21N,Psychoactive,1,251.4,12,3,1,1,C1CCNC(C1)C(C2=CC=CC=C2)C3=CC=CC=C3,"Amine, Aromatic Ring"
+Methiopropamine,C8H13NS,Psychoactive,1,155.26,40.3,3,1,2,CC(CC1=CC=CS1)NC,Amine
+Nicotine,C10H14N2,Psychoactive,1,308.13,16.1,1,0,2,CN1CCCC1C2=CN=CC=C2,Aromatic Ring
+NM-2-AI,C10H13N,Psychoactive,1,147.22,12,1,1,1,CNC1CC2=CC=CC=C2C1,"Amine, Aromatic Ring"
+Phenethylamine,C8H11N,Psychoactive,1,121.18,26,2,1,1,C1=CC=C(C=C1)CCN,Amine
+1-Phenyl-n-propylpentan-2-amine hydrochloride,C14H24ClN,Psychoactive,1,241.8,68.28,7,2,1,CCCC(CC1=CC=CC=C1)NCCC.Cl,"Amine, Aromatic Ring, Halide"
+Prolintane,C15H23N,Psychoactive,1,217.35,3.2,5,0,1,CCCC(CC1=CC=CC=C1)N2CCCC2,Aromatic Ring
+Propylhexedrine,C10H21N,Psychoactive,1,155.28,12,3,1,1,CC(CC1CCCCC1)NC,Amine
+MDAI,C10H11NO2,Psychoactive,1,177.2,44.5,0,1,3,C1C(CC2=CC3=C(C=C21)OCO3)N,"Amine, Ether"
+MDEA,C12H17NO2,Psychoactive,1,207.27,30.5,4,1,3,CCNC(C)CC1=CC2=C(C=C1)OCO2,Ether
+MDMA,C11H15NO2,Psychoactive,1,193.24,30.5,3,1,3,CC(CC1=CC2=C(C=C1)OCO2)NC,Ether
+MMDA,C11H15NO3,Psychoactive,1,209.24,53.7,3,1,4,CC(CC1=CC2=C(C(=C1)OC)OCO2)N,"Amine, Ether"
+5-APB,C11H13NO,Psychoactive,1,175.23,39.2,2,1,2,CC(CC1=CC2=C(C=C1)OC=C2)N,Amine
+5-MAPB,C12H15NO,Psychoactive,1,189.25,25.2,3,1,2,CC(CC1=CC2=C(C=C1)OC=C2)NC,"Amine, Aromatic Ring"
+6-APB,C11H13NO,Psychoactive,1,175.23,39.2,2,1,2,CC(CC1=CC2=C(C=C1)C=CO2)N,Amine
+6-APDB,C11H15NO,Psychoactive,1,177.24,35.3,2,1,2,CC(CC1=CC2=C(CCO2)C=C1)N,"Amine, Ether"
+PMA,C36H56O8,Psychoactive,1,616.8,130,17,3,8,CCCCCCCCCCCCCC(=O)OC1C(C2(C(C=C(CC3(C2C=C(C3=O)C)O)CO)C4C1(C4(C)C)OC(=O)C)O)C,"Hydroxyl, Carbonyl, Alcohol, Ether, Ketone"
+PMMA graphene,C6H12O2,Psychoactive,1,116.16,26.3,2,0,2,C.CC(=C)C(=O)OC,"Carbonyl, Ether, Ketone"
+Adrafinil,C15H15NO3S,Psychoactive,1,289.4,85.6,5,2,4,C1=CC=C(C=C1)C(C2=CC=CC=C2)S(=O)CC(=O)NO,"Hydroxyl, Carbonyl, Ketone"
+Bisfluoromodafinil,C15H13F2NO2S,Psychoactive,1,309.3,79.4,5,1,5,C1=CC(=CC=C1C(C2=CC=C(C=C2)F)S(=O)CC(=O)N)F,"Amine, Carbonyl, Ketone"
+Modafinil,C15H15NO2S,Psychoactive,1,273.4,79.4,5,1,3,C1=CC=C(C=C1)C(C2=CC=CC=C2)S(=O)CC(=O)N,"Amine, Carbonyl, Ketone"
+Armodafinil,C15H15NO2S,Psychoactive,1,273.4,79.4,5,1,3,C1=CC=C(C=C1)C(C2=CC=CC=C2)S(=O)CC(=O)N,"Amine, Carbonyl, Ketone"
+Modafinil,C15H15NO2S,Psychoactive,1,273.4,79.4,5,1,3,C1=CC=C(C=C1)C(C2=CC=CC=C2)S(=O)CC(=O)N,"Amine, Carbonyl, Ketone"
+5-HTP,C11H12N2O3,Psychoactive,1,220.22,99.3,3,4,4,C1=CC2=C(C=C1O)C(=CN2)CC(C(=O)O)N,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Choline,C5H14NO+,Psychoactive,1,104.17,20.2,2,1,1,C[N+](C)(C)CCO,"Hydroxyl, Alcohol, Ether"
+Alpha-GPC,C8H20NO6P,Psychoactive,1,257.22,99.1,4.62,2,6,C[N+](C)(C)CCOP(=O)([O-])OCC(CO)O,"Hydroxyl, Alcohol, Ether"
+Choline bitartrate,C9H19NO7,Psychoactive,1,253.25,138,4,4,7,C[N+](C)(C)CCO.C(C(C(=O)[O-])O)(C(=O)O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Citicoline,C14H26N4O11P2,Psychoactive,1,488.32,214,10,4,11,C[N+](C)(C)CCOP(=O)([O-])OP(=O)(O)OCC1C(C(C(O1)N2C=CC(=NC2=O)N)O)O,"Hydroxyl, Amine, Alcohol, Ether"
+Meclofenoxate,C12H16ClNO3,Psychoactive,1,257.71,38.8,7,0,4,CN(C)CCOC(=O)COC1=CC=C(C=C1)Cl,"Carbonyl, Ether, Ketone"
+Creatine,C4H9N3O2,Psychoactive,1,131.13,90.4,3,3,3,CN(CC(=O)O)C(=N)N,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+L-Tyrosine,C9H11NO3,Psychoactive,1,181.19,83.6,3,3,4,C1=CC(=CC=C1CC(C(=O)O)N)O,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+S-Adenosyl methionine,C15H23N6O5S+,Psychoactive,1,399.4,184,7,5,10,C[S+](CCC(C(=O)O)N)CC1C(C(C(O1)N2C=NC3=C(N=CN=C32)N)O)O,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Aniracetam,C12H13NO3,Psychoactive,1,219.24,68.28,2,0,3,COC1=CC=C(C=C1)C(=O)N2CCCC2=O,"Carbonyl, Ether, Ketone"
+Coluracetam,C19H23N3O3,Psychoactive,1,341.4,75.4,3,1,4,CC1=C(OC2=NC3=C(CCCC3)C(=C12)NC(=O)CN4CCCC4=O)C,"Carbonyl, Ketone"
+Fasoracetam,C10H16N2O2,Psychoactive,1,196.25,49.4,1,1,2,C1CCN(CC1)C(=O)C2CCC(=O)N2,"Carbonyl, Ketone"
+Oxiracetam,C6H10N2O3,Psychoactive,1,308.13,68.28,4.62,2,3,C1C(CN(C1=O)CC(=O)N)O,"Hydroxyl, Amine, Carbonyl, Alcohol, Ether, Ketone"
+Phenylpiracetam,C12H14N2O2,Psychoactive,1,308.13,68.28,4.62,1,2,C1C(CN(C1=O)CC(=O)N)C2=CC=CC=C2,"Amine, Carbonyl, Ketone"
+Piracetam,C6H10N2O2,Psychoactive,1,308.13,68.28,2,1,2,C1CC(=O)N(C1)CC(=O)N,"Amine, Carbonyl, Ketone"
+Pramiracetam,C14H27N3O2,Psychoactive,1,269.38,52.7,7,1,3,CC(C)N(CCNC(=O)CN1CCCC1=O)C(C)C,"Carbonyl, Ketone"
+L-Theanine,C7H14N2O3,Psychoactive,1,174.2,92.4,5,3,4,CCNC(=O)CCC(C(=O)O)N,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+N-Acetylcysteine,C5H9NO3S,Psychoactive,1,163.2,67.4,3,3,4,CC(=O)NC(CS)C(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Noopept,C17H22N2O4,Psychoactive,1,318.4,75.7,7,1,4,CCOC(=O)CNC(=O)C1CCCN1C(=O)CC2=CC=CC=C2,"Carbonyl, Ether, Ketone"
+Picamilon,C10H12N2O3,Psychoactive,1,208.21,79.3,5,2,4,C1=CC(=CN=C1)C(=O)NCCCC(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Tianeptine,C21H25ClN2O4S,Psychoactive,1,437,95.1,8,2,6,CN1C2=CC=CC=C2C(C3=C(S1(=O)=O)C=C(C=C3)Cl)NCCCCCCC(=O)O,"Hydroxyl, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
+Phenethylamine,C8H11N,Psychoactive,1,121.18,68.28,2,1,1,C1=CC=C(C=C1)CCN,Amine
+Semax,C37H51N9O10S,Psychoactive,1,813.9,312,21,8,13,CSCCC(C(=O)NC(CCC(=O)O)C(=O)NC(CC1=CN=CN1)C(=O)NC(CC2=CC=CC=C2)C(=O)N3CCCC3C(=O)NCC(=O)N4CCCC4C(=O)O)N,"Hydroxyl, Amine, Carbonyl, Carboxyl, Alcohol, Ether, Ketone"
