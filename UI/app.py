@@ -54,6 +54,13 @@ def index():
             file.save(filepath)
 
             df = pd.read_csv(filepath)
+            
+            # ==================================================================
+            # FIX: Impute missing values by filling with the column's mean
+            # ==================================================================
+            df.fillna(df.mean(), inplace=True)
+
+
             data = None
 
             # Load data based on user-selected dimension
