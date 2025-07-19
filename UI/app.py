@@ -95,7 +95,8 @@ def index():
             coeffs_df = wt.get_coefficients_df_and_save(
                 app.config['GENERATED_FOLDER'],
                 coeffs_tree,
-                output_filename
+                output_filename,
+                levels
             )
 
             coeffs_html = coeffs_df.to_html(classes='table table-striped table-hover', index=False, na_rep='-')

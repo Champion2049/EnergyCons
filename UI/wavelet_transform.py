@@ -119,7 +119,7 @@ def haar_lwt_nd_reconstruct(coeffs_tree):
     return current_reconstruction[final_reconstruction_slicer]
 
 
-def get_coefficients_df_and_save(output_dir, coeffs_tree, filename):
+def get_coefficients_df_and_save(output_dir, coeffs_tree, filename, level):
     """
     Saves Haar LWT coefficients to a CSV and returns them as a pandas DataFrame.
     """
@@ -160,6 +160,8 @@ def get_coefficients_df_and_save(output_dir, coeffs_tree, filename):
         combined_coeffs_2d = np.array([[]])
 
     df = pd.DataFrame(combined_coeffs_2d, columns=headers)
+
+    df['Matlab_coeff'] = df['Final_Approximation'] * level
     
     combined_filepath = os.path.join(output_dir, filename)
     df.to_csv(combined_filepath, index=False)
