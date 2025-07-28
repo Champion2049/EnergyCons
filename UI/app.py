@@ -55,11 +55,8 @@ def index():
 
             df = pd.read_csv(filepath)
             
-            # ==================================================================
-            # FIX: Impute missing values by filling with the column's mean
-            # ==================================================================
-            df.fillna(df.mean(), inplace=True)
-
+            # Impute missing values across all potentially numeric columns
+            df.fillna(df.mean(numeric_only=True), inplace=True)
 
             data = None
 
@@ -72,14 +69,26 @@ def index():
                 if column_name not in df.columns:
                     flash(f"Column '{column_name}' not found in the file.")
                     return redirect(request.url)
-                data = df[column_name].values
+                
+                # Check if selected column for 1D is numeric
+                if pd.api.types.is_numeric_dtype(df[column_name]):
+                    data = df[column_name].values
+                else:
+                    flash(f"Column '{column_name}' is not numeric and cannot be processed in 1D mode.")
+                    return redirect(request.url)
+
 
             elif data_dimension == '2d':
-                # For 2D, we use all numerical columns from the CSV
+                # ==================================================================
+                # FIX: Explicitly select only numeric columns for 2D processing
+                # This robustly handles CSVs with text columns like 'STATE' or 'DISTRICT'
+                # ==================================================================
                 numeric_df = df.select_dtypes(include=np.number)
+
                 if numeric_df.empty:
                     flash('No numeric data found in the CSV for 2D processing.')
                     return redirect(request.url)
+                
                 data = numeric_df.to_numpy()
                 flash(f'Processing 2D data with shape: {data.shape}', 'info')
             
