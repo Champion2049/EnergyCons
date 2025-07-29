@@ -1,0 +1,21 @@
+
+LWT-LSTM Model Evaluation Summary (haar wavelet)
+================================================
+R² Score: 0.996856
+Mean Squared Error (MSE): 0.066345
+Root Mean Squared Error (RMSE): 0.257575
+Mean Absolute Error (MAE): 0.182624
+Mean Absolute Percentage Error (MAPE): 1.830%
+ROC AUC Score: 0.9993
+Classification Threshold: 10.219
+
+Model Configuration:
+- LWT Window Size: 32
+- LWT Levels: 3
+- Wavelet Type: haar
+- Hidden Dimensions: 64
+- Number of Layers: 2
+- Epochs: 200
+- Batch Size: 64
+- Learning Rate: 0.001
+- Using CuPy: True
