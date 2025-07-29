@@ -1,11 +1,11 @@
 
 LWT-LSTM Model Evaluation Summary (haar wavelet)
 ================================================
-R² Score: 0.996856
-Mean Squared Error (MSE): 0.066345
-Root Mean Squared Error (RMSE): 0.257575
-Mean Absolute Error (MAE): 0.182624
-Mean Absolute Percentage Error (MAPE): 1.830%
+R² Score: 0.995581
+Mean Squared Error (MSE): 0.093261
+Root Mean Squared Error (RMSE): 0.305387
+Mean Absolute Error (MAE): 0.231182
+Mean Absolute Percentage Error (MAPE): 2.331%
 ROC AUC Score: 0.9993
 Classification Threshold: 10.219
 
