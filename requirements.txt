@@ -1,0 +1,20 @@
+# Core numerical and ML libraries
+numpy
+pandas
+
+# Deep learning frameworks
+torch
+tensorflow
+
+# Visualization
+matplotlib
+
+# Web UI
+flask
+# werkzeug
+
+# Configuration / YAML parsing
+PyYAML
+
+# (Optional) If you run only on CPU and want a lighter TensorFlow install, you can replace 'tensorflow' with:
+# tensorflow-cpu
