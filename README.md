@@ -245,7 +245,7 @@ Please open an issue first for architectural changes.
 ---
 
 ## 18. License
-Add a LICENSE file (MIT / Apache-2.0 recommended). Currently unspecified.
+MIT License is present with the authors being Chirayu Nilesh Chaudhari & Rtamanyu NJ.
 
 ---
 
