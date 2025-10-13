@@ -2,7 +2,7 @@
 
 import os
 import pandas as pd
-from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory
+from flask import Flask, render_template, request, redirect, url_for, flash, send_from_directory, abort
 from werkzeug.utils import secure_filename
 import numpy as np
 
@@ -10,14 +10,18 @@ import numpy as np
 import wavelet_transform as wt
 
 # --- Configuration ---
-UPLOAD_FOLDER = 'uploads'
-GENERATED_FOLDER = 'generated_coeffs'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+UPLOAD_FOLDER = os.path.join(BASE_DIR, 'uploads')
+GENERATED_FOLDER = os.path.join(BASE_DIR, 'generated_coeffs')
 ALLOWED_EXTENSIONS = {'csv'}
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['GENERATED_FOLDER'] = GENERATED_FOLDER
 app.secret_key = 'super_secret_key_for_nd'
+
+os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+os.makedirs(app.config['GENERATED_FOLDER'], exist_ok=True)
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -125,9 +129,16 @@ def index():
 
     return render_template('index.html')
 
-@app.route('/download/<filename>')
+@app.route('/download/<path:filename>')
 def download_file(filename):
-    return send_from_directory(app.config['GENERATED_FOLDER'], filename, as_attachment=True)
+    safe_filename = secure_filename(filename)
+    directory = app.config['GENERATED_FOLDER']
+    file_path = os.path.join(directory, safe_filename)
+
+    if not os.path.isfile(file_path):
+        abort(404)
+
+    return send_from_directory(directory, safe_filename, as_attachment=True)
 
 if __name__ == '__main__':
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
