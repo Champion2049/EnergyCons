@@ -1,0 +1,46 @@
+
+============================================================
+APPROACH 1: PREDICTION-LEVEL ERRORS (WILCOXON TEST)
+============================================================
+
+--- Testing XGBoost ---
+Orig vs LWT_L1 -> Orig MAE: 408.08 | L1 MAE: 464.50 | P-Value: 0.9622
+Orig vs LWT_L2 -> Orig MAE: 408.08 | L2 MAE: 412.73 | P-Value: 0.5070
+
+--- Testing RandomForest ---
+Orig vs LWT_L1 -> Orig MAE: 424.56 | L1 MAE: 422.34 | P-Value: 0.4181
+Orig vs LWT_L2 -> Orig MAE: 424.56 | L2 MAE: 404.03 | P-Value: 0.2959
+
+--- Testing SVR ---
+Orig vs LWT_L1 -> Orig MAE: 393.33 | L1 MAE: 393.49 | P-Value: 0.4874
+Orig vs LWT_L2 -> Orig MAE: 393.33 | L2 MAE: 393.25 | P-Value: 0.4429
+
+--- Testing Stacking ---
+Orig vs LWT_L1 -> Orig MAE: 490.39 | L1 MAE: 476.16 | P-Value: 0.1801
+Orig vs LWT_L2 -> Orig MAE: 490.39 | L2 MAE: 428.94 | P-Value: 0.0030
+  * LWT Level 2 is significantly better.
+
+-> Saved Error Distribution Boxplot to: Wavelet-LWT-Rtamanyu/Output\approach1_error_distributions.png
+
+============================================================
+APPROACH 2: TIME-SERIES CROSS-VALIDATION (PAIRED T-TEST)
+============================================================
+
+--- CV Testing XGBoost ---
+Orig vs L1 -> Orig Mean CV: 438.68 | L1 Mean CV: 437.65 | P-Value: 0.4852
+Orig vs L2 -> Orig Mean CV: 438.68 | L2 Mean CV: 398.74 | P-Value: 0.0473
+  * LWT Level 2 consistently reduces RMSE.
+
+--- CV Testing RandomForest ---
+Orig vs L1 -> Orig Mean CV: 444.99 | L1 Mean CV: 431.13 | P-Value: 0.2238
+Orig vs L2 -> Orig Mean CV: 444.99 | L2 Mean CV: 427.14 | P-Value: 0.1941
+
+--- CV Testing SVR ---
+Orig vs L1 -> Orig Mean CV: 426.90 | L1 Mean CV: 428.75 | P-Value: 0.7483
+Orig vs L2 -> Orig Mean CV: 426.90 | L2 Mean CV: 430.21 | P-Value: 0.7311
+
+--- CV Testing Stacking ---
+Orig vs L1 -> Orig Mean CV: 434.05 | L1 Mean CV: 498.29 | P-Value: 0.9509
+Orig vs L2 -> Orig Mean CV: 434.05 | L2 Mean CV: 435.34 | P-Value: 0.5185
+
+-> Saved CV Line Charts Grid to: Wavelet-LWT-Rtamanyu/Output\approach2_cv_scores_grid.png
