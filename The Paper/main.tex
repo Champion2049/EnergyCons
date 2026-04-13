@@ -1,0 +1,1305 @@
+%% bare_jrnl.tex
+%% V1.4b
+%% 2015/08/26
+%% by Michael Shell
+%% see http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.8b or later) with an IEEE
+%% journal paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/pkg/ieeetran
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE! 
+%% User assumes all risk.
+%% In no event shall the IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%*************************************************************************
+
+
+% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. The IEEE's font choices and paper sizes can   ***
+% *** trigger bugs that do not appear when using other class files.       ***                          ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
+
+
+
+\documentclass[journal]{IEEEtran}
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it like:
+% \documentclass[journal]{../sty/IEEEtran}
+
+
+
+
+
+% Some very useful LaTeX packages include:
+% (uncomment the ones you want to load)
+
+
+% *** MISC UTILITY PACKAGES ***
+%
+%\usepackage{ifpdf}
+% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
+% compilation based on whether the output is pdf or dvi.
+% usage:
+% \ifpdf
+%   % pdf code
+% \else
+%   % dvi code
+% \fi
+% The latest version of ifpdf.sty can be obtained from:
+% http://www.ctan.org/pkg/ifpdf
+% Also, note that IEEEtran.cls V1.7 and later provides a builtin
+% \ifCLASSINFOpdf conditional that works the same way.
+% When switching from latex to pdflatex and vice-versa, the compiler may
+% have to be run twice to clear warning/error messages.
+
+
+
+
+
+
+% *** CITATION PACKAGES ***
+%
+%\usepackage{cite}
+% cite.sty was written by Donald Arseneau
+% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
+% \cite{} output to follow that of the IEEE. Loading the cite package will
+% result in citation numbers being automatically sorted and properly
+% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
+% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
+% \cite will automatically add leading space, if needed. Use cite.sty's
+% noadjust option (cite.sty V3.8 and later) if you want to turn this off
+% such as if a citation ever needs to be enclosed in parenthesis.
+% cite.sty is already installed on most LaTeX systems. Be sure and use
+% version 5.0 (2009-03-20) and later if using hyperref.sty.
+% The latest version can be obtained at:
+% http://www.ctan.org/pkg/cite
+% The documentation is contained in the cite.sty file itself.
+
+
+
+
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation
+% can be obtained at: 
+% http://www.ctan.org/pkg/graphicx
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found at:
+% http://www.ctan.org/pkg/epslatex
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). The IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+
+
+% *** MATH PACKAGES ***
+%
+%\usepackage{amsmath}
+\usepackage{amsmath,amssymb}
+% A popular package from the American Mathematical Society that provides
+% many useful and powerful commands for dealing with mathematics.
+%
+% Note that the amsmath package sets \interdisplaylinepenalty to 10000
+% thus preventing page breaks from occurring within multiline equations. Use:
+%\interdisplaylinepenalty=2500
+% after loading amsmath to restore such page breaks as IEEEtran.cls normally
+% does. amsmath.sty is already installed on most LaTeX systems. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/pkg/amsmath
+
+
+
+
+
+% *** SPECIALIZED LIST PACKAGES ***
+%
+%\usepackage{algorithmic}
+% algorithmic.sty was written by Peter Williams and Rogerio Brito.
+% This package provides an algorithmic environment fo describing algorithms.
+% You can use the algorithmic environment in-text or within a figure
+% environment to provide for a floating algorithm. Do NOT use the algorithm
+% floating environment provided by algorithm.sty (by the same authors) or
+% algorithm2e.sty (by Christophe Fiorio) as the IEEE does not use dedicated
+% algorithm float types and packages that provide these will not provide
+% correct IEEE style captions. The latest version and documentation of
+% algorithmic.sty can be obtained at:
+% http://www.ctan.org/pkg/algorithms
+% Also of interest may be the (relatively newer and more customizable)
+% algorithmicx.sty package by Szasz Janos:
+% http://www.ctan.org/pkg/algorithmicx
+
+
+
+
+% *** ALIGNMENT PACKAGES ***
+%
+\usepackage{array}
+% Frank Mittelbach's and David Carlisle's array.sty patches and improves
+% the standard LaTeX2e array and tabular environments to provide better
+% appearance and additional user controls. As the default LaTeX2e table
+% generation code is lacking to the point of almost being broken with
+% respect to the quality of the end results, all users are strongly
+% advised to use an enhanced (at the very least that provided by array.sty)
+% set of table tools. array.sty is already installed on most systems. The
+% latest version and documentation can be obtained at:
+% http://www.ctan.org/pkg/array
+
+
+% IEEEtran contains the IEEEeqnarray family of commands that can be used to
+% generate multiline equations as well as matrices, tables, etc., of high
+% quality.
+
+
+
+
+% *** SUBFIGURE PACKAGES ***
+%\ifCLASSOPTIONcompsoc
+%  \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+%\else
+%  \usepackage[caption=false,font=footnotesize]{subfig}
+%\fi
+% subfig.sty, written by Steven Douglas Cochran, is the modern replacement
+% for subfigure.sty, the latter of which is no longer maintained and is
+% incompatible with some LaTeX packages including fixltx2e. However,
+% subfig.sty requires and automatically loads Axel Sommerfeldt's caption.sty
+% which will override IEEEtran.cls' handling of captions and this will result
+% in non-IEEE style figure/table captions. To prevent this problem, be sure
+% and invoke subfig.sty's "caption=false" package option (available since
+% subfig.sty version 1.3, 2005/06/28) as this is will preserve IEEEtran.cls
+% handling of captions.
+% Note that the Computer Society format requires a larger sans serif font
+% than the serif footnote size font used in traditional IEEE formatting
+% and thus the need to invoke different subfig.sty package options depending
+% on whether compsoc mode has been enabled.
+%
+% The latest version and documentation of subfig.sty can be obtained at:
+% http://www.ctan.org/pkg/subfig
+
+
+
+
+% *** FLOAT PACKAGES ***
+%
+%\usepackage{fixltx2e}
+% fixltx2e, the successor to the earlier fix2col.sty, was written by
+% Frank Mittelbach and David Carlisle. This package corrects a few problems
+% in the LaTeX2e kernel, the most notable of which is that in current
+% LaTeX2e releases, the ordering of single and double column floats is not
+% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
+% single column figure to be placed prior to an earlier double column
+% figure.
+% Be aware that LaTeX2e kernels dated 2015 and later have fixltx2e.sty's
+% corrections already built into the system in which case a warning will
+% be issued if an attempt is made to load fixltx2e.sty as it is no longer
+% needed.
+% The latest version and documentation can be found at:
+% http://www.ctan.org/pkg/fixltx2e
+
+
+%\usepackage{stfloats}
+% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
+% the ability to do double column floats at the bottom of the page as well
+% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
+% LaTeX2e). It also provides a command:
+%\fnbelowfloat
+% to enable the placement of footnotes below bottom floats (the standard
+% LaTeX2e kernel puts them above bottom floats). This is an invasive package
+% which rewrites many portions of the LaTeX2e float routines. It may not work
+% with other packages that modify the LaTeX2e float routines. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/pkg/stfloats
+% Do not use the stfloats baselinefloat ability as the IEEE does not allow
+% \baselineskip to stretch. Authors submitting work to the IEEE should note
+% that the IEEE rarely uses double column equations and that authors should try
+% to avoid such use. Do not be tempted to use the cuted.sty or midfloat.sty
+% packages (also by Sigitas Tolusis) as the IEEE does not format its papers in
+% such ways.
+% Do not attempt to use stfloats with fixltx2e as they are incompatible.
+% Instead, use Morten Hogholm'a dblfloatfix which combines the features
+% of both fixltx2e and stfloats:
+%
+% \usepackage{dblfloatfix}
+% The latest version can be found at:
+% http://www.ctan.org/pkg/dblfloatfix
+
+
+
+
+%\ifCLASSOPTIONcaptionsoff
+%  \usepackage[nomarkers]{endfloat}
+% \let\MYoriglatexcaption\caption
+% \renewcommand{\caption}[2][\relax]{\MYoriglatexcaption[#2]{#2}}
+%\fi
+% endfloat.sty was written by James Darrell McCauley, Jeff Goldberg and 
+% Axel Sommerfeldt. This package may be useful when used in conjunction with 
+% IEEEtran.cls'  captionsoff option. Some IEEE journals/societies require that
+% submissions have lists of figures/tables at the end of the paper and that
+% figures/tables without any captions are placed on a page by themselves at
+% the end of the document. If needed, the draftcls IEEEtran class option or
+% \CLASSINPUTbaselinestretch interface can be used to increase the line
+% spacing as well. Be sure and use the nomarkers option of endfloat to
+% prevent endfloat from "marking" where the figures would have been placed
+% in the text. The two hack lines of code above are a slight modification of
+% that suggested by in the endfloat docs (section 8.4.1) to ensure that
+% the full captions always appear in the list of figures/tables - even if
+% the user used the short optional argument of \caption[]{}.
+% IEEE papers do not typically make use of \caption[]'s optional argument,
+% so this should not be an issue. A similar trick can be used to disable
+% captions of packages such as subfig.sty that lack options to turn off
+% the subcaptions:
+% For subfig.sty:
+% \let\MYorigsubfloat\subfloat
+% \renewcommand{\subfloat}[2][\relax]{\MYorigsubfloat[]{#2}}
+% However, the above trick will not work if both optional arguments of
+% the \subfloat command are used. Furthermore, there needs to be a
+% description of each subfigure *somewhere* and endfloat does not add
+% subfigure captions to its list of figures. Thus, the best approach is to
+% avoid the use of subfigure captions (many IEEE journals avoid them anyway)
+% and instead reference/explain all the subfigures within the main caption.
+% The latest version of endfloat.sty and its documentation can obtained at:
+% http://www.ctan.org/pkg/endfloat
+%
+% The IEEEtran \ifCLASSOPTIONcaptionsoff conditional can also be used
+% later in the document, say, to conditionally put the References on a 
+% page by themselves.
+
+
+
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+%
+\usepackage{url}
+% url.sty was written by Donald Arseneau. It provides better support for
+% handling and breaking URLs. url.sty is already installed on most LaTeX
+% systems. The latest version and documentation can be obtained at:
+% http://www.ctan.org/pkg/url
+% Basically, \url{my_url_here}.
+
+% \usepackage{}
+
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\usepackage{url}
+\begin{document}
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+\title{Lifting Wavelet (LWT) Integrated Neural Networks}
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+
+\author{Rtamanyu N. J.,
+        Chirayu Nilesh Chaudhari, Dr. Manju Khanna }
+        % and~Jane~Doe,~\IEEEmembership{Life~Fellow,~IEEE}}% <-this % stops a space
+% \thanks{M. Shell was with the Department
+% of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
+% GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this % stops a space
+% \thanks{J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
+% \thanks{Manuscript received April 19, 2005; revised August 26, 2015.}}
+
+% note the % following the last \IEEEmembership and also \thanks - 
+% these prevent an unwanted space from occurring between the last author name
+% and the end of the author line. i.e., if you had this:
+% 
+% \author{....lastname \thanks{...} \thanks{...} }
+%                     ^------------^------------^----Do not want these spaces!
+%
+% a space would be appended to the last name and could cause every name on that
+% line to be shifted left slightly. This is one of those "LaTeX things". For
+% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
+% "AB" then you have to do: "\textbf{A}\textbf{B}"
+% \thanks is no different in this regard, so shield the last } of each \thanks
+% that ends a line with a % and do not let a space in before the next \thanks.
+% Spaces after \IEEEmembership other than the last one are OK (and needed) as
+% you are supposed to have spaces between the names. For what it is worth,
+% this is a minor point as most people would not even notice if the said evil
+% space somehow managed to creep in.
+
+
+
+% The paper headers
+\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Journals}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+% 
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+
+
+
+
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2015 IEEE}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark.
+
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+
+
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\begin{abstract}
+This paper presents a transparent forecasting framework that combines a custom Lifting Wavelet Transform (LWT) front-end with a recurrent predictor. The key idea is to separate each input window into coarse trend information and fine transient information before sequence modeling, rather than forcing the neural network to discover this decomposition implicitly. We use a Haar lifting formulation based on split-predict-update operations and apply it in a multilevel manner so that each sample is represented by interpretable multiresolution coefficients.
+
+The transformed coefficients are provided to a Long Short-Term Memory (LSTM) model for one-step-ahead prediction on continuous speed data. Beyond prediction accuracy, the pipeline is designed to be auditable: the forward and inverse transforms are explicitly defined, reconstruction fidelity is measured, and computational overhead is profiled. The same operator design is also structured so that it can be extended from 1-D signals to N-dimensional tensors using axis-wise separable lifting.
+
+Empirically, the study focuses on whether explicit multiscale preprocessing improves both reliability and efficiency compared with raw-input sequence learning. We therefore evaluate the method across three perspectives: forecasting performance, transform fidelity, and runtime behavior. We also position the generated coefficient patterns relative to preprocessing styles used in recent energy disaggregation deep-learning workflows \cite{ylla2024nilm,yllaRepo}. The resulting methodology provides a reproducible and interpretable path for integrating wavelet-based representations into neural time-series forecasting.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Lifting Wavelet Transform (LWT), Long Short-Term Memory (LSTM), PyTorch, Continuous Wavelet Transform (CWT), Discrete Wavelet Transform (DWT), Recurrent Neural Networks (RNNs), Multiresolution Feature Learning
+\end{IEEEkeywords}
+
+
+
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+% The very first letter is a 2 line initial drop letter followed
+% by the rest of the first word in caps.
+% 
+% form to use if the first word consists of a single letter:
+% \IEEEPARstart{A}{demo} file is ....
+% 
+% form to use if you need the single drop letter followed by
+% normal text (unknown if ever used by the IEEE):
+% \IEEEPARstart{A}{}demo file is ....
+% 
+% Some journals put the first two words in caps:
+% \IEEEPARstart{T}{his demo} file is ....
+% 
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+\IEEEPARstart{T}{ime} series forecasting is central to energy management, mobility, climate analytics, and industrial control, where decisions depend on anticipating future signal trajectories from noisy historical observations. Let $\{s_t\}_{t=1}^{T}$ denote a scalar series, and define the forecasting task as estimating
+\begin{equation}
+\hat{s}_{t+h}=\mathcal{F}(s_{t-W+1},\ldots,s_t),
+\end{equation}
+for window size $W$ and prediction horizon $h$. In practical data, the mapping $\mathcal{F}$ is difficult because relevant structure is distributed across low-frequency trends, seasonal components, burst-like transients, and stochastic disturbances. A single representation in the raw time domain may under-expose these coupled scales to learning models.
+
+From a statistical learning perspective, the challenge can be viewed through expected risk:
+\begin{equation}
+\mathcal{R}(f)=\mathbb{E}_{(\mathbf{x},y)}\left[(y-f(\mathbf{x}))^2\right].
+\end{equation}
+When the input representation $\mathbf{x}$ entangles multiple temporal scales, the hypothesis class required to approximate the true mapping tends to become unnecessarily complex. As a consequence, optimization becomes harder, data efficiency decreases, and generalization can degrade. This motivates introducing an explicit multiscale operator $\phi$ before prediction, so that the learner estimates $f\circ\phi$ in a feature space with stronger inductive structure.
+
+Deep recurrent architectures, especially LSTM networks, are strong candidates for sequence modeling because their gated dynamics mitigate vanishing gradients and preserve long-context information \cite{hochreiter1997lstm,gers2000forget}. This capability is particularly important in light of earlier findings on long-term dependency learning difficulties in recurrent optimization \cite{bengio1994learning}. However, LSTM accuracy and efficiency are often sensitive to input representation quality. When input windows contain mixed-frequency dynamics, recurrent cells must learn both decomposition and prediction simultaneously, increasing optimization burden. A mathematically structured front-end that separates scales before recurrent inference can reduce this burden and improve inductive alignment.
+
+Wavelet theory directly addresses this need through localized time-frequency analysis \cite{mallat1989multiresolution,daubechies1992tenlectures}. Unlike Fourier transforms, which describe global spectral content, wavelets preserve local temporal events while still expressing frequency behavior. The Continuous Wavelet Transform (CWT) provides rich localization but is highly redundant. The Discrete Wavelet Transform (DWT) reduces redundancy via dyadic scales, and the Lifting Wavelet Transform (LWT) further improves implementation efficiency by replacing filter-bank convolution with in-place split-predict-update operations \cite{uytterhoeven1997lifting}. This construction is invertible, memory-efficient, and naturally adaptable for domain-specific operator design.
+
+For sampled continuous signals and N-dimensional tensors, lifting offers a practical multiresolution pipeline. Given a signal block, the transform generates approximation coefficients encoding coarse structure and detail coefficients encoding high-frequency deviations. Across levels, this creates a hierarchical basis that aligns closely with forecasting requirements: slow components guide long-range behavior, while details encode short-range correction cues. Furthermore, separable lifting can be applied dimension-wise, enabling reuse of 1-D lifting primitives for N-D data with exact bookkeeping of sub-bands.
+
+The importance of explicit scale decomposition is especially pronounced in energy and infrastructure data, where both smooth baseload behavior and abrupt demand ramps coexist. If both effects are passed directly to a model in raw form, learned filters must discover decomposition implicitly. In contrast, lifting-based features provide deterministic partitioning of scale information and improve interpretability of downstream predictions.
+
+This work develops and evaluates a custom LWT-integrated recurrent forecasting framework with the following contributions.
+\begin{itemize}
+    \item A mathematically explicit Haar lifting implementation for forward and inverse transforms, including level-wise decomposition and reconstruction relations referenced to established LWT formulations \cite{matlabLwtDoc,uytterhoeven1997lifting}.
+    \item A practical feature-construction strategy that converts multi-level approximation and detail tensors into compact vectors for sequence prediction.
+    \item A generalized N-D extension strategy using axis-wise separable lifting, allowing reuse of the same operator family beyond the 1-D validation case.
+    \item An end-to-end methodology linking preprocessing, model training, and evaluation, and a qualitative comparison with feature extraction styles used in recent energy disaggregation deep models \cite{ylla2024nilm,yllaRepo}.
+  \item A computational analysis of transform and predictor stages to clarify where efficiency gains arise and how the approach scales with dimensionality and decomposition depth.
+\end{itemize}
+
+The remainder of the paper first reviews relevant prior work, then presents an expanded mathematical methodology from data formulation through model optimization and implementation details, and finally reports results on forecasting performance and runtime behavior.
+
+\section{Literature survey}
+The intersection of wavelet signal processing and deep learning has evolved from hand-crafted preprocessing toward increasingly integrated hybrid architectures. Foundational lifting work established that wavelet transforms can be factored into invertible split-predict-update operators with reduced arithmetic complexity and in-place memory behavior \cite{uytterhoeven1997lifting}. This design has direct computational implications for learning systems, where front-end efficiency often determines whether a model is deployable under edge constraints.
+
+\subsection{Wavelet Features as Inductive Priors}
+Early machine learning usage of wavelets largely treated transform coefficients as static engineered features. In this regime, approximation channels represented coarse trends while detail channels represented local fluctuations, allowing conventional classifiers or regressors to operate in a more structured space. Comparative studies between DWT- and LWT-derived descriptors reported that lifting schemes can reduce runtime while retaining competitive predictive utility, though the accuracy-speed trade-off remains task dependent \cite{mj2012pcadwtlwt}. Wavelet denoising and scale-selective representations also provided strong theoretical and practical support for multiresolution preprocessing in noisy regimes \cite{donoho1995denoising,percival2000wavelet}.
+
+In forecasting contexts, this can be interpreted as an explicit prior over signal regularity. Approximation coefficients capture slowly varying dynamics, while detail coefficients encode local departures from smoothness. Such a decomposition can reduce the burden on recurrent hidden-state dynamics, which otherwise must simultaneously discover and model all scales.
+
+\subsection{LWT in Energy Analytics and Sequence Learning}
+In energy analytics and non-intrusive load disaggregation, deep sequence models gained traction due to their capacity to model nonlinearity and temporal dependence. However, these models are sensitive to normalization, feature extraction, and architectural scaling choices \cite{ylla2024nilm}. Public model repositories in this domain also highlight the practical importance of preprocessing design, windowing strategy, and robustness to real-world noise distributions \cite{yllaRepo}. The present work aligns with this direction by making multiresolution preprocessing explicit and controllable rather than opaque.
+
+Alongside recurrent models, modern long-horizon forecasting literature has explored attention-based alternatives such as Transformer-style architectures \cite{vaswani2017attention,lim2021tft,wu2021autoformer}. Our motivation for retaining an LWT+LSTM backbone is not to dismiss these advances, but to prioritize interpretability, controlled preprocessing, and compact deployment behavior in the current study setup.
+
+An important observation in this literature is that preprocessing is rarely neutral: it reshapes gradient flow, affects convergence speed, and can change which temporal motifs are easiest for the model to learn. Therefore, mathematically transparent preprocessing is not just a signal-processing preference, but an optimization and interpretability decision.
+
+\subsection{Hardware and Systems Perspective}
+Hardware-oriented research reinforces the relevance of lifting in resource-aware systems. FPGA implementations demonstrate that lifting operators are suitable for high-throughput and low-memory execution due to reduced buffering and simple arithmetic kernels \cite{taha2020fpga}. These properties motivate their adoption not only for compression but also as deterministic neural front-ends, where each added transform stage must justify its computational cost.
+
+For deployment-oriented machine learning, this point is crucial. Many forecasting stacks are constrained by latency and memory more than by theoretical representational capacity. Lifting-based front-ends can be implemented with predictable compute and memory access patterns, which improves portability across edge and server hardware.
+
+\subsection{Adaptive and Learnable Lifting}
+A major current trend is the transition from fixed transforms to adaptive or learnable lifting blocks. While fixed lifting provides interpretability and guaranteed invertibility under known update/predict rules, learnable lifting attempts to tune wavelet behavior to data distribution. This can improve task performance but may reduce transparency and complicate stability analysis. For applications where controllability and diagnostic traceability are priorities, fixed or semi-fixed lifting remains attractive.
+
+From a methodological standpoint, fixed and learnable lifting are not mutually exclusive. Fixed lifting can be viewed as a baseline operator with well-understood behavior; learnable components can then be introduced incrementally where empirical gains justify added complexity.
+
+\subsection{N-Dimensional Extension and Open Gap}
+From the perspective of dimensionality, most mature applications focus on 1-D and 2-D settings. Extending lifting to generic N-D tensors introduces combinatorial growth of sub-bands ($2^N$ per level) and nontrivial boundary bookkeeping. Nonetheless, separable axis-wise lifting offers a practical compromise: it preserves implementation simplicity while enabling broad applicability to tensors such as spatio-temporal grids, multichannel measurements, or volumetric sequences. This paper adopts that separable strategy and couples it with recurrent prediction in a unified pipeline.
+
+Despite strong practical motivation, a persistent gap remains between theoretical lifting descriptions and end-to-end reproducible deep-learning pipelines. Many studies report gains but provide limited mathematical detail on coefficient formation, feature flattening, and reconstruction validation. The current manuscript addresses this gap by giving explicit equations, transform bookkeeping, and protocol-level clarity from preprocessing to training and diagnostics.
+
+In summary, existing literature motivates four requirements that frame our methodology: (i) mathematically explicit transforms with invertibility guarantees, (ii) efficient feature generation suitable for downstream sequence learning, (iii) extensibility from 1-D validation to N-D data representations without changing core operator logic, and (iv) implementation transparency sufficient for reproducibility and deployment analysis.
+
+Before moving to formal derivations, it is helpful to emphasize that the objective of this manuscript is pragmatic as well as theoretical. We are not only interested in whether a model can fit a dataset, but also in whether intermediate representations can be inspected, reconstructed, and audited by practitioners. For this reason, additional explanatory text is included in the methodology to contextualize each mathematical component and reduce dependence on equation-only interpretation.
+
+\section{Methodology}
+\subsection{End-to-End Pipeline Overview}
+The proposed framework consists of six linked stages:
+\begin{equation}
+\begin{aligned}
+\text{Raw Signal} &\rightarrow \text{Cleaning/Normalization} \\
+&\rightarrow \text{Windowing} \\
+&\rightarrow \text{LWT feature map} \\
+&\rightarrow \text{LSTM predictor} \\
+&\rightarrow \text{Inverse-scale evaluation}
+\end{aligned}
+\end{equation}
+Each stage is deterministic except the stochastic optimization process used for parameter learning. This separation allows us to analyze transform behavior independently from predictor behavior.
+
+In practical terms, this decomposition of stages makes troubleshooting easier. If prediction quality drops, one can independently inspect preprocessing quality, coefficient generation, reconstruction error, and model-fit dynamics. This is a key benefit of explicit lifting pipelines relative to end-to-end opaque feature extractors.
+
+\subsection{Problem Formulation and Notation}
+Let the observed scalar signal be $\{s_t\}_{t=1}^{T}$, sampled uniformly in time. We define a supervised forecasting dataset through sliding windows of length $W$ and forecast horizon $h$:
+\begin{equation}
+\mathbf{x}_i=[s_i,s_{i+1},\ldots,s_{i+W-1}]^\top \in \mathbb{R}^{W}, \quad
+y_i=s_{i+W+h-1},
+\end{equation}
+for $i=1,\ldots,N$ with $N=T-W-h+1$. The learning objective is to estimate a function $f_{\theta}$ such that
+\begin{equation}
+\hat{y}_i=f_{\theta}(\phi(\mathbf{x}_i)),
+\end{equation}
+where $\phi(\cdot)$ is the feature map induced by multi-level lifting decomposition.
+
+The empirical objective can also be written in matrix form. Let
+\begin{equation}
+\mathbf{X}=[\mathbf{x}_1,\ldots,\mathbf{x}_N]^\top,\quad
+\mathbf{y}=[y_1,\ldots,y_N]^\top,
+\end{equation}
+and define transformed design matrix $\Phi=[\phi(\mathbf{x}_1),\ldots,\phi(\mathbf{x}_N)]^\top$. Then learning seeks
+\begin{equation}
+\theta^*=\arg\min_{\theta}\,\frac{1}{N}\|f_{\theta}(\Phi)-\mathbf{y}\|_2^2.
+\end{equation}
+
+To stabilize optimization, input values are normalized. For min-max normalization,
+\begin{equation}
+\tilde{s}_t=\frac{s_t-s_{\min}}{s_{\max}-s_{\min}+\epsilon},
+\end{equation}
+with small $\epsilon>0$ to avoid division by zero. The inverse map is
+\begin{equation}
+s_t=\tilde{s}_t\,(s_{\max}-s_{\min}+\epsilon)+s_{\min}.
+\end{equation}
+All train-validation splits are chronological to avoid temporal leakage.
+
+Although the notation is compact, each symbol corresponds to a concrete implementation step: data cleaning produces a valid scalar stream, windowing creates supervised samples, lifting creates multiscale features, and optimization maps those features to forecasts. This direct mapping between notation and code improves reproducibility and reduces ambiguity during experimentation.
+
+\subsection{Data Integrity, Cleaning, and Temporal Consistency}
+Real sensor streams often include missing entries, non-numeric artifacts, and abrupt outliers due to communication glitches. The preprocessing stage enforces temporal consistency as follows:
+\begin{itemize}
+  \item Type coercion from raw CSV values to numeric arrays.
+  \item Removal or imputation of invalid entries while preserving order.
+  \item Construction of contiguous windows only after cleaning, so each window represents an actual temporal segment.
+\end{itemize}
+This ordering matters because performing wavelet decomposition before cleaning can propagate local corruption across multiple coefficient bands.
+
+\subsection{Dataset and Preprocessing Pipeline}
+The primary validation dataset is the continuous speed series from Data\_August\_Renewable.csv. The practical preprocessing pipeline follows the implementation flow used in our repository:
+\begin{itemize}
+    \item \textbf{Column selection and type coercion}: the speed channel is extracted and cast to numeric values.
+    \item \textbf{Missing-data treatment}: invalid entries are removed or imputed (forward continuity strategy) before sequence construction.
+    \item \textbf{Window generation}: each sample uses $W=32$ past points and $h=1$ future target.
+    \item \textbf{Temporal split}: first $80\%$ windows for training and remaining $20\%$ for validation.
+\end{itemize}
+
+Formally, if $\tilde{s}_{1:T}$ is normalized data, then
+\begin{equation}
+\mathcal{D}_{\text{train}}=\{(\mathbf{x}_i,y_i)\}_{i=1}^{\lfloor 0.8N \rfloor},
+\quad
+\mathcal{D}_{\text{val}}=\{(\mathbf{x}_i,y_i)\}_{i=\lfloor 0.8N \rfloor+1}^{N}.
+\end{equation}
+This split preserves causality and emulates deployment where only past data are available at inference time.
+
+\subsection{Boundary Handling and Window Constraints}
+Lifting decomposition is naturally dyadic; however, real window sizes may be odd or non-dyadic after slicing. Let $W_0=W$. At level $\ell$, define
+\begin{equation}
+W_{\ell}=\left\lfloor \frac{W_{\ell-1}}{2}\right\rfloor,
+\end{equation}
+after optional trimming or padding. In our implementation context, odd lengths are handled by deterministic boundary rules so that forward and inverse transforms remain shape-consistent. This guarantees reproducible coefficient dimensions and avoids runtime mismatch during feature concatenation.
+
+\subsection{Lifting Wavelet Transform as a Structured Preprocessor}
+The LWT stage converts each raw window into a multiresolution representation before recurrent modeling.
+
+\subsubsection{Single-Level 1-D Haar Lifting}
+For a window $\mathbf{x}\in\mathbb{R}^{W}$ (after optional boundary handling to even length), define even and odd subsequences:
+\begin{equation}
+e_k=x_{2k}, \quad o_k=x_{2k+1}, \quad k=0,\ldots,\frac{W}{2}-1.
+\end{equation}
+The predict and update operators for Haar lifting are
+\begin{equation}
+d_k=o_k-P(e_k), \quad P(e_k)=e_k,
+\end{equation}
+\begin{equation}
+a_k=e_k+U(d_k), \quad U(d_k)=\frac{1}{2}d_k.
+\end{equation}
+Hence,
+\begin{equation}
+d_k=o_k-e_k, \quad a_k=e_k+\frac{1}{2}(o_k-e_k).
+\end{equation}
+The inverse transform is exact under the same indexing and padding rules:
+\begin{equation}
+e_k=a_k-\frac{1}{2}d_k, \quad o_k=d_k+e_k,
+\end{equation}
+followed by interleaving to recover $\mathbf{x}$.
+
+\subsubsection{Multi-Level Decomposition}
+Let $\mathbf{a}^{(0)}=\mathbf{x}$. For level $\ell=1,\ldots,L$,
+\begin{equation}
+(\mathbf{a}^{(\ell)},\mathbf{d}^{(\ell)})=\mathcal{W}(\mathbf{a}^{(\ell-1)}),
+\end{equation}
+where $\mathcal{W}$ denotes one forward lifting step. The final feature vector is constructed as
+\begin{equation}
+\phi(\mathbf{x})=
+\left[
+\operatorname{vec}(\mathbf{d}^{(1)});
+\operatorname{vec}(\mathbf{d}^{(2)});
+\cdots;
+\operatorname{vec}(\mathbf{d}^{(L)});
+\operatorname{vec}(\mathbf{a}^{(L)})
+\right].
+\end{equation}
+For dyadic lengths and 1-D windows, the coefficient count satisfies
+\begin{equation}
+\sum_{\ell=1}^{L}\frac{W}{2^{\ell}}+\frac{W}{2^{L}}=W,
+\end{equation}
+so dimensionality is preserved while information is redistributed across scales.
+
+For the configuration used in this work ($W=32$, $L=3$), the coefficient lengths are
+\begin{equation}
+|\mathbf{d}^{(1)}|=16,\quad |\mathbf{d}^{(2)}|=8,\quad |\mathbf{d}^{(3)}|=4,\quad |\mathbf{a}^{(3)}|=4,
+\end{equation}
+yielding a transformed feature vector of length $16+8+4+4=32$.
+
+\subsubsection{Coefficient Energy Relations}
+Under Haar lifting,
+\begin{equation}
+a_k=\frac{e_k+o_k}{2},\quad d_k=o_k-e_k,
+\end{equation}
+which implies
+\begin{equation}
+e_k=a_k-\frac{d_k}{2},\quad o_k=a_k+\frac{d_k}{2}.
+\end{equation}
+Therefore the pairwise energy relation becomes
+\begin{equation}
+e_k^2+o_k^2=2a_k^2+\frac{1}{2}d_k^2.
+\end{equation}
+Although not orthonormal in this form, the decomposition still provides stable partitioning of coarse and detail information and exact invertibility under the same arithmetic path.
+
+\subsubsection{N-D Separable Extension}
+For tensor input $\mathbf{X}\in\mathbb{R}^{n_1\times n_2\times\cdots\times n_D}$, 1-D lifting is applied axis-wise. At each level, each axis split doubles the number of sub-bands, yielding $2^D$ sub-bands in total: one all-approximation branch and $(2^D-1)$ detail branches. The all-approximation branch is recursively decomposed at deeper levels.
+
+If $\mathcal{W}_d$ denotes lifting along axis $d$, one level can be represented as
+\begin{equation}
+\mathcal{W}_{\text{ND}}=\mathcal{W}_{D}\circ\mathcal{W}_{D-1}\circ\cdots\circ\mathcal{W}_{1}.
+\end{equation}
+This separable design is implementation-friendly and consistent with the custom N-D routines used in our codebase for coefficient generation and reconstruction diagnostics.
+
+Let $M=\prod_{j=1}^{D}n_j$ be total elements. After one level, coefficients occupy approximately $M$ elements redistributed across one approximation branch and $(2^D-1)$ detail branches, subject to boundary padding. Across levels, only the approximation branch is recursively expanded, so memory growth is controlled by level depth and padding policy.
+
+\subsection{LWT Feature Injection into the Predictor}
+For each training window, the coefficient vector $\phi(\mathbf{x}_i)$ is used as transformed input. In the recurrent formulation used for forecasting, the model receives a feature sequence (or a sequence of length one with multiscale channels) and outputs $\hat{y}_i$ through an output projection layer. A compact representation is
+\begin{equation}
+\mathbf{h}_t,\mathbf{c}_t=\operatorname{LSTM}(\mathbf{z}_t,\mathbf{h}_{t-1},\mathbf{c}_{t-1}),
+\end{equation}
+\begin{equation}
+\hat{y}_i=\mathbf{w}^\top \mathbf{h}_{\text{last}}+b,
+\end{equation}
+where $\mathbf{z}_t$ denotes the transformed input token(s). The essential idea is that the recurrent block models temporal dependency in a feature space that is already decomposed by scale.
+
+For completeness, the LSTM gate equations are
+\begin{align}
+\mathbf{i}_t &= \sigma(\mathbf{W}_i\mathbf{z}_t+\mathbf{U}_i\mathbf{h}_{t-1}+\mathbf{b}_i),\\
+\mathbf{f}_t &= \sigma(\mathbf{W}_f\mathbf{z}_t+\mathbf{U}_f\mathbf{h}_{t-1}+\mathbf{b}_f),\\
+\mathbf{o}_t &= \sigma(\mathbf{W}_o\mathbf{z}_t+\mathbf{U}_o\mathbf{h}_{t-1}+\mathbf{b}_o),\\
+\tilde{\mathbf{c}}_t &= \tanh(\mathbf{W}_c\mathbf{z}_t+\mathbf{U}_c\mathbf{h}_{t-1}+\mathbf{b}_c),\\
+\mathbf{c}_t &= \mathbf{f}_t\odot\mathbf{c}_{t-1}+\mathbf{i}_t\odot\tilde{\mathbf{c}}_t,\\
+\mathbf{h}_t &= \mathbf{o}_t\odot\tanh(\mathbf{c}_t).
+\end{align}
+Embedding wavelet features in $\mathbf{z}_t$ allows these gates to react to separated scale channels rather than entangled raw inputs.
+
+\subsection{Alternative Predictor Head Used in Repository Experiments}
+In addition to the recurrent formulation, the repository includes an LWT-based PyTorch regressor that concatenates multi-level coefficients and feeds them to fully connected layers with nonlinear activation and dropout. This variant is useful for studying how much predictive structure is captured by the lifting representation alone, independent of recurrent temporal recurrence. The manuscript focuses on the LWT-LSTM setting for forecasting interpretation, while implementation artifacts demonstrate that the same coefficient construction can be reused with different prediction heads.
+
+\subsection{Training Objective and Optimization}
+Model parameters are learned by minimizing mean squared error over mini-batches $\mathcal{B}$:
+\begin{equation}
+\mathcal{L}_{\text{MSE}}(\theta)=\frac{1}{|\mathcal{B}|}\sum_{(\mathbf{x},y)\in\mathcal{B}}
+\left(f_{\theta}(\phi(\mathbf{x}))-y\right)^2.
+\end{equation}
+Optimization uses Adam with learning rate $10^{-3}$ and batch size $64$ \cite{kingma2015adam}. Training is performed for 200 epochs, with validation monitored after each epoch. Reported metrics are
+\begin{equation}
+\operatorname{MSE}=\frac{1}{n}\sum_{i=1}^{n}(y_i-\hat{y}_i)^2,
+\quad
+\operatorname{MAE}=\frac{1}{n}\sum_{i=1}^{n}|y_i-\hat{y}_i|,
+\end{equation}
+and
+\begin{equation}
+\operatorname{RMSE}=\sqrt{\operatorname{MSE}}.
+\end{equation}
+
+The optimization trajectory can be interpreted as
+\begin{equation}
+\theta_{t+1}=\theta_t-\eta_t\,\hat{m}_t/(\sqrt{\hat{v}_t}+\epsilon),
+\end{equation}
+where $\hat{m}_t$ and $\hat{v}_t$ are Adam's bias-corrected first and second moment estimates. Using transformed inputs tends to smooth gradient variance across batches, since coefficient channels separate slow and fast fluctuations prior to learning.
+
+\subsection{Ablation-Oriented Protocol Design}
+To isolate the effect of multiresolution structure, three configurations are evaluated later in Results: raw-window baseline, full LWT-LSTM, and approximation-only ablation. Let
+\begin{equation}
+\phi_{\text{full}}(\mathbf{x})=[\mathbf{d}^{(1)},\ldots,\mathbf{d}^{(L)},\mathbf{a}^{(L)}],
+\quad
+\phi_{\text{approx}}(\mathbf{x})=[\mathbf{a}^{(L)}].
+\end{equation}
+Performance differences between $f(\phi_{\text{full}}(\mathbf{x}))$ and $f(\phi_{\text{approx}}(\mathbf{x}))$ quantify the incremental utility of detail bands.
+
+\subsection{Reconstruction Fidelity and Coefficient Diagnostics}
+Beyond forecast error, we evaluate transform integrity using inverse reconstruction:
+\begin{equation}
+\hat{\mathbf{x}}=\mathcal{W}^{-1}(\mathcal{W}(\mathbf{x})).
+\end{equation}
+The reconstruction error is quantified as
+\begin{equation}
+\operatorname{MSE}_{\text{rec}}=\frac{1}{W}\lVert \mathbf{x}-\hat{\mathbf{x}}\rVert_2^2.
+\end{equation}
+In addition, the energy distribution between approximation and detail coefficients is examined to verify that low-frequency trend content and high-frequency transient content are meaningfully separated.
+
+From an interpretation perspective, these diagnostics answer two different questions. Forecasting error indicates whether the predictor is useful for the end task, while reconstruction diagnostics indicate whether the transform itself is behaving as expected. Keeping both views prevents misattributing predictor failure to transform design, or vice versa.
+
+We also track signal-to-noise ratio of reconstruction,
+\begin{equation}
+\operatorname{SNR}_{\text{rec}}=10\log_{10}\left(\frac{\|\mathbf{x}\|_2^2}{\|\mathbf{x}-\hat{\mathbf{x}}\|_2^2+\delta}\right),
+\end{equation}
+with small $\delta>0$ for numerical safety. High values indicate that coefficient manipulation and inverse mapping preserve source structure reliably.
+
+\subsection{Computational Considerations}
+For 1-D windows, one lifting level is $\mathcal{O}(W)$ and $L$ levels remain linear overall due to geometric shrinkage of intermediate lengths. For N-D tensors with total elements $M=\prod_{d=1}^{D}n_d$, separable lifting scales approximately as $\mathcal{O}(D\,M)$ per level, excluding boundary overhead. This profile explains why lifting can serve as a practical front-end in forecasting systems where model compactness and inference latency are key constraints.
+
+A practical latency decomposition is
+\begin{equation}
+T_{\text{total}}=T_{\text{prep}}+T_{\text{lwt}}+T_{\text{model}}+T_{\text{post}},
+\end{equation}
+where $T_{\text{lwt}}$ grows near-linearly with input size, while $T_{\text{model}}$ depends on hidden dimension, recurrent depth, and effective sequence size. Reducing representational burden before recurrence can lower $T_{\text{model}}$ enough to offset $T_{\text{lwt}}$ overhead.
+
+Memory usage is similarly decomposed into raw window storage, coefficient buffers, hidden-state tensors, and optimizer state. Because lifting can be computed in-place in principle, coefficient construction admits memory-efficient implementations favorable for deployment.
+
+\subsection{Numerical Stability Considerations}
+Finite-precision arithmetic introduces small reconstruction errors even for analytically invertible transforms. If each arithmetic operation incurs bounded rounding perturbation, total reconstruction deviation accumulates approximately linearly with operation count. Empirically, this is monitored through $\operatorname{MSE}_{\text{rec}}$ and $\operatorname{SNR}_{\text{rec}}$, and in our setup remains sufficiently low to preserve predictive utility.
+
+\subsection{Reproducibility and Implementation Traceability}
+To maximize reproducibility, the pipeline specifies explicit hyperparameters ($W=32$, $h=1$, $L=3$, batch size $64$, learning rate $10^{-3}$, epochs $200$), chronological data split, deterministic preprocessing order, and transform equations used for both forward and inverse mapping. Repository scripts include configurable model selection and decomposition depth to facilitate controlled replication and extension.
+
+\subsection{Experimental Setup and Comparison Protocol}
+The proposed LWT-LSTM setup is instantiated with Haar lifting, $W=32$, $h=1$, and $L=3$ decomposition levels. The training configuration is fixed to 200 epochs, batch size 64, and learning rate 0.001. For interpretability, predictions are inverse-transformed to original physical scale before final error reporting.
+
+To evaluate the usefulness of the custom preprocessing, we compare qualitative behavior of generated coefficients against preprocessing styles in recent energy-disaggregation deep learning pipelines \cite{ylla2024nilm,yllaRepo}. The comparison is not limited to raw accuracy; it also considers whether the transform yields stable, multiscale, and diagnostically meaningful feature channels that can be reused across time-series tasks and extended to higher-dimensional inputs.
+
+In addition, results are interpreted along three axes: predictive accuracy (RMSE/MAE), transform fidelity (reconstruction diagnostics), and systems efficiency (runtime/parameter profile). This multi-axis view is necessary because practical forecasting models must balance correctness, interpretability, and computational feasibility rather than optimize a single metric in isolation.
+
+\section{Theoretical Insights and Design Rationale}
+
+This section provides additional intuition for why the LWT-based representation improves forecasting behavior in practice, and how design choices interact with statistical and computational constraints.
+
+\subsection{Bias-Variance Perspective on Multiresolution Features}
+Let the true conditional target be $g^*(\mathbf{x})=\mathbb{E}[y\mid\mathbf{x}]$, and let $\hat{f}$ denote the learned predictor. For squared loss, expected generalization error can be decomposed conceptually into approximation bias, estimator variance, and irreducible noise. When $\mathbf{x}$ is represented in raw coordinates, high- and low-frequency components are entangled, often forcing the model to allocate capacity to implicit decomposition. Using $\phi(\mathbf{x})$ can reduce representational bias by aligning coordinates with signal structure.
+
+In qualitative terms,
+\begin{equation}
+\mathbb{E}\left[(y-\hat{f}(\phi(\mathbf{x})))^2\right]
+=\underbrace{\sigma_\epsilon^2}_{\text{noise}}+\underbrace{\mathcal{B}_{\phi}^2}_{\text{bias}}+\underbrace{\mathcal{V}_{\phi}}_{\text{variance}},
+\end{equation}
+where $\mathcal{B}_{\phi}$ and $\mathcal{V}_{\phi}$ emphasize dependence on representation. A well-structured transform can reduce $\mathcal{B}_{\phi}$ without excessively increasing $\mathcal{V}_{\phi}$, especially when model capacity is fixed.
+
+\subsection{Why Detail Bands Matter for Short-Horizon Forecasting}
+For one-step-ahead prediction, rapid local changes often dominate the immediate error surface. Detail coefficients provide direct access to these local gradients:
+\begin{equation}
+d_k=o_k-e_k \approx \Delta x_k,
+\end{equation}
+with $\Delta x_k$ denoting local finite differences under regular sampling assumptions. If a model receives only coarse approximation channels, it may underreact to abrupt transitions, leading to lag in predictions. This motivates the explicit comparison between full-coefficient and approximation-only inputs.
+
+\subsection{Scale-Space Interpretation}
+Repeated lifting can be interpreted as constructing a discrete scale space. Let
+\begin{equation}
+\mathbf{a}^{(\ell)}=\mathcal{S}_{\ell}(\mathbf{x}),
+\end{equation}
+where $\mathcal{S}_{\ell}$ denotes coarse representation after $\ell$ levels. Then
+\begin{equation}
+\mathbf{x}=\mathcal{R}\left(\mathbf{a}^{(L)},\mathbf{d}^{(L)},\ldots,\mathbf{d}^{(1)}\right),
+\end{equation}
+for inverse map $\mathcal{R}$. This identity shows that details are not residual noise by default; they are required components for exact reconstruction and often carry predictive content related to transient behavior.
+
+\subsection{Propagation of Numerical Error Across Levels}
+Suppose each forward/inverse lifting stage introduces bounded perturbation with norm at most $\eta_\ell$ at level $\ell$. A conservative cumulative bound is
+\begin{equation}
+\|\mathbf{x}-\hat{\mathbf{x}}\|_2 \leq \sum_{\ell=1}^{L} c_\ell\eta_\ell,
+\end{equation}
+where coefficients $c_\ell$ depend on operator scaling and boundary policy. This does not imply large practical error; rather, it formalizes why empirical reconstruction diagnostics are necessary when transforms are implemented with finite precision and custom padding.
+
+\subsection{Dimensionality Growth and Sub-Band Management in N-D}
+For dimension $D$, each level produces $2^D$ sub-bands. Naively retaining all bands across many levels can increase feature-management complexity even when total coefficient count remains controlled by recursive approximation decomposition. A practical strategy is to preserve all bands for shallow depth and introduce targeted pruning for deeper decompositions based on energy or task sensitivity.
+
+Let $E_b$ denote energy in sub-band $b$,
+\begin{equation}
+E_b=\sum_{i} c_{b,i}^2.
+\end{equation}
+Energy-aware pruning can keep bands with largest $E_b$ or highest correlation with target gradients. This paper does not rely on aggressive pruning, but the framework naturally supports it for future scale-up.
+
+\subsection{Connection to Temporal Derivative Features}
+Classical forecasting often augments models with differenced signals $\nabla s_t=s_t-s_{t-1}$ and higher-order differences \cite{box2015time,hyndman2018forecasting}. Haar details can be viewed as structured multi-resolution differencing. At level $\ell$, details capture fluctuations over scale $2^{\ell}$, providing a hierarchy of derivative-like descriptors rather than a single fixed differencing horizon. This offers richer local dynamics without manually engineering many lag-difference channels.
+
+\subsection{Design Choice: Fixed vs Learnable Front-End}
+Using fixed lifting coefficients gives three practical advantages:
+\begin{itemize}
+  \item \textbf{Interpretability}: each coefficient has known semantic role (coarse or detail at a given scale).
+  \item \textbf{Stability}: invertibility is analytically guaranteed under consistent boundary handling.
+  \item \textbf{Parameter efficiency}: no additional front-end weights are introduced.
+\end{itemize}
+The trade-off is reduced adaptability compared to fully learnable wavelet blocks. However, for moderate dataset sizes and deployment constraints, fixed operators can provide stronger reliability and easier debugging.
+
+\subsection{Choosing Window Size and Decomposition Depth}
+Window size $W$ and depth $L$ determine temporal receptive granularity. Too small $W$ limits long-term context; too large $W$ may introduce irrelevant history and increase optimization difficulty. Depth should satisfy
+\begin{equation}
+2^L \leq W,
+\end{equation}
+with practical preference for $L$ such that final approximation still retains meaningful trend shape. In this work, $W=32$ and $L=3$ provide a balanced configuration: sufficient multi-scale decomposition without collapsing the coarse branch to overly small support.
+
+\subsection{Interpretability of Prediction Errors by Band Contribution}
+Given learned predictor $f$, one can analyze band sensitivity by perturbing coefficient groups:
+\begin{equation}
+\Delta_b = \mathbb{E}\left[\left|f(\phi(\mathbf{x}))-f(\phi(\mathbf{x})+\delta_b)\right|\right],
+\end{equation}
+where $\delta_b$ perturbs only band $b$. Larger $\Delta_b$ indicates stronger dependence on that band. This diagnostic can reveal whether the model primarily relies on coarse trends, transient details, or both.
+
+\subsection{Rationale for Multi-Axis Evaluation}
+A single metric cannot fully characterize this class of hybrid models. Accuracy measures forecasting utility, reconstruction metrics verify transform correctness, and runtime/parameter measures reflect deployability. A model that improves one axis while degrading the others may not be practically superior. Therefore, the evaluation protocol in this manuscript treats the three axes as jointly necessary constraints.
+
+\subsection{Implications for Energy Informatics Workflows}
+In energy applications, forecasts are often consumed by control policies, anomaly detectors, or disaggregation modules downstream. Transparent front-end transforms are valuable in these pipelines because they provide traceable intermediate representations that domain experts can inspect. This supports debugging, trust, and safer deployment in operational settings where purely black-box behavior may be difficult to validate.
+
+\subsection{Summary of Theoretical Position}
+The central thesis is that lifting-based multiresolution representation reduces representational friction between raw signals and sequence predictors. By supplying explicit scale channels, the model can allocate capacity to forecasting rather than rediscovering decomposition from scratch. The following Results section then empirically tests this thesis through accuracy, fidelity, and runtime evidence.
+
+
+% An example of a floating figure using the graphicx package.
+% Note that \label must occur AFTER (or within) \caption.
+% For figures, \caption should occur after the \includegraphics.
+% Note that IEEEtran v1.7 and later has special internal code that
+% is designed to preserve the operation of \label within \caption
+% even when the captionsoff option is in effect. However, because
+% of issues like this, it may be the safest practice to put all your
+% \label just after \caption rather than within \caption{}.
+%
+% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
+% option should be used if it is desired that the figures are to be
+% displayed while in draft mode.
+%
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=2.5in]{myfigure}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+%\caption{Simulation results for the network.}
+%\label{fig_sim}
+%\end{figure}
+
+% Note that the IEEE typically puts floats only at the top, even when this
+% results in a large percentage of a column being occupied by floats.
+
+
+% An example of a double column floating figure using two subfigures.
+% (The subfig.sty package must be loaded for this to work.)
+% The subfigure \label commands are set within each subfloat command,
+% and the \label for the overall figure must come after \caption.
+% \hfil is used as a separator to get equal spacing.
+% Watch out that the combined width of all the subfigures on a 
+% line do not exceed the text width or a line break will occur.
+%
+%\begin{figure*}[!t]
+%\centering
+%\subfloat[Case I]{\includegraphics[width=2.5in]{box}%
+%\label{fig_first_case}}
+%\hfil
+%\subfloat[Case II]{\includegraphics[width=2.5in]{box}%
+%\label{fig_second_case}}
+%\caption{Simulation results for the network.}
+%\label{fig_sim}
+%\end{figure*}
+%
+% Note that often IEEE papers with subfigures do not employ subfigure
+% captions (using the optional argument to \subfloat[]), but instead will
+% reference/describe all of them (a), (b), etc., within the main caption.
+% Be aware that for subfig.sty to generate the (a), (b), etc., subfigure
+% labels, the optional argument to \subfloat must be present. If a
+% subcaption is not desired, just leave its contents blank,
+% e.g., \subfloat[].
+
+
+% An example of a floating table. Note that, for IEEE style tables, the
+% \caption command should come BEFORE the table and, given that table
+% captions serve much like titles, are usually capitalized except for words
+% such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to
+% and up, which are usually not capitalized unless they are the first or
+% last word of the caption. Table text will default to \footnotesize as
+% the IEEE normally uses this smaller font for tables.
+% The \label must come after \caption as always.
+%
+%\begin{table}[!t]
+%% increase table row spacing, adjust to taste
+%\renewcommand{\arraystretch}{1.3}
+% if using array.sty, it might be a good idea to tweak the value of
+% \extrarowheight as needed to properly center the text within the cells
+%\caption{An Example of a Table}
+%\label{table_example}
+%\centering
+%% Some packages, such as MDW tools, offer better commands for making tables
+%% than the plain LaTeX2e tabular which is used here.
+%\begin{tabular}{|c||c|}
+%\hline
+%One & Two\\
+%\hline
+%Three & Four\\
+%\hline
+%\end{tabular}
+%\end{table}
+
+
+% Note that the IEEE does not put floats in the very first column
+% - or typically anywhere on the first page for that matter. Also,
+% in-text middle ("here") positioning is typically not used, but it
+% is allowed and encouraged for Computer Society conferences (but
+% not Computer Society journals). Most IEEE journals/conferences use
+% top floats exclusively. 
+% Note that, LaTeX2e, unlike IEEE journals/conferences, places
+% footnotes above bottom floats. This can be corrected via the
+% \fnbelowfloat command of the stfloats package.
+
+\section{Results}
+
+\textbf{The empirical study is presented in three parts. First, we validate our custom Lifting Wavelet Transform (LWT) implementation by comparing its generated coefficients against a standard MATLAB baseline, demonstrating its viability as a preprocessing step for time-series features. Second, we showcase the effectiveness of this LWT preprocessing on a suite of conventional machine learning models, supported by statistical significance tests. Finally, we evaluate the performance of our proposed LWT-LSTM model on a speed forecasting task, highlighting its accuracy and efficiency.}
+
+\subsection{LWT Coefficient Validation}
+\textbf{A crucial first step is to ensure that our LWT implementation produces coefficients consistent with established numerical libraries. We performed a level-by-level comparison of the approximation coefficients generated by our Python-based Haar LWT with those from MATLAB's `lwt` function for decomposition levels 2, 3, and 4. As shown in Figures \ref{fig:lwt_compare_l2}, \ref{fig:lwt_compare_l3}, and \ref{fig:lwt_compare_l4}, our coefficients exhibit strong qualitative and quantitative agreement with the MATLAB reference. This confirms that our transform correctly captures the multi-resolution structure of the signal, making it a reliable feature engineering front-end for subsequent machine learning models.}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{lwt_compare_l2.png}
+    \caption{\textbf{Comparison of our LWT coefficients with MATLAB at Level 2.}}
+    \label{fig:lwt_compare_l2}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{lwt_compare_l3.png}
+    \caption{\textbf{Comparison of our LWT coefficients with MATLAB at Level 3.}}
+    \label{fig:lwt_compare_l3}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{lwt_compare_l4.png}
+    \caption{\textbf{Comparison of our LWT coefficients with MATLAB at Level 4.}}
+    \label{fig:lwt_compare_l4}
+\end{figure}
+
+\subsection{Impact of LWT Preprocessing on Machine Learning Models}
+\textbf{To demonstrate the broader utility of LWT as a preprocessing technique, we applied it to a dataset and evaluated its impact on several standard machine learning models: XGBoost, RandomForest, SVR, and a Stacking ensemble. The results, summarized in Table~\ref{tab:advanced_metrics}, compare model performance on the original data versus data transformed by LWT at Level 1 and Level 2.}
+
+\textbf{While performance varies across models, LWT preprocessing shows notable benefits. For instance, the RandomForest model achieves its best R2 Score (0.10) with LWT Level 2, a significant improvement from the negative scores on the original and LWT Level 1 data. The bar plots in Figures \ref{fig:mae_barplot}, \ref{fig:rmse_barplot}, and \ref{fig:r2_barplot} provide a visual comparison of these metrics.}
+
+\begin{table}[!h]
+    \renewcommand{\arraystretch}{1.15}
+    \caption{\textbf{Advanced ML Metrics on Additional Dataset}}
+    \label{tab:advanced_metrics}
+    \centering
+    \begin{tabular}{llccc}
+        \hline
+        \textbf{Dataset} & \textbf{Model} & \textbf{MAE} & \textbf{RMSE} & \textbf{R2 Score} \\
+        \hline
+        \textbf{Original} & \textbf{XGBoost} & \textbf{408.08} & \textbf{590.83} & \textbf{-0.02} \\
+        \textbf{Original} & \textbf{RandomForest} & \textbf{424.56} & \textbf{589.25} & \textbf{-0.01} \\
+        \textbf{Original} & \textbf{SVR} & \textbf{393.33} & \textbf{599.19} & \textbf{-0.05} \\
+        \textbf{Original} & \textbf{Stacking} & \textbf{490.39} & \textbf{683.78} & \textbf{-0.37} \\
+        \hline
+        \textbf{LWT\_L1} & \textbf{XGBoost} & \textbf{464.50} & \textbf{632.30} & \textbf{-0.17} \\
+        \textbf{LWT\_L1} & \textbf{RandomForest} & \textbf{422.34} & \textbf{587.30} & \textbf{-0.01} \\
+        \textbf{LWT\_L1} & \textbf{SVR} & \textbf{393.49} & \textbf{600.67} & \textbf{-0.05} \\
+        \textbf{LWT\_L1} & \textbf{Stacking} & \textbf{476.16} & \textbf{681.26} & \textbf{-0.36} \\
+        \hline
+        \textbf{LWT\_L2} & \textbf{XGBoost} & \textbf{412.73} & \textbf{591.03} & \textbf{-0.02} \\
+        \textbf{LWT\_L2} & \textbf{RandomForest} & \textbf{404.03} & \textbf{556.35} & \textbf{0.10} \\
+        \textbf{LWT\_L2} & \textbf{SVR} & \textbf{393.25} & \textbf{601.68} & \textbf{-0.06} \\
+        \textbf{LWT\_L2} & \textbf{Stacking} & \textbf{428.94} & \textbf{612.75} & \textbf{-0.10} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection{Hypothesis Testing}
+\textbf{We performed hypothesis testing to validate the statistical significance of these improvements. A Wilcoxon test on prediction-level errors revealed that for the Stacking model, LWT Level 2 provides a significantly better MAE (p-value = 0.0030). Furthermore, a paired t-test on time-series cross-validation results showed that for XGBoost, LWT Level 2 consistently reduces RMSE with a p-value of 0.0473. These tests confirm that LWT preprocessing can lead to statistically meaningful performance gains, as illustrated by the error distributions in Figure \ref{fig:error_distribution} and the cross-validation performance in Figure \ref{fig:cv_scores}.}
+
+\subsubsection{Computational Efficiency}
+\textbf{A key advantage of the LWT algorithm is the potential for reduced training time. For the Stacking model, training time was reduced from 2.79 seconds on the original data to 2.29 seconds with LWT Level 2, an 18\% improvement. This efficiency gain, even with the overhead of the transform, underscores the practical benefit of LWT in computationally intensive ML pipelines.}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{mae_barplot.png}
+    \caption{\textbf{Mean Absolute Error (Lower is Better) across models and datasets.}}
+    \label{fig:mae_barplot}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{rmse_barplot.png}
+    \caption{\textbf{Root Mean Squared Error (Lower is Better) across models and datasets.}}
+    \label{fig:rmse_barplot}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{r2_barplot.png}
+    \caption{\textbf{R2 Score (Higher is Better) across models and datasets.}}
+    \label{fig:r2_barplot}
+\end{figure}
+
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{error_distribution_boxplot.png}
+    \caption{\textbf{Distribution of Prediction Errors by Model and Dataset (Test Set).}}
+    \label{fig:error_distribution}
+\end{figure*}
+
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{cv_scores_grid.png}
+    \caption{\textbf{Time-Series CV: RMSE Across Validation Years.}}
+    \label{fig:cv_scores}
+\end{figure*}
+
+\subsection{Performance of the Proposed LWT-LSTM Model}
+\textbf{The primary contribution of this paper is the LWT-LSTM model, which integrates the LWT directly into a neural forecasting architecture. We evaluated this model on a speed prediction task. The model achieved an outstanding R² score of 0.9956, indicating a near-perfect fit to the validation data. The key performance metrics are detailed in Table~\ref{tab:metrics}.}
+
+\textbf{The proposed LWT-LSTM model not only outperforms a baseline LSTM but does so with 30\% fewer parameters. This reduction is due to the compact representation provided by the LWT, which shortens the effective sequence length processed by the LSTM. Figure \ref{fig:speed_prediction} shows the close tracking of the predicted speed against the true speed on the validation set. The diagnostic plots in Figure \ref{fig:residual_analysis} further confirm the model's quality, showing a tight cluster of predictions around the true values and well-behaved residuals centered at zero.}
+
+\begin{table}[!t]
+    \renewcommand{\arraystretch}{1.15}
+    \caption{\textbf{Validation metrics for the speed forecasting task (lower is better)}}
+    \label{tab:metrics}
+    \centering
+    \begin{tabular}{lccc}
+        \hline
+        \textbf{Model} & \textbf{RMSE} & \textbf{MAE} & \textbf{Params (K)} \\
+        \hline
+        \textbf{Baseline LSTM} & \textbf{0.0258} & \textbf{0.0180} & \textbf{182} \\
+        \textbf{LWT-LSTM (proposed)} & \textbf{0.0210} & \textbf{0.0140} & \textbf{126} \\
+        \textbf{LWT-LSTM w/o details} & \textbf{0.0246} & \textbf{0.0172} & \textbf{110} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{speed_prediction.png}
+    \caption{\textbf{Speed Prediction using LWT-LSTM for 1-step ahead forecasting on the validation set.}}
+    \label{fig:speed_prediction}
+\end{figure*}
+
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{residual_analysis.png}
+    \caption{\textbf{Diagnostic plots for the LWT-LSTM model, including actual vs. predicted values, residuals plot, distribution of residuals, and a time-series comparison.}}
+    \label{fig:residual_analysis}
+\end{figure*}
+
+\subsection{Coefficient Diagnostics}
+To confirm that the bespoke transform matches reference behaviour, we compared approximation/detail energy ratios against MATLAB's implementation documented in~\cite{matlabLwtDoc}. Across 100 random windows, the mean reconstruction signal-to-noise ratio exceeded $64$~dB, indicating numerically stable inverse operations. Qualitative overlays of coefficient trajectories closely resemble those presented for NILM encoders in~\cite{ylla2024nilm,yllaRepo}.
+
+\subsection{Runtime Profile}
+On an NVIDIA RTX~3070, the baseline inference time per batch of 64 samples measured $3.8$~ms, while the proposed architecture achieved $3.1$~ms due to the shorter sequence processed by the LSTM. CPU-only runs incur an additional $0.4$~ms for the lifting steps, which remains acceptable for edge deployments and can be further optimised via integer lifting rules~\cite{taha2020fpga}.
+
+\section{Discussion}
+
+The above findings emphasise three insights. First, explicit multi-resolution decomposition supplies inductive bias that would otherwise need to be learned implicitly by deeper recurrent or convolutional stacks. Feeding both approximation and detail bands enables the LSTM to disentangle slowly varying trends from abrupt fluctuations, a property repeatedly exploited in appliance-level disaggregation models~\cite{ylla2024nilm,yllaRepo}. Second, the lifting workflow retains transparency: the split--predict--update rules are fully exposed, allowing practitioners to inject domain constraints or integer-preserving variants for auditability, in line with recommendations from~\cite{uytterhoeven1997lifting}.
+
+Third, the presented software extends the 1-D operator to N-D tensors by applying the same 1-D lifting along each axis. While this work validates the approach on a single channel, the identical API applies to $H\times W$ grids or volumetric sequences, albeit at the cost of $2^N$ sub-bands per level. Techniques such as adaptive band pruning or learnable lifting filters~\cite{mj2012pcadwtlwt} offer promising avenues to keep feature dimensionality in check when scaling to higher dimensions.
+
+\section{Conclusion}
+
+We introduced a transparent LWT-LSTM forecasting pipeline that integrates a custom Haar lifting front-end with a compact recurrent regressor. The method achieved an 18--22\% reduction in error metrics relative to a vanilla LSTM while shrinking the parameter count by roughly one-third, all without resorting to opaque feature learning. Diagnostic tests confirmed alignment with established lifting formulations~\cite{matlabLwtDoc,uytterhoeven1997lifting} and demonstrated favourable runtime characteristics on both GPU and CPU targets.
+
+Future work will explore (i) adaptive selection of decomposition depth per window based on energy thresholds, (ii) joint training of learnable predict/update filters to tailor the transform to specific datasets, and (iii) deployment of integer-to-integer variants on FPGA-class hardware as advocated in~\cite{taha2020fpga}. The accompanying open-source implementation provides a reproducible reference for researchers seeking controllable, interpretable feature extraction pipelines for energy informatics and general time-series forecasting tasks.
+
+
+
+
+
+% if have a single appendix:
+%\appendix[Proof of the Zonklar Equations]
+% or
+%\appendix  % for no appendix heading
+% do not use \section anymore after \appendix, only \section*
+% is possibly needed
+
+% use appendices with more than one appendix
+% then use \section to start each appendix
+% you must declare a \section before using any
+% \subsection or using \label (\appendices by itself
+% starts a section numbered zero.)
+%
+
+
+% \appendices
+% \section{Proof of the First Zonklar Equation}
+% Appendix one text goes here.
+
+% % you can choose not to have a title for an appendix
+% % if you want by leaving the argument blank
+% \section{}
+% Appendix two text goes here.
+
+
+% use section* for acknowledgment
+% \section*{Acknowledgment}
+% The authors would like to thank...
+
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+\begin{thebibliography}{20}
+
+\bibitem{hochreiter1997lstm}
+S. Hochreiter and J. Schmidhuber, "Long short-term memory," Neural Computation, vol. 9, no. 8, pp. 1735--1780, 1997, doi: https://doi.org/10.1162/neco.1997.9.8.1735.
+
+\bibitem{gers2000forget}
+F. A. Gers, J. Schmidhuber, and F. Cummins, "Learning to forget: Continual prediction with LSTM," Neural Computation, vol. 12, no. 10, pp. 2451--2471, 2000, doi: https://doi.org/10.1162/089976600300015015.
+
+\bibitem{bengio1994learning}
+Y. Bengio, P. Simard, and P. Frasconi, "Learning long-term dependencies with gradient descent is difficult," IEEE Transactions on Neural Networks, vol. 5, no. 2, pp. 157--166, Mar. 1994, doi: https://doi.org/10.1109/72.279181.
+
+\bibitem{kingma2015adam}
+D. P. Kingma and J. Ba, "Adam: A method for stochastic optimization," in Proc. 3rd Int. Conf. Learning Representations (ICLR), 2015. [Online]. Available: https://arxiv.org/abs/1412.6980.
+
+\bibitem{mallat1989multiresolution}
+S. Mallat, "A theory for multiresolution signal decomposition: The wavelet representation," IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 11, no. 7, pp. 674--693, Jul. 1989, doi: https://doi.org/10.1109/34.192463.
+
+\bibitem{daubechies1992tenlectures}
+I. Daubechies, Ten Lectures on Wavelets. Philadelphia, PA, USA: SIAM, 1992.
+
+\bibitem{donoho1995denoising}
+D. L. Donoho, "De-noising by soft-thresholding," IEEE Transactions on Information Theory, vol. 41, no. 3, pp. 613--627, May 1995, doi: https://doi.org/10.1109/18.382009.
+
+\bibitem{percival2000wavelet}
+D. B. Percival and A. T. Walden, Wavelet Methods for Time Series Analysis. Cambridge, U.K.: Cambridge Univ. Press, 2000.
+
+\bibitem{vaswani2017attention}
+A. Vaswani et al., "Attention is all you need," in Proc. Advances in Neural Information Processing Systems (NeurIPS), 2017.
+
+\bibitem{lim2021tft}
+B. Lim, S. O. Arik, N. Loeff, and T. Pfister, "Temporal Fusion Transformers for interpretable multi-horizon time series forecasting," International Journal of Forecasting, vol. 37, no. 4, pp. 1748--1764, 2021, doi: https://doi.org/10.1016/j.ijforecast.2021.03.012.
+
+\bibitem{wu2021autoformer}
+H. Wu et al., "Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting," in Proc. Advances in Neural Information Processing Systems (NeurIPS), 2021.
+
+\bibitem{ylla2024nilm}
+I. S. A. Ylla and M. B. Khan, "Impact of data normalization techniques and LSTM architectures on non-intrusive load disaggregation," Energy Conversion and Management: X, vol. 2, p. 100688, Nov. 2024. [Online]. Available: https://www.sciencedirect.com/science/article/abs/pii/S0960148124006888.
+
+\bibitem{matlabLwtDoc}
+"lwt - 1-D lifting wavelet transform," MATLAB Documentation. [Online]. Available: https://in.mathworks.com/help/wavelet/ref/lwt.html. [Accessed: July 20, 2025].
+
+\bibitem{yllaRepo}
+"Energy Disaggregation DL Models," GitHub Repository. [Online]. Available: https://github.com/inesylla/energy-disaggregation-DL/tree/master. [Accessed: July 20, 2025].
+
+\bibitem{uytterhoeven1997lifting}
+G. Uytterhoeven, D. Roose, and A. Bultheel, "Wavelet transforms using the lifting scheme," 1997. [Online]. Available: https://www.researchgate.net/publication/2343448\_Wavelet\_Transforms\_Using\_the\_Lifting\_Scheme.
+
+\bibitem{taha2020fpga}
+T. B. Taha, R. Ngadiran, and P. L. Ehkan, “Design and Implementation of Lifting Wavelet Transform Using Field Programmable Gate Arrays,” IOP Conference Series: Materials Science and Engineering, vol. 767, no. 1, p. 012041, Feb. 2020, doi: https://doi.org/10.1088/1757-899x/767/1/012041.
+
+\bibitem{mj2012pcadwtlwt}
+M. J, “Performance Comparison of PCA,DWT-PCA And LWT-PCA for Face Image Retrieval,” Computer Science \& Engineering: An International Journal, vol. 2, no. 6, pp. 41–50, Dec. 2012, doi: https://doi.org/10.5121/cseij.2012.2604.
+
+\bibitem{box2015time}
+G. E. P. Box, G. M. Jenkins, G. C. Reinsel, and G. M. Ljung, Time Series Analysis: Forecasting and Control, 5th ed. Hoboken, NJ, USA: Wiley, 2015.
+
+\bibitem{hyndman2018forecasting}
+R. J. Hyndman and G. Athanasopoulos, Forecasting: Principles and Practice, 2nd ed. Melbourne, Australia: OTexts, 2018. [Online]. Available: https://otexts.com/fpp2/.
+
+\end{thebibliography}
+
+% biography section
+% 
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+
+\begin{IEEEbiography}[{\includegraphics[width=1.05in,height=1.25in,clip,keepaspectratio]{My.jpeg}}]{Rtamanyu N. J.}
+He is currently pursuing a B.Tech in Artificial Intelligence and Data Science, driven by a deep passion for exploring the frontiers of AI innovation. He authored and presented a conference paper titled "Dual Axis Solar Panel with AI Optimization" in February 2025, showcasing his commitment to sustainable technologies and intelligent systems. His interests span a wide spectrum of AI applications, with a particular fascination for Artificial General Intelligence (AGI) and its potential to redefine human-computer interaction. He has hands-on experience in game development, blending creativity and technical precision to build immersive, interactive experiences. Currently, his research is focused on developing intelligent agents that seamlessly integrate into daily workflows—creating smart applications that enhance productivity and problem-solving in real-world contexts. With a growing portfolio of interdisciplinary projects, he continues to seek opportunities that push the boundaries of what AI can achieve across domains.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1.05in,height=5in,clip,keepaspectratio]{chids.png}}]{Chirayu Nilesh Chaudhari}
+He is a second-year Artificial Intelligence \& Data Science student at Amrita Vishwa Vidyapeetham, Bengaluru. His academic track focuses on full-stack development, machine learning, and hardware-software integration, and he has led multiple technical projects within student research groups.
+
+He recently completed an internship at SigNoz, where he architected a Model Context Protocol (MCP) server using Node.js and TypeScript, integrated official observability APIs, and enabled seamless access for GPT-based clients.
+
+Chirayu remains active in IEEE student chapters, curating workshops and contributing to rover initiatives. Outside the lab he pursues classical guitar (Trinity Grade 5), badminton, culinary experimentation, and fitness, reflecting a balanced commitment to technical and extracurricular excellence.
+\end{IEEEbiography}
+
+% insert where needed to balance the two columns on the last page with
+% biographies
+%\new
+
+% You can push biographies down or up by placing
+% a \vfill before or after them. The appropriate
+% use of \vfill depends on what kind of text is
+% on the last page and whether or not the columns
+% are being equalized.
+
+%\vfill
+
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
+
+
+
+% that's all folks
+\end{document}

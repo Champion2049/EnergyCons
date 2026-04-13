@@ -19,10 +19,10 @@ warnings.filterwarnings('ignore')
 # ==========================================
 # 1. CONFIGURATION
 # ==========================================
-ORIGINAL_DATA_PATH = 'Wavelet-LWT-Rtamanyu/maams_preprocessed_yield_weather.csv'
-LWT_L1_DATA = 'Wavelet-LWT-Rtamanyu/lwt_level_1_preprocessed_yield_weather.csv'
-LWT_L2_DATA = 'Wavelet-LWT-Rtamanyu/lwt_level_2_preprocessed_yield_weather.csv'
-OUTPUT_DIR = 'Wavelet-LWT-Rtamanyu/Output'
+ORIGINAL_DATA_PATH = 'Wavelet-LWT-Rtamanyu/1st Dataset/maams_preprocessed_yield_weather.csv'
+LWT_L1_DATA = 'Wavelet-LWT-Rtamanyu/1st Dataset/lwt_level_1_preprocessed_yield_weather.csv'
+LWT_L2_DATA = 'Wavelet-LWT-Rtamanyu/1st Dataset/lwt_level_2_preprocessed_yield_weather.csv'
+OUTPUT_DIR = 'Wavelet-LWT-Rtamanyu/1st Dataset/Output'
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -167,32 +167,48 @@ if __name__ == "__main__":
     results_df.to_csv(csv_out_path, index=False)
     print(f"\nSaved metrics to: {csv_out_path}")
     
-    # Step 4: Plot
+    # Step 4: Plot - create and save separate figures for each metric
     sns.set_theme(style="whitegrid")
-    fig, axes = plt.subplots(3, 1, figsize=(12, 16))
-    fig.suptitle('Model Performance Across Datasets', fontsize=16, fontweight='bold')
-    
+
     def add_labels(ax):
         for p in ax.patches:
             height = p.get_height()
+            if height is None:
+                continue
             if height > 0:
                 ax.annotate(f'{height:.2f}', (p.get_x() + p.get_width() / 2., height),
                             ha='center', va='bottom', xytext=(0, 3), textcoords='offset points', fontsize=9)
 
-    sns.barplot(data=results_df, x='Model', y='RMSE', hue='Dataset', ax=axes[0], palette='viridis')
-    axes[0].set_title('Root Mean Squared Error (Lower is Better)')
-    add_labels(axes[0])
-    
-    sns.barplot(data=results_df, x='Model', y='MAE', hue='Dataset', ax=axes[1], palette='viridis')
-    axes[1].set_title('Mean Absolute Error (Lower is Better)')
-    add_labels(axes[1])
-    
-    sns.barplot(data=results_df, x='Model', y='R2_Score', hue='Dataset', ax=axes[2], palette='viridis')
-    axes[2].set_title('R² Score (Higher is Better)')
-    axes[2].set_ylim(-0.2, 1.0)
-    add_labels(axes[2])
-    
-    plt.tight_layout(rect=(0, 0.03, 1, 0.96))
-    plot_path = os.path.join(OUTPUT_DIR, 'advanced_ml_comparison.png')
+    # RMSE plot
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.barplot(data=results_df, x='Model', y='RMSE', hue='Dataset', ax=ax, palette='viridis')
+    ax.set_title('Root Mean Squared Error (Lower is Better)')
+    add_labels(ax)
+    plt.tight_layout()
+    plot_path = os.path.join(OUTPUT_DIR, 'ml_rmse_comparision.png')
     plt.savefig(plot_path, dpi=300)
-    print(f"Saved comparison charts to: {plot_path}")
+    plt.close(fig)
+    print(f"Saved RMSE chart to: {plot_path}")
+
+    # MAE plot
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.barplot(data=results_df, x='Model', y='MAE', hue='Dataset', ax=ax, palette='viridis')
+    ax.set_title('Mean Absolute Error (Lower is Better)')
+    add_labels(ax)
+    plt.tight_layout()
+    plot_path = os.path.join(OUTPUT_DIR, 'ml_mae_comparision.png')
+    plt.savefig(plot_path, dpi=300)
+    plt.close(fig)
+    print(f"Saved MAE chart to: {plot_path}")
+
+    # R2 plot
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.barplot(data=results_df, x='Model', y='R2_Score', hue='Dataset', ax=ax, palette='viridis')
+    ax.set_title('R² Score (Higher is Better)')
+    ax.set_ylim(-0.2, 1.0)
+    add_labels(ax)
+    plt.tight_layout()
+    plot_path = os.path.join(OUTPUT_DIR, 'ml_r2_comparision.png')
+    plt.savefig(plot_path, dpi=300)
+    plt.close(fig)
+    print(f"Saved R2 chart to: {plot_path}")
